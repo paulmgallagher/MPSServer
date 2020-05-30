@@ -43,6 +43,7 @@ dependencies {
 	ant_lib "org.apache.ant:ant-junit:1.10.1"
 	mps "com.jetbrains:mps:$mpsVersion"
     libs 'com.beijunyi:parallelgit-filesystem:2.0.0'
+    libs 'org.mongodb:mongo-java-driver:3.12.4'
 }
 
 repositories {	
