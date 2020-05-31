@@ -55,11 +55,13 @@
         <reference id="1203092736097" name="modifiedGroup" index="tU$_T" />
       </concept>
       <concept id="1213888653896" name="jetbrains.mps.lang.plugin.structure.InitBlock" flags="in" index="2xpIHi" />
+      <concept id="1213888677711" name="jetbrains.mps.lang.plugin.structure.DisposeBlock" flags="in" index="2xpOpl" />
       <concept id="1213888797251" name="jetbrains.mps.lang.plugin.structure.ConceptFunctionParameter_Project" flags="nn" index="2xqhHp" />
       <concept id="1214307303872" name="jetbrains.mps.lang.plugin.structure.GetComponentBlock" flags="in" index="2UmK3q" />
       <concept id="6547237850567458268" name="jetbrains.mps.lang.plugin.structure.BaseToolDeclaration" flags="ng" index="2XNcJY">
         <property id="2498620720770664572" name="position" index="2bmUCM" />
         <property id="6547237850567462620" name="caption" index="2XNbzY" />
+        <child id="8096638938275469615" name="toolDisposeBlock" index="uR5co" />
         <child id="8096638938275469614" name="toolInitBlock" index="uR5cp" />
         <child id="6547237850567462848" name="methodDeclaration" index="2XNbBy" />
         <child id="6547237850567462849" name="fieldDeclaration" index="2XNbBz" />
@@ -213,6 +215,7 @@
         <child id="1081773367579" name="rightExpression" index="3uHU7w" />
         <child id="1081773367580" name="leftExpression" index="3uHU7B" />
       </concept>
+      <concept id="1073239437375" name="jetbrains.mps.baseLanguage.structure.NotEqualsExpression" flags="nn" index="3y3z36" />
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
       </concept>
@@ -818,6 +821,13 @@
       <node concept="3Tm6S6" id="7f23gRic3dk" role="1B3o_S" />
       <node concept="3uibUv" id="7f23gRic4nl" role="1tU5fm">
         <ref role="3uigEE" to="wudb:7f23gRhQ5vn" resolve="MongoDbConnector" />
+      </node>
+    </node>
+    <node concept="2BZ0e9" id="4OGp9ehK7qR" role="2XNbBz">
+      <property role="TrG5h" value="server" />
+      <node concept="3Tm6S6" id="4OGp9ehK7qS" role="1B3o_S" />
+      <node concept="3uibUv" id="4OGp9ehK9pD" role="1tU5fm">
+        <ref role="3uigEE" to="30ym:5SYYrGBzPK3" resolve="Server" />
       </node>
     </node>
     <node concept="2UmK3q" id="7f23gRhPMj6" role="2Um5zG">
@@ -1569,17 +1579,51 @@
                             </node>
                           </node>
                         </node>
-                        <node concept="3cpWs8" id="4qHA_yf42$g" role="3cqZAp">
-                          <node concept="3cpWsn" id="4qHA_yf42$h" role="3cpWs9">
-                            <property role="TrG5h" value="server" />
-                            <node concept="3uibUv" id="4qHA_yf42$i" role="1tU5fm">
-                              <ref role="3uigEE" to="30ym:5SYYrGBzPK3" resolve="Server" />
+                        <node concept="3clFbJ" id="4OGp9ehKhqv" role="3cqZAp">
+                          <node concept="3clFbS" id="4OGp9ehKhqx" role="3clFbx">
+                            <node concept="3clFbF" id="4OGp9ehKlZa" role="3cqZAp">
+                              <node concept="2OqwBi" id="4OGp9ehKmcq" role="3clFbG">
+                                <node concept="2OqwBi" id="4OGp9ehKlZ4" role="2Oq$k0">
+                                  <node concept="2WthIp" id="4OGp9ehKlZ7" role="2Oq$k0">
+                                    <ref role="32nkFo" node="7f23gRhPMhI" resolve="MongoDBExporter" />
+                                  </node>
+                                  <node concept="2BZ7hE" id="4OGp9ehKlZ9" role="2OqNvi">
+                                    <ref role="2WH_rO" node="4OGp9ehK7qR" resolve="server" />
+                                  </node>
+                                </node>
+                                <node concept="liA8E" id="4OGp9ehKmSf" role="2OqNvi">
+                                  <ref role="37wK5l" to="30ym:5SYYrGB_oAA" resolve="kill" />
+                                </node>
+                              </node>
                             </node>
-                            <node concept="2YIFZM" id="4qHA_yf42Qo" role="33vP2m">
+                          </node>
+                          <node concept="3y3z36" id="4OGp9ehKjZ0" role="3clFbw">
+                            <node concept="10Nm6u" id="4OGp9ehKkHq" role="3uHU7w" />
+                            <node concept="2OqwBi" id="4OGp9ehKjj2" role="3uHU7B">
+                              <node concept="2WthIp" id="4OGp9ehKjj5" role="2Oq$k0">
+                                <ref role="32nkFo" node="7f23gRhPMhI" resolve="MongoDBExporter" />
+                              </node>
+                              <node concept="2BZ7hE" id="4OGp9ehKjj7" role="2OqNvi">
+                                <ref role="2WH_rO" node="4OGp9ehK7qR" resolve="server" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="4OGp9ehKggV" role="3cqZAp">
+                          <node concept="37vLTI" id="4OGp9ehKggX" role="3clFbG">
+                            <node concept="2YIFZM" id="4qHA_yf42Qo" role="37vLTx">
                               <ref role="37wK5l" to="30ym:80AXrSevja" resolve="launch" />
                               <ref role="1Pybhc" to="30ym:5SYYrGBzPK3" resolve="Server" />
                               <node concept="37vLTw" id="4qHA_yf43K0" role="37wK5m">
                                 <ref role="3cqZAo" node="4qHA_yf43fn" resolve="serverConfiguration" />
+                              </node>
+                            </node>
+                            <node concept="2OqwBi" id="4OGp9ehKgBU" role="37vLTJ">
+                              <node concept="2WthIp" id="4OGp9ehKgBX" role="2Oq$k0">
+                                <ref role="32nkFo" node="7f23gRhPMhI" resolve="MongoDBExporter" />
+                              </node>
+                              <node concept="2BZ7hE" id="4OGp9ehKgBZ" role="2OqNvi">
+                                <ref role="2WH_rO" node="4OGp9ehK7qR" resolve="server" />
                               </node>
                             </node>
                           </node>
@@ -1766,6 +1810,47 @@
               <ref role="37wK5l" to="wudb:7f23gRhQbPr" resolve="database" />
               <node concept="Xl_RD" id="7f23gRiatZe" role="37wK5m">
                 <property role="Xl_RC" value="test" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2xpOpl" id="4OGp9ehK6Nr" role="uR5co">
+      <node concept="3clFbS" id="4OGp9ehK6Ns" role="2VODD2">
+        <node concept="3clFbJ" id="4OGp9ehK9to" role="3cqZAp">
+          <node concept="3y3z36" id="4OGp9ehK9F0" role="3clFbw">
+            <node concept="10Nm6u" id="4OGp9ehK9Ih" role="3uHU7w" />
+            <node concept="2OqwBi" id="4OGp9ehK9tH" role="3uHU7B">
+              <node concept="2WthIp" id="4OGp9ehK9tK" role="2Oq$k0" />
+              <node concept="2BZ7hE" id="4OGp9ehK9tM" role="2OqNvi">
+                <ref role="2WH_rO" node="4OGp9ehK7qR" resolve="server" />
+              </node>
+            </node>
+          </node>
+          <node concept="3clFbS" id="4OGp9ehK9tq" role="3clFbx">
+            <node concept="3clFbF" id="4OGp9ehK9P6" role="3cqZAp">
+              <node concept="2OqwBi" id="4OGp9ehK9Q4" role="3clFbG">
+                <node concept="2OqwBi" id="4OGp9ehK9P0" role="2Oq$k0">
+                  <node concept="2WthIp" id="4OGp9ehK9P3" role="2Oq$k0" />
+                  <node concept="2BZ7hE" id="4OGp9ehK9P5" role="2OqNvi">
+                    <ref role="2WH_rO" node="4OGp9ehK7qR" resolve="server" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="4OGp9ehKfJ0" role="2OqNvi">
+                  <ref role="37wK5l" to="30ym:5SYYrGB_oAA" resolve="kill" />
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4OGp9ehKfN3" role="3cqZAp">
+              <node concept="37vLTI" id="4OGp9ehKgck" role="3clFbG">
+                <node concept="10Nm6u" id="4OGp9ehKgcU" role="37vLTx" />
+                <node concept="2OqwBi" id="4OGp9ehKfTf" role="37vLTJ">
+                  <node concept="2WthIp" id="4OGp9ehKfN1" role="2Oq$k0" />
+                  <node concept="2BZ7hE" id="4OGp9ehKg1P" role="2OqNvi">
+                    <ref role="2WH_rO" node="4OGp9ehK7qR" resolve="server" />
+                  </node>
+                </node>
               </node>
             </node>
           </node>

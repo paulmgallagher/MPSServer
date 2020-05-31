@@ -42,6 +42,9 @@
         <reference id="1188214555875" name="key" index="2B6OnR" />
         <child id="1188214607812" name="value" index="2B70Vg" />
       </concept>
+      <concept id="2820489544401957797" name="jetbrains.mps.baseLanguage.structure.DefaultClassCreator" flags="nn" index="HV5vD">
+        <reference id="2820489544401957798" name="classifier" index="HV5vE" />
+      </concept>
       <concept id="1154032098014" name="jetbrains.mps.baseLanguage.structure.AbstractLoopStatement" flags="nn" index="2LF5Ji">
         <child id="1154032183016" name="body" index="2LFqv$" />
       </concept>
@@ -164,6 +167,9 @@
       </concept>
       <concept id="1178549954367" name="jetbrains.mps.baseLanguage.structure.IVisible" flags="ng" index="1B3ioH">
         <child id="1178549979242" name="visibility" index="1B3o_S" />
+      </concept>
+      <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615">
+        <child id="1107797138135" name="extendedInterface" index="3HQHJm" />
       </concept>
       <concept id="6329021646629104954" name="jetbrains.mps.baseLanguage.structure.SingleLineComment" flags="nn" index="3SKdUt">
         <child id="1350122676458893092" name="text" index="3ndbpf" />
@@ -773,6 +779,35 @@
         </node>
       </node>
     </node>
+    <node concept="3clFbW" id="4OGp9ehN7YV" role="jymVt">
+      <node concept="37vLTG" id="4OGp9ehN7YW" role="3clF46">
+        <property role="TrG5h" value="uuid" />
+        <node concept="3uibUv" id="4OGp9ehN8eM" role="1tU5fm">
+          <ref role="3uigEE" to="33ny:~UUID" resolve="UUID" />
+        </node>
+      </node>
+      <node concept="37vLTG" id="4OGp9ehN7YY" role="3clF46">
+        <property role="TrG5h" value="name" />
+        <node concept="17QB3L" id="4OGp9ehN7YZ" role="1tU5fm" />
+      </node>
+      <node concept="3cqZAl" id="4OGp9ehN7Z0" role="3clF45" />
+      <node concept="3Tm1VV" id="4OGp9ehN7Z1" role="1B3o_S" />
+      <node concept="3clFbS" id="4OGp9ehN7Z2" role="3clF47">
+        <node concept="1VxSAg" id="4OGp9ehN8_R" role="3cqZAp">
+          <ref role="37wK5l" node="bXFpGBpXqU" resolve="MyModelReference" />
+          <node concept="2YIFZM" id="4OGp9ehN8Hq" role="37wK5m">
+            <ref role="37wK5l" to="w1kc:~SModelId.regular(java.util.UUID)" resolve="regular" />
+            <ref role="1Pybhc" to="w1kc:~SModelId" resolve="SModelId" />
+            <node concept="37vLTw" id="4OGp9ehN8Js" role="37wK5m">
+              <ref role="3cqZAo" node="4OGp9ehN7YW" resolve="uuid" />
+            </node>
+          </node>
+          <node concept="37vLTw" id="4OGp9ehN8LG" role="37wK5m">
+            <ref role="3cqZAo" node="4OGp9ehN7YY" resolve="name" />
+          </node>
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="bXFpGBpWxo" role="jymVt" />
     <node concept="3Tm1VV" id="bXFpGBpWxp" role="1B3o_S" />
     <node concept="3uibUv" id="bXFpGBpWPg" role="EKbjA">
@@ -972,6 +1007,46 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="4OGp9ehOA6U" role="jymVt" />
+    <node concept="312cEg" id="4OGp9ehOBMy" role="jymVt">
+      <property role="TrG5h" value="dataSource" />
+      <node concept="3Tm6S6" id="4OGp9ehOB8$" role="1B3o_S" />
+      <node concept="3uibUv" id="4OGp9ehOB$M" role="1tU5fm">
+        <ref role="3uigEE" to="dush:~DataSource" resolve="DataSource" />
+      </node>
+      <node concept="2ShNRf" id="4OGp9ehODaC" role="33vP2m">
+        <node concept="HV5vD" id="4OGp9ehODHb" role="2ShVmc">
+          <ref role="HV5vE" node="bXFpGBq88s" resolve="MyDataSource" />
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4OGp9ehOCnP" role="jymVt" />
+    <node concept="3clFb_" id="4OGp9ehOF12" role="jymVt">
+      <property role="TrG5h" value="setDataSource" />
+      <node concept="3clFbS" id="4OGp9ehOF15" role="3clF47">
+        <node concept="3clFbF" id="4OGp9ehOGbK" role="3cqZAp">
+          <node concept="37vLTI" id="4OGp9ehOGDn" role="3clFbG">
+            <node concept="37vLTw" id="4OGp9ehOGSt" role="37vLTx">
+              <ref role="3cqZAo" node="4OGp9ehOFuC" resolve="dataSource" />
+            </node>
+            <node concept="2OqwBi" id="4OGp9ehOGhN" role="37vLTJ">
+              <node concept="Xjq3P" id="4OGp9ehOGbJ" role="2Oq$k0" />
+              <node concept="2OwXpG" id="4OGp9ehOGn$" role="2OqNvi">
+                <ref role="2Oxat5" node="4OGp9ehOBMy" resolve="dataSource" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="3Tm1VV" id="4OGp9ehOEnG" role="1B3o_S" />
+      <node concept="3cqZAl" id="4OGp9ehOENJ" role="3clF45" />
+      <node concept="37vLTG" id="4OGp9ehOFuC" role="3clF46">
+        <property role="TrG5h" value="dataSource" />
+        <node concept="3uibUv" id="4OGp9ehOFuB" role="1tU5fm">
+          <ref role="3uigEE" to="dush:~DataSource" resolve="DataSource" />
+        </node>
+      </node>
+    </node>
     <node concept="2tJIrI" id="bXFpGBnsmI" role="jymVt" />
     <node concept="3clFb_" id="bXFpGBntaG" role="jymVt">
       <property role="TrG5h" value="addModel" />
@@ -998,6 +1073,24 @@
                       <ref role="37wK5l" to="ends:~ModelRootBase.getModule()" resolve="getModule" />
                     </node>
                   </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbF" id="4OGp9ehXd20" role="3cqZAp">
+              <node concept="2OqwBi" id="4OGp9ehXd21" role="3clFbG">
+                <node concept="1eOMI4" id="4OGp9ehXd22" role="2Oq$k0">
+                  <node concept="10QFUN" id="4OGp9ehXd23" role="1eOMHV">
+                    <node concept="3uibUv" id="4OGp9ehXd24" role="10QFUM">
+                      <ref role="3uigEE" node="bXFpGBq64j" resolve="MyModel" />
+                    </node>
+                    <node concept="37vLTw" id="4OGp9ehXd25" role="10QFUP">
+                      <ref role="3cqZAo" node="bXFpGBntvS" resolve="model" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="liA8E" id="4OGp9ehXdHy" role="2OqNvi">
+                  <ref role="37wK5l" to="g3l6:~SModelBase.setModelRoot(org.jetbrains.mps.openapi.persistence.ModelRoot)" resolve="setModelRoot" />
+                  <node concept="Xjq3P" id="4OGp9ehXdIQ" role="37wK5m" />
                 </node>
               </node>
             </node>
@@ -1246,7 +1339,7 @@
         <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
       </node>
       <node concept="37vLTG" id="bXFpGBmREN" role="3clF46">
-        <property role="TrG5h" value="string" />
+        <property role="TrG5h" value="name" />
         <node concept="3uibUv" id="bXFpGBmREO" role="1tU5fm">
           <ref role="3uigEE" to="wyt6:~String" resolve="String" />
         </node>
@@ -1255,11 +1348,45 @@
         </node>
       </node>
       <node concept="3clFbS" id="bXFpGBmRES" role="3clF47">
-        <node concept="YS8fn" id="bXFpGBmTzj" role="3cqZAp">
-          <node concept="2ShNRf" id="bXFpGBmTzk" role="YScLw">
-            <node concept="1pGfFk" id="bXFpGBmTzl" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
+        <node concept="3cpWs8" id="4OGp9ehN5JT" role="3cqZAp">
+          <node concept="3cpWsn" id="4OGp9ehN5JU" role="3cpWs9">
+            <property role="TrG5h" value="model" />
+            <node concept="3uibUv" id="4OGp9ehN5JV" role="1tU5fm">
+              <ref role="3uigEE" node="bXFpGBq64j" resolve="MyModel" />
             </node>
+            <node concept="2ShNRf" id="4OGp9ehN5Lq" role="33vP2m">
+              <node concept="1pGfFk" id="4OGp9ehN5Lg" role="2ShVmc">
+                <ref role="37wK5l" node="bXFpGBq7PJ" resolve="MyModel" />
+                <node concept="2ShNRf" id="4OGp9ehNdc4" role="37wK5m">
+                  <node concept="1pGfFk" id="4OGp9ehNe42" role="2ShVmc">
+                    <ref role="37wK5l" node="4OGp9ehN7YV" resolve="MyModelReference" />
+                    <node concept="2YIFZM" id="4OGp9ehNamh" role="37wK5m">
+                      <ref role="37wK5l" to="33ny:~UUID.randomUUID()" resolve="randomUUID" />
+                      <ref role="1Pybhc" to="33ny:~UUID" resolve="UUID" />
+                    </node>
+                    <node concept="37vLTw" id="4OGp9ehNa_g" role="37wK5m">
+                      <ref role="3cqZAo" node="bXFpGBmREN" resolve="name" />
+                    </node>
+                  </node>
+                </node>
+                <node concept="37vLTw" id="4OGp9ehOHqQ" role="37wK5m">
+                  <ref role="3cqZAo" node="4OGp9ehOBMy" resolve="dataSource" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="3clFbF" id="4OGp9ehQdvI" role="3cqZAp">
+          <node concept="1rXfSq" id="4OGp9ehQdvG" role="3clFbG">
+            <ref role="37wK5l" node="bXFpGBntaG" resolve="addModel" />
+            <node concept="37vLTw" id="4OGp9ehQdWb" role="37wK5m">
+              <ref role="3cqZAo" node="4OGp9ehN5JU" resolve="model" />
+            </node>
+          </node>
+        </node>
+        <node concept="3cpWs6" id="4OGp9ehNaOa" role="3cqZAp">
+          <node concept="37vLTw" id="4OGp9ehNaPr" role="3cqZAk">
+            <ref role="3cqZAo" node="4OGp9ehN5JU" resolve="model" />
           </node>
         </node>
       </node>
@@ -1281,10 +1408,88 @@
         </node>
       </node>
       <node concept="3clFbS" id="bXFpGBmRF5" role="3clF47">
-        <node concept="YS8fn" id="bXFpGBmTyM" role="3cqZAp">
-          <node concept="2ShNRf" id="bXFpGBmTyN" role="YScLw">
-            <node concept="1pGfFk" id="bXFpGBmTyO" role="2ShVmc">
-              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
+        <node concept="2Gpval" id="4OGp9ehOw6X" role="3cqZAp">
+          <node concept="2GrKxI" id="4OGp9ehOw6Y" role="2Gsz3X">
+            <property role="TrG5h" value="m" />
+          </node>
+          <node concept="37vLTw" id="4OGp9ehOw7N" role="2GsD0m">
+            <ref role="3cqZAo" node="bXFpGBnrtq" resolve="models" />
+          </node>
+          <node concept="3clFbS" id="4OGp9ehOw70" role="2LFqv$">
+            <node concept="3cpWs8" id="4OGp9ehO$_l" role="3cqZAp">
+              <node concept="3cpWsn" id="4OGp9ehO$_m" role="3cpWs9">
+                <property role="TrG5h" value="dataSource" />
+                <node concept="3uibUv" id="4OGp9ehO$_n" role="1tU5fm">
+                  <ref role="3uigEE" to="dush:~DataSource" resolve="DataSource" />
+                </node>
+                <node concept="2OqwBi" id="4OGp9ehOwuy" role="33vP2m">
+                  <node concept="2GrUjf" id="4OGp9ehOwry" role="2Oq$k0">
+                    <ref role="2Gs0qQ" node="4OGp9ehOw6Y" resolve="m" />
+                  </node>
+                  <node concept="liA8E" id="4OGp9ehO$ja" role="2OqNvi">
+                    <ref role="37wK5l" to="mhbf:~SModel.getSource()" resolve="getSource" />
+                  </node>
+                </node>
+              </node>
+            </node>
+            <node concept="3clFbJ" id="4OGp9ehQfzE" role="3cqZAp">
+              <node concept="3clFbS" id="4OGp9ehQfzG" role="3clFbx">
+                <node concept="3cpWs8" id="4OGp9ehQfHp" role="3cqZAp">
+                  <node concept="3cpWsn" id="4OGp9ehQfHq" role="3cpWs9">
+                    <property role="TrG5h" value="mySaveableDataSource" />
+                    <node concept="3uibUv" id="4OGp9ehQfHr" role="1tU5fm">
+                      <ref role="3uigEE" node="4OGp9ehQf1O" resolve="MySaveableDataSource" />
+                    </node>
+                    <node concept="1eOMI4" id="4OGp9ehQfSp" role="33vP2m">
+                      <node concept="10QFUN" id="4OGp9ehQfSm" role="1eOMHV">
+                        <node concept="3uibUv" id="4OGp9ehQfSr" role="10QFUM">
+                          <ref role="3uigEE" node="4OGp9ehQf1O" resolve="MySaveableDataSource" />
+                        </node>
+                        <node concept="37vLTw" id="4OGp9ehQfSs" role="10QFUP">
+                          <ref role="3cqZAo" node="4OGp9ehO$_m" resolve="dataSource" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3clFbF" id="4OGp9ehQg2T" role="3cqZAp">
+                  <node concept="2OqwBi" id="4OGp9ehQg7K" role="3clFbG">
+                    <node concept="37vLTw" id="4OGp9ehQg2R" role="2Oq$k0">
+                      <ref role="3cqZAo" node="4OGp9ehQfHq" resolve="mySaveableDataSource" />
+                    </node>
+                    <node concept="liA8E" id="4OGp9ehQgbd" role="2OqNvi">
+                      <ref role="37wK5l" node="4OGp9ehQf36" resolve="saveModel" />
+                      <node concept="2GrUjf" id="4OGp9ehQgbW" role="37wK5m">
+                        <ref role="2Gs0qQ" node="4OGp9ehOw6Y" resolve="m" />
+                      </node>
+                    </node>
+                  </node>
+                </node>
+                <node concept="3cpWs6" id="4OGp9ehQg1V" role="3cqZAp" />
+              </node>
+              <node concept="2ZW3vV" id="4OGp9ehQfEA" role="3clFbw">
+                <node concept="3uibUv" id="4OGp9ehQfGG" role="2ZW6by">
+                  <ref role="3uigEE" node="4OGp9ehQf1O" resolve="MySaveableDataSource" />
+                </node>
+                <node concept="37vLTw" id="4OGp9ehQf_C" role="2ZW6bz">
+                  <ref role="3cqZAo" node="4OGp9ehO$_m" resolve="dataSource" />
+                </node>
+              </node>
+            </node>
+            <node concept="YS8fn" id="4OGp9ehO$DV" role="3cqZAp">
+              <node concept="2ShNRf" id="4OGp9ehO$EO" role="YScLw">
+                <node concept="1pGfFk" id="4OGp9ehO_aJ" role="2ShVmc">
+                  <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;(java.lang.String)" resolve="UnsupportedOperationException" />
+                  <node concept="3cpWs3" id="4OGp9ehO_xU" role="37wK5m">
+                    <node concept="37vLTw" id="4OGp9ehO_z7" role="3uHU7w">
+                      <ref role="3cqZAo" node="4OGp9ehO$_m" resolve="dataSource" />
+                    </node>
+                    <node concept="Xl_RD" id="4OGp9ehO_dQ" role="3uHU7B">
+                      <property role="Xl_RC" value="I do not know how to save with data source: " />
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
           </node>
         </node>
@@ -2242,16 +2447,30 @@
                   <node concept="3Tm1VV" id="bXFpGBqYl2" role="1B3o_S" />
                   <node concept="3cqZAl" id="bXFpGBqYl4" role="3clF45" />
                   <node concept="37vLTG" id="bXFpGBqYl5" role="3clF46">
-                    <property role="TrG5h" value="p0" />
+                    <property role="TrG5h" value="runnable" />
                     <node concept="3uibUv" id="bXFpGBqYl6" role="1tU5fm">
                       <ref role="3uigEE" to="wyt6:~Runnable" resolve="Runnable" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="bXFpGBqYl7" role="3clF47">
-                    <node concept="YS8fn" id="bXFpGBr1hE" role="3cqZAp">
-                      <node concept="2ShNRf" id="bXFpGBr1hF" role="YScLw">
-                        <node concept="1pGfFk" id="bXFpGBr1hG" role="2ShVmc">
-                          <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
+                    <node concept="1X3_iC" id="5$t3kDlBoGg" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="YS8fn" id="bXFpGBr1hE" role="8Wnug">
+                        <node concept="2ShNRf" id="bXFpGBr1hF" role="YScLw">
+                          <node concept="1pGfFk" id="bXFpGBr1hG" role="2ShVmc">
+                            <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="4OGp9ehN2Nb" role="3cqZAp">
+                      <node concept="2OqwBi" id="4OGp9ehN3pp" role="3clFbG">
+                        <node concept="37vLTw" id="4OGp9ehN2N9" role="2Oq$k0">
+                          <ref role="3cqZAo" node="bXFpGBqYl5" resolve="runnable" />
+                        </node>
+                        <node concept="liA8E" id="4OGp9ehN3rU" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Runnable.run()" resolve="run" />
                         </node>
                       </node>
                     </node>
@@ -2266,16 +2485,30 @@
                   <node concept="3Tm1VV" id="bXFpGBqYlc" role="1B3o_S" />
                   <node concept="3cqZAl" id="bXFpGBqYle" role="3clF45" />
                   <node concept="37vLTG" id="bXFpGBqYlf" role="3clF46">
-                    <property role="TrG5h" value="p0" />
+                    <property role="TrG5h" value="runnable" />
                     <node concept="3uibUv" id="bXFpGBqYlg" role="1tU5fm">
                       <ref role="3uigEE" to="wyt6:~Runnable" resolve="Runnable" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="bXFpGBqYlh" role="3clF47">
-                    <node concept="YS8fn" id="bXFpGBr1gI" role="3cqZAp">
-                      <node concept="2ShNRf" id="bXFpGBr1gJ" role="YScLw">
-                        <node concept="1pGfFk" id="bXFpGBr1gK" role="2ShVmc">
-                          <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
+                    <node concept="1X3_iC" id="5$t3kDlBqT4" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="YS8fn" id="bXFpGBr1gI" role="8Wnug">
+                        <node concept="2ShNRf" id="bXFpGBr1gJ" role="YScLw">
+                          <node concept="1pGfFk" id="bXFpGBr1gK" role="2ShVmc">
+                            <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="5$t3kDlBt6q" role="3cqZAp">
+                      <node concept="2OqwBi" id="5$t3kDlBtGv" role="3clFbG">
+                        <node concept="37vLTw" id="5$t3kDlBt6o" role="2Oq$k0">
+                          <ref role="3cqZAo" node="bXFpGBqYlf" resolve="runnable" />
+                        </node>
+                        <node concept="liA8E" id="5$t3kDlBui3" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Runnable.run()" resolve="run" />
                         </node>
                       </node>
                     </node>
@@ -2290,16 +2523,30 @@
                   <node concept="3Tm1VV" id="bXFpGBqYlm" role="1B3o_S" />
                   <node concept="3cqZAl" id="bXFpGBqYlo" role="3clF45" />
                   <node concept="37vLTG" id="bXFpGBqYlp" role="3clF46">
-                    <property role="TrG5h" value="p0" />
+                    <property role="TrG5h" value="runnable" />
                     <node concept="3uibUv" id="bXFpGBqYlq" role="1tU5fm">
                       <ref role="3uigEE" to="wyt6:~Runnable" resolve="Runnable" />
                     </node>
                   </node>
                   <node concept="3clFbS" id="bXFpGBqYlr" role="3clF47">
-                    <node concept="YS8fn" id="bXFpGBr1fW" role="3cqZAp">
-                      <node concept="2ShNRf" id="bXFpGBr1fX" role="YScLw">
-                        <node concept="1pGfFk" id="bXFpGBr1fY" role="2ShVmc">
-                          <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
+                    <node concept="1X3_iC" id="5$t3kDlBujx" role="lGtFl">
+                      <property role="3V$3am" value="statement" />
+                      <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123136/1068581517665" />
+                      <node concept="YS8fn" id="bXFpGBr1fW" role="8Wnug">
+                        <node concept="2ShNRf" id="bXFpGBr1fX" role="YScLw">
+                          <node concept="1pGfFk" id="bXFpGBr1fY" role="2ShVmc">
+                            <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                    <node concept="3clFbF" id="5$t3kDlBulZ" role="3cqZAp">
+                      <node concept="2OqwBi" id="5$t3kDlBuUx" role="3clFbG">
+                        <node concept="37vLTw" id="5$t3kDlBulX" role="2Oq$k0">
+                          <ref role="3cqZAo" node="bXFpGBqYlp" resolve="runnable" />
+                        </node>
+                        <node concept="liA8E" id="5$t3kDlBvui" role="2OqNvi">
+                          <ref role="37wK5l" to="wyt6:~Runnable.run()" resolve="run" />
                         </node>
                       </node>
                     </node>
@@ -2405,6 +2652,25 @@
       <node concept="2AHcQZ" id="Fhwl$azOFc" role="2AJF6D">
         <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
+    </node>
+  </node>
+  <node concept="3HP615" id="4OGp9ehQf1O">
+    <property role="TrG5h" value="MySaveableDataSource" />
+    <node concept="3clFb_" id="4OGp9ehQf36" role="jymVt">
+      <property role="TrG5h" value="saveModel" />
+      <node concept="3clFbS" id="4OGp9ehQf39" role="3clF47" />
+      <node concept="3Tm1VV" id="4OGp9ehQf3a" role="1B3o_S" />
+      <node concept="3cqZAl" id="4OGp9ehQf2X" role="3clF45" />
+      <node concept="37vLTG" id="4OGp9ehQf3$" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="3uibUv" id="4OGp9ehQf3z" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+        </node>
+      </node>
+    </node>
+    <node concept="3Tm1VV" id="4OGp9ehQf1P" role="1B3o_S" />
+    <node concept="3uibUv" id="4OGp9ehQf2q" role="3HQHJm">
+      <ref role="3uigEE" to="dush:~DataSource" resolve="DataSource" />
     </node>
   </node>
 </model>

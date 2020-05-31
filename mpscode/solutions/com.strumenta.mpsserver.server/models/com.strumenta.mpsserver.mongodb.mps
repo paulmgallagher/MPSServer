@@ -25,6 +25,7 @@
     <import index="tqz5" ref="48e3d84c-0510-4776-ac01-301d43fa8646/java:org.bson.codecs(com.strumenta.mpsserver.deps/)" />
     <import index="506e" ref="r:7e5b2038-fef4-4e4d-bb66-6d01879f6f52(com.strumenta.mpsserver.modelhierarchy)" />
     <import index="vndm" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel.language(MPS.Core/)" />
+    <import index="mhfm" ref="3f233e7f-b8a6-46d2-a57f-795d56775243/java:org.jetbrains.annotations(Annotations/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -80,6 +81,7 @@
         <child id="1081256993304" name="leftExpression" index="2ZW6bz" />
       </concept>
       <concept id="1070534058343" name="jetbrains.mps.baseLanguage.structure.NullLiteral" flags="nn" index="10Nm6u" />
+      <concept id="1070534644030" name="jetbrains.mps.baseLanguage.structure.BooleanType" flags="in" index="10P_77" />
       <concept id="1070534760951" name="jetbrains.mps.baseLanguage.structure.ArrayType" flags="in" index="10Q1$e">
         <child id="1070534760952" name="componentType" index="10Q1$1" />
       </concept>
@@ -138,6 +140,7 @@
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
+      <concept id="1068581242867" name="jetbrains.mps.baseLanguage.structure.LongType" flags="in" index="3cpWsb" />
       <concept id="1068581242863" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclaration" flags="nr" index="3cpWsn" />
       <concept id="1068581517677" name="jetbrains.mps.baseLanguage.structure.VoidType" flags="in" index="3cqZAl" />
       <concept id="1206060495898" name="jetbrains.mps.baseLanguage.structure.ElsifClause" flags="ng" index="3eNFk2">
@@ -3395,6 +3398,22 @@
                 </node>
               </node>
             </node>
+            <node concept="3clFbF" id="4OGp9ehPa61" role="3cqZAp">
+              <node concept="2OqwBi" id="4OGp9ehPasA" role="3clFbG">
+                <node concept="37vLTw" id="4OGp9ehPa5Z" role="2Oq$k0">
+                  <ref role="3cqZAo" node="7f23gRikYmj" resolve="modelRoot" />
+                </node>
+                <node concept="liA8E" id="4OGp9ehPaxr" role="2OqNvi">
+                  <ref role="37wK5l" to="506e:4OGp9ehOF12" resolve="setDataSource" />
+                  <node concept="2ShNRf" id="4OGp9ehPayx" role="37wK5m">
+                    <node concept="1pGfFk" id="4OGp9ehQqyj" role="2ShVmc">
+                      <ref role="37wK5l" node="4OGp9ehQgRG" resolve="MongoDBDataSource" />
+                      <node concept="Xjq3P" id="4OGp9ehQqyi" role="37wK5m" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
             <node concept="2Gpval" id="7f23gRil4tD" role="3cqZAp">
               <node concept="2GrKxI" id="7f23gRil4tF" role="2Gsz3X">
                 <property role="TrG5h" value="modelIDstr" />
@@ -3749,7 +3768,184 @@
         </node>
       </node>
     </node>
+    <node concept="2tJIrI" id="4OGp9ehQ$l0" role="jymVt" />
+    <node concept="2tJIrI" id="4OGp9ehQCy7" role="jymVt" />
     <node concept="3Tm1VV" id="7f23gRhQ5vo" role="1B3o_S" />
+  </node>
+  <node concept="312cEu" id="4OGp9ehP0bT">
+    <property role="TrG5h" value="MongoDBDataSource" />
+    <node concept="2tJIrI" id="4OGp9ehQgEy" role="jymVt" />
+    <node concept="312cEg" id="4OGp9ehQhzv" role="jymVt">
+      <property role="TrG5h" value="connector" />
+      <node concept="3Tm6S6" id="4OGp9ehQheI" role="1B3o_S" />
+      <node concept="3uibUv" id="4OGp9ehQhqf" role="1tU5fm">
+        <ref role="3uigEE" node="7f23gRhQ5vn" resolve="MongoDbConnector" />
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4OGp9ehQh3A" role="jymVt" />
+    <node concept="3clFbW" id="4OGp9ehQgRG" role="jymVt">
+      <node concept="37vLTG" id="4OGp9ehQhIX" role="3clF46">
+        <property role="TrG5h" value="connector" />
+        <node concept="3uibUv" id="4OGp9ehQhIZ" role="1tU5fm">
+          <ref role="3uigEE" node="7f23gRhQ5vn" resolve="MongoDbConnector" />
+        </node>
+      </node>
+      <node concept="3cqZAl" id="4OGp9ehQgRI" role="3clF45" />
+      <node concept="3Tm1VV" id="4OGp9ehQgRJ" role="1B3o_S" />
+      <node concept="3clFbS" id="4OGp9ehQgRK" role="3clF47">
+        <node concept="3clFbF" id="4OGp9ehQhTS" role="3cqZAp">
+          <node concept="37vLTI" id="4OGp9ehQiiA" role="3clFbG">
+            <node concept="37vLTw" id="4OGp9ehQiuR" role="37vLTx">
+              <ref role="3cqZAo" node="4OGp9ehQhIX" resolve="connector" />
+            </node>
+            <node concept="2OqwBi" id="4OGp9ehQhZE" role="37vLTJ">
+              <node concept="Xjq3P" id="4OGp9ehQhTR" role="2Oq$k0" />
+              <node concept="2OwXpG" id="4OGp9ehQi4E" role="2OqNvi">
+                <ref role="2Oxat5" node="4OGp9ehQhzv" resolve="connector" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="2tJIrI" id="4OGp9ehQgGh" role="jymVt" />
+    <node concept="3Tm1VV" id="4OGp9ehP0bU" role="1B3o_S" />
+    <node concept="3uibUv" id="4OGp9ehQgeQ" role="EKbjA">
+      <ref role="3uigEE" to="506e:4OGp9ehQf1O" resolve="MySaveableDataSource" />
+    </node>
+    <node concept="3clFb_" id="4OGp9ehP0dz" role="jymVt">
+      <property role="TrG5h" value="getLocation" />
+      <node concept="3Tm1VV" id="4OGp9ehP0d$" role="1B3o_S" />
+      <node concept="2AHcQZ" id="4OGp9ehP0dA" role="2AJF6D">
+        <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+      </node>
+      <node concept="3uibUv" id="4OGp9ehP0dB" role="3clF45">
+        <ref role="3uigEE" to="wyt6:~String" resolve="String" />
+      </node>
+      <node concept="3clFbS" id="4OGp9ehP0dC" role="3clF47">
+        <node concept="YS8fn" id="4OGp9ehP0nq" role="3cqZAp">
+          <node concept="2ShNRf" id="4OGp9ehP0on" role="YScLw">
+            <node concept="1pGfFk" id="4OGp9ehP1eG" role="2ShVmc">
+              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4OGp9ehP0dD" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="4OGp9ehP0dG" role="jymVt">
+      <property role="TrG5h" value="addListener" />
+      <node concept="3Tm1VV" id="4OGp9ehP0dH" role="1B3o_S" />
+      <node concept="3cqZAl" id="4OGp9ehP0dJ" role="3clF45" />
+      <node concept="37vLTG" id="4OGp9ehP0dK" role="3clF46">
+        <property role="TrG5h" value="listener" />
+        <node concept="3uibUv" id="4OGp9ehP0dL" role="1tU5fm">
+          <ref role="3uigEE" to="dush:~DataSourceListener" resolve="DataSourceListener" />
+        </node>
+        <node concept="2AHcQZ" id="4OGp9ehP0dM" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="4OGp9ehP0dN" role="3clF47">
+        <node concept="YS8fn" id="4OGp9ehP1hD" role="3cqZAp">
+          <node concept="2ShNRf" id="4OGp9ehP1hE" role="YScLw">
+            <node concept="1pGfFk" id="4OGp9ehP1hF" role="2ShVmc">
+              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4OGp9ehP0dO" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="4OGp9ehP0dP" role="jymVt">
+      <property role="TrG5h" value="removeListener" />
+      <node concept="3Tm1VV" id="4OGp9ehP0dQ" role="1B3o_S" />
+      <node concept="3cqZAl" id="4OGp9ehP0dS" role="3clF45" />
+      <node concept="37vLTG" id="4OGp9ehP0dT" role="3clF46">
+        <property role="TrG5h" value="listener" />
+        <node concept="3uibUv" id="4OGp9ehP0dU" role="1tU5fm">
+          <ref role="3uigEE" to="dush:~DataSourceListener" resolve="DataSourceListener" />
+        </node>
+        <node concept="2AHcQZ" id="4OGp9ehP0dV" role="2AJF6D">
+          <ref role="2AI5Lk" to="mhfm:~NotNull" resolve="NotNull" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="4OGp9ehP0dW" role="3clF47">
+        <node concept="YS8fn" id="4OGp9ehP1ia" role="3cqZAp">
+          <node concept="2ShNRf" id="4OGp9ehP1ib" role="YScLw">
+            <node concept="1pGfFk" id="4OGp9ehP1ic" role="2ShVmc">
+              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4OGp9ehP0dX" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="4OGp9ehP0dY" role="jymVt">
+      <property role="TrG5h" value="getTimestamp" />
+      <node concept="3Tm1VV" id="4OGp9ehP0dZ" role="1B3o_S" />
+      <node concept="3cpWsb" id="4OGp9ehP0e1" role="3clF45" />
+      <node concept="3clFbS" id="4OGp9ehP0e2" role="3clF47">
+        <node concept="YS8fn" id="4OGp9ehP1iO" role="3cqZAp">
+          <node concept="2ShNRf" id="4OGp9ehP1iP" role="YScLw">
+            <node concept="1pGfFk" id="4OGp9ehP1iQ" role="2ShVmc">
+              <ref role="37wK5l" to="wyt6:~UnsupportedOperationException.&lt;init&gt;()" resolve="UnsupportedOperationException" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4OGp9ehP0e3" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="4OGp9ehP0e4" role="jymVt">
+      <property role="TrG5h" value="isReadOnly" />
+      <node concept="3Tm1VV" id="4OGp9ehP0e5" role="1B3o_S" />
+      <node concept="10P_77" id="4OGp9ehP0e7" role="3clF45" />
+      <node concept="3clFbS" id="4OGp9ehP0e8" role="3clF47">
+        <node concept="3clFbF" id="4OGp9ehP0eb" role="3cqZAp">
+          <node concept="3clFbT" id="4OGp9ehP0ea" role="3clFbG" />
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4OGp9ehP0e9" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
+    <node concept="3clFb_" id="4OGp9ehQgtw" role="jymVt">
+      <property role="TrG5h" value="saveModel" />
+      <node concept="3Tm1VV" id="4OGp9ehQgty" role="1B3o_S" />
+      <node concept="3cqZAl" id="4OGp9ehQgtz" role="3clF45" />
+      <node concept="37vLTG" id="4OGp9ehQgt$" role="3clF46">
+        <property role="TrG5h" value="model" />
+        <node concept="3uibUv" id="4OGp9ehQgt_" role="1tU5fm">
+          <ref role="3uigEE" to="mhbf:~SModel" resolve="SModel" />
+        </node>
+      </node>
+      <node concept="3clFbS" id="4OGp9ehQgtA" role="3clF47">
+        <node concept="3clFbF" id="4OGp9ehQv8b" role="3cqZAp">
+          <node concept="2OqwBi" id="4OGp9ehQvcF" role="3clFbG">
+            <node concept="37vLTw" id="4OGp9ehQv8a" role="2Oq$k0">
+              <ref role="3cqZAo" node="4OGp9ehQhzv" resolve="connector" />
+            </node>
+            <node concept="liA8E" id="4OGp9ehQZeo" role="2OqNvi">
+              <ref role="37wK5l" node="7f23gRhTB6O" resolve="addModel" />
+              <node concept="37vLTw" id="4OGp9ehQZg9" role="37wK5m">
+                <ref role="3cqZAo" node="4OGp9ehQgt$" resolve="model" />
+              </node>
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="2AHcQZ" id="4OGp9ehQgtB" role="2AJF6D">
+        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
+      </node>
+    </node>
   </node>
 </model>
 
