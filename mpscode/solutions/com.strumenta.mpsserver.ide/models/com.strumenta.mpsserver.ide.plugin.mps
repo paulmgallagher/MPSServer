@@ -24,6 +24,7 @@
     <import index="guwi" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.io(JDK/)" />
     <import index="wudb" ref="r:687dd5e3-c33c-4b74-91bd-32a816763180(com.strumenta.mpsserver.mongodb)" />
     <import index="lui2" ref="8865b7a8-5271-43d3-884c-6fd1d9cfdd34/java:org.jetbrains.mps.openapi.module(MPS.OpenAPI/)" />
+    <import index="506e" ref="r:7e5b2038-fef4-4e4d-bb66-6d01879f6f52(com.strumenta.mpsserver.modelhierarchy)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
   </imports>
   <registry>
@@ -1508,6 +1509,77 @@
                                 <node concept="37vLTw" id="7f23gRifxgJ" role="37wK5m">
                                   <ref role="3cqZAo" node="7f23gRif3RY" resolve="moduleRef" />
                                 </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3cpWs8" id="4qHA_yf3Vxs" role="3cqZAp">
+                          <node concept="3cpWsn" id="4qHA_yf3Vxt" role="3cpWs9">
+                            <property role="TrG5h" value="myRepo" />
+                            <node concept="3uibUv" id="4qHA_yf3Vxu" role="1tU5fm">
+                              <ref role="3uigEE" to="506e:Fhwl$azODv" resolve="MyRepo" />
+                            </node>
+                            <node concept="2ShNRf" id="4qHA_yf3VM5" role="33vP2m">
+                              <node concept="HV5vD" id="4qHA_yf40kj" role="2ShVmc">
+                                <ref role="HV5vE" to="506e:Fhwl$azODv" resolve="MyRepo" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="4qHA_yf40FB" role="3cqZAp">
+                          <node concept="2OqwBi" id="4qHA_yf40XR" role="3clFbG">
+                            <node concept="37vLTw" id="4qHA_yf40F_" role="2Oq$k0">
+                              <ref role="3cqZAo" node="4qHA_yf3Vxt" resolve="myRepo" />
+                            </node>
+                            <node concept="liA8E" id="4qHA_yf41eZ" role="2OqNvi">
+                              <ref role="37wK5l" to="506e:Fhwl$azTJa" resolve="addModule" />
+                              <node concept="37vLTw" id="4qHA_yf41tq" role="37wK5m">
+                                <ref role="3cqZAo" node="7f23gRif_0V" resolve="module" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbH" id="4qHA_yf41v5" role="3cqZAp" />
+                        <node concept="3cpWs8" id="4qHA_yf43fm" role="3cqZAp">
+                          <node concept="3cpWsn" id="4qHA_yf43fn" role="3cpWs9">
+                            <property role="TrG5h" value="serverConfiguration" />
+                            <node concept="3uibUv" id="4qHA_yf43fo" role="1tU5fm">
+                              <ref role="3uigEE" to="30ym:6Jg9HTa6xHe" resolve="Server.ServerConfiguration" />
+                            </node>
+                            <node concept="2ShNRf" id="4qHA_yf43y4" role="33vP2m">
+                              <node concept="1pGfFk" id="4qHA_yf43rq" role="2ShVmc">
+                                <ref role="37wK5l" to="30ym:6Jg9HTa6Ode" resolve="Server.ServerConfiguration" />
+                                <node concept="37vLTw" id="4qHA_yf44EW" role="37wK5m">
+                                  <ref role="3cqZAo" node="4qHA_yf3Vxt" resolve="myRepo" />
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3clFbF" id="4qHA_yf453I" role="3cqZAp">
+                          <node concept="2OqwBi" id="4qHA_yf45gD" role="3clFbG">
+                            <node concept="37vLTw" id="4qHA_yf453G" role="2Oq$k0">
+                              <ref role="3cqZAo" node="4qHA_yf43fn" resolve="serverConfiguration" />
+                            </node>
+                            <node concept="liA8E" id="4qHA_yf45rk" role="2OqNvi">
+                              <ref role="37wK5l" to="30ym:6Jg9HTa7afr" resolve="port" />
+                              <node concept="3cmrfG" id="4qHA_yf45yT" role="37wK5m">
+                                <property role="3cmrfH" value="9100" />
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                        <node concept="3cpWs8" id="4qHA_yf42$g" role="3cqZAp">
+                          <node concept="3cpWsn" id="4qHA_yf42$h" role="3cpWs9">
+                            <property role="TrG5h" value="server" />
+                            <node concept="3uibUv" id="4qHA_yf42$i" role="1tU5fm">
+                              <ref role="3uigEE" to="30ym:5SYYrGBzPK3" resolve="Server" />
+                            </node>
+                            <node concept="2YIFZM" id="4qHA_yf42Qo" role="33vP2m">
+                              <ref role="37wK5l" to="30ym:80AXrSevja" resolve="launch" />
+                              <ref role="1Pybhc" to="30ym:5SYYrGBzPK3" resolve="Server" />
+                              <node concept="37vLTw" id="4qHA_yf43K0" role="37wK5m">
+                                <ref role="3cqZAo" node="4qHA_yf43fn" resolve="serverConfiguration" />
                               </node>
                             </node>
                           </node>
