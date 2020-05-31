@@ -552,6 +552,22 @@
             </node>
           </node>
         </node>
+        <node concept="1SiIV0" id="4qHA_yf4eHx" role="3bR37C">
+          <node concept="1BurEX" id="4qHA_yf4eHy" role="1SiIV1">
+            <node concept="398BVA" id="4qHA_yf4eHp" role="1BurEY">
+              <ref role="398BVh" node="5jTJHMumiWk" resolve="mpsserver.home" />
+              <node concept="2Ry0Ak" id="4qHA_yf4eHq" role="iGT6I">
+                <property role="2Ry0Am" value="build" />
+                <node concept="2Ry0Ak" id="4qHA_yf4eHr" role="2Ry0An">
+                  <property role="2Ry0Am" value="libs" />
+                  <node concept="2Ry0Ak" id="4qHA_yf4eHs" role="2Ry0An">
+                    <property role="2Ry0Am" value="mongo-java-driver.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="2p2ql82MleI" role="2G$12L">
         <property role="TrG5h" value="com.strumenta.mpsserver.server" />
@@ -671,6 +687,11 @@
         <node concept="1SiIV0" id="3mLHDKYZLL6" role="3bR37C">
           <node concept="3bR9La" id="3mLHDKYZLL7" role="1SiIV1">
             <ref role="3bR37D" to="ffeo:2eDSGe9d1q1" resolve="MPS.Workbench" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="4qHA_yf4eHF" role="3bR37C">
+          <node concept="3bR9La" id="4qHA_yf4eHG" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:7Kfy9QB6L8Y" resolve="jetbrains.mps.lang.project" />
           </node>
         </node>
       </node>
@@ -854,6 +875,20 @@
                   <property role="2Ry0Am" value="libs" />
                   <node concept="2Ry0Ak" id="1P$YlGOVsCU" role="2Ry0An">
                     <property role="2Ry0Am" value="jsch.jar" />
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="4qHA_yf4gCe" role="39821P">
+            <node concept="398BVA" id="4qHA_yf4gEx" role="28jJRO">
+              <ref role="398BVh" node="5jTJHMumiWk" resolve="mpsserver.home" />
+              <node concept="2Ry0Ak" id="4qHA_yf4gG1" role="iGT6I">
+                <property role="2Ry0Am" value="build" />
+                <node concept="2Ry0Ak" id="4qHA_yf4gHw" role="2Ry0An">
+                  <property role="2Ry0Am" value="libs" />
+                  <node concept="2Ry0Ak" id="4qHA_yf4gH_" role="2Ry0An">
+                    <property role="2Ry0Am" value="mongo-java-driver.jar" />
                   </node>
                 </node>
               </node>
