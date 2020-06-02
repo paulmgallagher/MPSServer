@@ -4,6 +4,7 @@
     <modelRoot contentPath="${module}" type="default">
       <sourceRoot location="models" />
     </modelRoot>
+    <modelRoot mongo_dbname="test" mongo_url="localhost:27017" module_name="com.strumenta.businessorg.sandbox" type="mongodb" />
   </models>
   <facets>
     <facet type="java" />
