@@ -1,11 +1,12 @@
 package com.strumenta.mpsprotocol
 
-data class AddChild(var container: NodeIDInModel? = null,
-                    var containmentName: String? = null,
-                    var conceptToInstantiate: String? = null,
-                    var index: Int = -1)
-    : RequestMessage(AddChild::class.simpleName!!)
-
+data class AddChild(
+    var container: NodeIDInModel? = null,
+    var containmentName: String? = null,
+    var conceptToInstantiate: String? = null,
+    var index: Int = -1
+) :
+    RequestMessage(AddChild::class.simpleName!!)
 
 abstract class RequestAnswerMessage(type: String) : Message(type) {
     var requestId: String? = null
@@ -19,8 +20,11 @@ data class AddChildAnswer(var nodeCreated: NodeIDInModel? = null) : RequestAnswe
 
 class AnswerAlternatives : RequestAnswerMessage(AnswerAlternatives::class.simpleName!!) {
     open class AnswerAlternativesItem(open var conceptName: String, open var alias: String)
-    data class SmartReferenceAlternative(override var conceptName: String, override var alias: String,
-                                         var node: NodeInfoDetailed) : AnswerAlternativesItem(conceptName, alias)
+    data class SmartReferenceAlternative(
+        override var conceptName: String,
+        override var alias: String,
+        var node: NodeInfoDetailed
+    ) : AnswerAlternativesItem(conceptName, alias)
 
     var items: List<AnswerAlternativesItem>? = null
 }
@@ -37,7 +41,6 @@ class AnswerForDirectReferences : RequestAnswerMessage(AnswerForDirectReferences
     }
 
     var items: List<DirAlternative>? = null
-
 }
 
 class AnswerForWrappingReferences : RequestAnswerMessage(AnswerForWrappingReferences::class.simpleName!!) {
@@ -50,8 +53,6 @@ class AnswerForWrappingReferences : RequestAnswerMessage(AnswerForWrappingRefere
     }
 
     var items: List<WraAlternative>? = null
-
-
 }
 
 /**
@@ -59,18 +60,17 @@ class AnswerForWrappingReferences : RequestAnswerMessage(AnswerForWrappingRefere
  */
 class AnswerPropertyChange : RequestAnswerMessage(AnswerPropertyChange::class.simpleName!!)
 
-data class AskAlternatives(var modelName: String? = null,
-                           var nodeId: Long = 0,
-                           var containmentName: String? = null) : RequestMessage(AskAlternatives::class.simpleName!!)
-
+data class AskAlternatives(
+    var modelName: String? = null,
+    var nodeId: Long = 0,
+    var containmentName: String? = null
+) : RequestMessage(AskAlternatives::class.simpleName!!)
 
 data class AskErrorsForNode(var rootNode: NodeIDInModel? = null) : Message(AskErrorsForNode::class.simpleName!!)
 
 class CreateIntentionsBlock : RequestMessage(CreateIntentionsBlock::class.simpleName!!) {
     var node: NodeIDInModel? = null
 }
-
-
 
 class CreateIntentionsBlockAnswer : RequestAnswerMessage(CreateIntentionsBlockAnswer::class.simpleName!!) {
     var blockUUID: UUID? = null
@@ -111,7 +111,6 @@ class ErrorsForModelReport : Message(ErrorsForModelReport::class.simpleName!!) {
     var model: String? = null
     var issues: List<IssueDescription> = mutableListOf()
 }
-
 
 class ErrorsForNodeReport : Message(ErrorsForNodeReport::class.simpleName!!) {
     class IssueDescription {

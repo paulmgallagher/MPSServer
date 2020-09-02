@@ -1,28 +1,31 @@
 package com.strumenta.mpsprotocol
 
 data class ConceptInfo(
-        var qualifiedName: String? = null,
-        var alias: String? = null,
-        var isInterface : Boolean = false,
-        var isAbstract : Boolean = false,
-        var rootable : Boolean = false,
-        var superConcept: String? = null,
-        var interfaceConcepts: List<String>? = null,
-        var declaredContainments: List<MMContainmentInfo>? = null,
-        var inheritedContainments: List<MMContainmentInfo>? = null,
-        var declaredReferences: List<MMReferenceInfo>? = null,
-        var inheritedReferences: List<MMReferenceInfo>? = null,
-        var declaredProperties: List<MMPropertyInfo>? = null,
-        var inheritedProperties: List<MMPropertyInfo>? = null)
+    var qualifiedName: String? = null,
+    var alias: String? = null,
+    var isInterface: Boolean = false,
+    var isAbstract: Boolean = false,
+    var rootable: Boolean = false,
+    var superConcept: String? = null,
+    var interfaceConcepts: List<String>? = null,
+    var declaredContainments: List<MMContainmentInfo>? = null,
+    var inheritedContainments: List<MMContainmentInfo>? = null,
+    var declaredReferences: List<MMReferenceInfo>? = null,
+    var inheritedReferences: List<MMReferenceInfo>? = null,
+    var declaredProperties: List<MMPropertyInfo>? = null,
+    var inheritedProperties: List<MMPropertyInfo>? = null
+)
 
 data class DeclarationInfo(
     var conceptName: String? = null,
-    var isInterface : Boolean = false)
+    var isInterface: Boolean = false
+)
 
 data class EnumInfo(
     var name: String? = null,
     var defaultLiteral: String? = null,
-    var literals: List<EnumLiteralInfo>? = null)
+    var literals: List<EnumLiteralInfo>? = null
+)
 
 class EnumLiteralInfo {
     var name: String? = null
@@ -53,11 +56,12 @@ class EnumLiteralInfo {
 }
 
 open class ModuleInfo(
-        open var name: String? = null,
-        open var uuid: UUID? = null,
-        open var foreignName: String? = null,
-        open var packaged : Boolean  = false,
-        open var readOnly : Boolean = false) {
+    open var name: String? = null,
+    open var uuid: UUID? = null,
+    open var foreignName: String? = null,
+    open var packaged: Boolean = false,
+    open var readOnly: Boolean = false
+) {
 
     override fun toString(): String {
         var flags = ""
@@ -72,16 +76,16 @@ open class ModuleInfo(
 }
 
 data class SolutionInfo(
-        override var name: String? = null,
-        override var uuid: UUID? = null,
-        override var foreignName: String? = null,
-        override var packaged : Boolean  = false,
-        override var readOnly : Boolean = false,
-        var usedLanguages: List<String> = mutableListOf()) : ModuleInfo(name, uuid, foreignName, packaged, readOnly) {
+    override var name: String? = null,
+    override var uuid: UUID? = null,
+    override var foreignName: String? = null,
+    override var packaged: Boolean = false,
+    override var readOnly: Boolean = false,
+    var usedLanguages: List<String> = mutableListOf()
+) : ModuleInfo(name, uuid, foreignName, packaged, readOnly) {
     fun hasAllTheseLanguages(requestedLanguages: List<String>): Boolean {
         return usedLanguages.containsAll(requestedLanguages)
     }
-
 
     override fun toString(): String {
         var flags = ""
@@ -139,8 +143,8 @@ open class ModelInfo(
     var uuid: UUID? = null,
     var foreignName: String? = null,
     var intValue: Int = -1,
-    var readOnly : Boolean = false) {
-
+    var readOnly: Boolean = false
+) {
 
     override fun toString(): String {
         val readOnlyStr = if (readOnly) " readOnly" else ""
@@ -160,7 +164,6 @@ class ModuleInfoDetailed : ModuleInfo() {
 }
 
 abstract class NodeIDInfo
-
 
 class NodeIDInModel {
     var model: String? = null
@@ -189,7 +192,6 @@ open class NodeInfoDetailed : NodeInfo() {
     var properties: Map<String, Any> = mutableMapOf()
     var refs: Map<String, ReferenceInfo> = mutableMapOf()
 }
-
 
 class ReferenceInfo {
     var id: NodeIDInfo? = null
