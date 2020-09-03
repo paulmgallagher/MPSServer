@@ -75,7 +75,7 @@ class CreateIntentionsBlock : RequestMessage(CreateIntentionsBlock::class.simple
 }
 
 class CreateIntentionsBlockAnswer : RequestAnswerMessage(CreateIntentionsBlockAnswer::class.simpleName!!) {
-    var blockUUID: UUID? = null
+    var blockUUID: KUUID? = null
     var intentions: List<Intention>? = null
 }
 
@@ -92,7 +92,7 @@ class DefaultInsertion : RequestMessage(DefaultInsertion::class.simpleName!!) {
 }
 
 class DeleteIntentionsBlock : Message(DeleteIntentionsBlock::class.simpleName!!) {
-    var blockUUID: UUID? = null
+    var blockUUID: KUUID? = null
 }
 
 class DeleteNode : Message(DeleteNode::class.simpleName!!) {
@@ -130,16 +130,16 @@ class ErrorsForNodeReport : Message(ErrorsForNodeReport::class.simpleName!!) {
 }
 
 class ExecuteIntention : Message(ExecuteIntention::class.simpleName!!) {
-    var blockUUID: UUID? = null
+    var blockUUID: KUUID? = null
     var index = 0
 }
 
 class GetIntentionsBlock : RequestMessage(GetIntentionsBlock::class.simpleName!!) {
-    var blockUUID: UUID? = null
+    var blockUUID: KUUID? = null
 }
 
 class GetIntentionsBlockAnswer : RequestAnswerMessage(GetIntentionsBlockAnswer::class.simpleName!!) {
-    var blockUUID: UUID? = null
+    var blockUUID: KUUID? = null
     var intentions: List<Intention>? = null
     var result: Result = Result.success()
 }

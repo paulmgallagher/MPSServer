@@ -1,10 +1,10 @@
 package com.strumenta.mpsprotocol.data
 
-import com.strumenta.mpsprotocol.UUID
+import com.strumenta.mpsprotocol.KUUID
 
 open class ModuleInfo(
         open var name: String? = null,
-        open var uuid: UUID? = null,
+        open var uuid: KUUID? = null,
         open var foreignName: String? = null,
         open var packaged: Boolean = false,
         open var readOnly: Boolean = false
@@ -24,7 +24,7 @@ open class ModuleInfo(
 
 data class SolutionInfo(
         override var name: String? = null,
-        override var uuid: UUID? = null,
+        override var uuid: KUUID? = null,
         override var foreignName: String? = null,
         override var packaged: Boolean = false,
         override var readOnly: Boolean = false,
@@ -61,7 +61,7 @@ class LanguageInfoDetailed : LanguageInfo() {
 
 open class ModelInfo(
         var qualifiedName: String? = null,
-        var uuid: UUID? = null,
+        var uuid: KUUID? = null,
         var foreignName: String? = null,
         var intValue: Int = -1,
         var readOnly: Boolean = false

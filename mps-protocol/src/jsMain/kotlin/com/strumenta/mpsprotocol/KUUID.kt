@@ -1,3 +1,3 @@
 package com.strumenta.mpsprotocol
 
-expect class UUID
+actual class KUUID
