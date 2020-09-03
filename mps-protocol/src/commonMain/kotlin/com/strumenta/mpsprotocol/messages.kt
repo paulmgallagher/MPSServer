@@ -6,7 +6,8 @@ data class AddChild(
     var container: NodeIDInModel? = null,
     var containmentName: String? = null,
     var conceptToInstantiate: String? = null,
-    var index: Int = -1
+    var index: Int = -1,
+    var smartRefNodeId: RegularNodeIDInfo? = null
 ) :
     RequestMessage(AddChild::class.simpleName!!)
 

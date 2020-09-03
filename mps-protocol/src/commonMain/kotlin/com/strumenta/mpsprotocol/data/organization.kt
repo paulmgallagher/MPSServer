@@ -1,8 +1,9 @@
 package com.strumenta.mpsprotocol.data
 
 import com.strumenta.mpsprotocol.KUUID
+import kotlin.jvm.JvmOverloads
 
-open class ModuleInfo(
+open class ModuleInfo @JvmOverloads constructor(
         open var name: String? = null,
         open var uuid: KUUID? = null,
         open var foreignName: String? = null,
@@ -22,7 +23,7 @@ open class ModuleInfo(
     }
 }
 
-data class SolutionInfo(
+data class SolutionInfo @JvmOverloads constructor(
         override var name: String? = null,
         override var uuid: KUUID? = null,
         override var foreignName: String? = null,
