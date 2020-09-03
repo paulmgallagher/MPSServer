@@ -124,3 +124,20 @@ spotless {
                 '\n'
     }
 }
+
+task copyModelClientToMps(type: Sync) {
+    from configurations.jvmDefault
+    from "$buildDir/libs"
+    into "$projectDir/../mpscode/solutions/com.strumenta.mpsserver.server/libs"
+    rename { fileName ->
+        stripVersion(fileName)
+    }
+    exclude 'mps-protocol-js.jar'
+    exclude 'annotations*.jar'
+}
+
+assemble.finalizedBy(copyModelClientToMps)
+
+String stripVersion(String fileNameWithVersion) {
+    return fileNameWithVersion.replaceAll(/-\d+(\.\d+)*(-SNAPSHOT)?/, "")
+}

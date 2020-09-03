@@ -44,6 +44,7 @@
     <import index="dnps" ref="r:7d44744b-e2b4-4f4d-95e4-ccc1b33c8297(com.strumenta.businessorg.intentions)" />
     <import index="f8ve" ref="r:480d701d-f50a-403e-b280-ef64b84517ed(com.strumenta.businessorg.sandbox.acmeinc)" />
     <import index="wy2b" ref="48e3d84c-0510-4776-ac01-301d43fa8646/java:com.google.gson(com.strumenta.mpsserver.deps/)" />
+    <import index="f6x8" ref="bf983e15-b4da-4ef2-8e0a-5041eab7ff32/java:com.strumenta.mpsprotocol.data(com.strumenta.mpsserver.server/)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ends" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.persistence(MPS.Core/)" implicit="true" />
@@ -2175,8 +2176,8 @@
         <node concept="3cpWs8" id="CJmshl5gU2" role="3cqZAp">
           <node concept="3cpWsn" id="CJmshl5gU3" role="3cpWs9">
             <property role="TrG5h" value="ci" />
-            <node concept="3uibUv" id="CJmshl5gU4" role="1tU5fm">
-              <ref role="3uigEE" to="30ym:CJmshkM_LL" resolve="ConceptInfo" />
+            <node concept="3uibUv" id="6r9$urbJE3y" role="1tU5fm">
+              <ref role="3uigEE" to="f6x8:~ConceptInfo" resolve="ConceptInfo" />
             </node>
             <node concept="2OqwBi" id="CJmshl5hZ1" role="33vP2m">
               <node concept="2OqwBi" id="CJmshl5h9f" role="2Oq$k0">

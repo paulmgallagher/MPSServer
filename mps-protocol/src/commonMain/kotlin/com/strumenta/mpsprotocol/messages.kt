@@ -1,5 +1,7 @@
 package com.strumenta.mpsprotocol
 
+import com.strumenta.mpsprotocol.data.*
+
 data class AddChild(
     var container: NodeIDInModel? = null,
     var containmentName: String? = null,
@@ -139,7 +141,7 @@ class GetIntentionsBlock : RequestMessage(GetIntentionsBlock::class.simpleName!!
 class GetIntentionsBlockAnswer : RequestAnswerMessage(GetIntentionsBlockAnswer::class.simpleName!!) {
     var blockUUID: UUID? = null
     var intentions: List<Intention>? = null
-    var result: Result = Result()
+    var result: Result = Result.success()
 }
 
 class GetNode : RequestMessage(GetNode::class.simpleName!!) {
