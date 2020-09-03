@@ -678,6 +678,87 @@
             <ref role="3bR37D" to="ffeo:7Kfy9QB6KXW" resolve="jetbrains.mps.lang.core" />
           </node>
         </node>
+        <node concept="1SiIV0" id="6r9$urbOCWU" role="3bR37C">
+          <node concept="3bR9La" id="6r9$urbOCWV" role="1SiIV1">
+            <ref role="3bR37D" to="ffeo:44LXwdzyvTi" resolve="Annotations" />
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6r9$urbOCX6" role="3bR37C">
+          <node concept="1BurEX" id="6r9$urbOCX7" role="1SiIV1">
+            <node concept="398BVA" id="6r9$urbOCWW" role="1BurEY">
+              <ref role="398BVh" node="5jTJHMumiWk" resolve="mpsserver.home" />
+              <node concept="2Ry0Ak" id="6r9$urbOCWX" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6r9$urbOCWY" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.strumenta.mpsserver.server" />
+                  <node concept="2Ry0Ak" id="6r9$urbOCWZ" role="2Ry0An">
+                    <property role="2Ry0Am" value="libs" />
+                    <node concept="2Ry0Ak" id="6r9$urbOCX0" role="2Ry0An">
+                      <property role="2Ry0Am" value="mps-protocol-jvm.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6r9$urbOCXi" role="3bR37C">
+          <node concept="1BurEX" id="6r9$urbOCXj" role="1SiIV1">
+            <node concept="398BVA" id="6r9$urbOCX8" role="1BurEY">
+              <ref role="398BVh" node="5jTJHMumiWk" resolve="mpsserver.home" />
+              <node concept="2Ry0Ak" id="6r9$urbOCX9" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6r9$urbOCXa" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.strumenta.mpsserver.server" />
+                  <node concept="2Ry0Ak" id="6r9$urbOCXb" role="2Ry0An">
+                    <property role="2Ry0Am" value="libs" />
+                    <node concept="2Ry0Ak" id="6r9$urbOCXc" role="2Ry0An">
+                      <property role="2Ry0Am" value="kotlin-stdlib-jdk7.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6r9$urbOCXu" role="3bR37C">
+          <node concept="1BurEX" id="6r9$urbOCXv" role="1SiIV1">
+            <node concept="398BVA" id="6r9$urbOCXk" role="1BurEY">
+              <ref role="398BVh" node="5jTJHMumiWk" resolve="mpsserver.home" />
+              <node concept="2Ry0Ak" id="6r9$urbOCXl" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6r9$urbOCXm" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.strumenta.mpsserver.server" />
+                  <node concept="2Ry0Ak" id="6r9$urbOCXn" role="2Ry0An">
+                    <property role="2Ry0Am" value="libs" />
+                    <node concept="2Ry0Ak" id="6r9$urbOCXo" role="2Ry0An">
+                      <property role="2Ry0Am" value="kotlin-stdlib-jdk8.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1SiIV0" id="6r9$urbOCXE" role="3bR37C">
+          <node concept="1BurEX" id="6r9$urbOCXF" role="1SiIV1">
+            <node concept="398BVA" id="6r9$urbOCXw" role="1BurEY">
+              <ref role="398BVh" node="5jTJHMumiWk" resolve="mpsserver.home" />
+              <node concept="2Ry0Ak" id="6r9$urbOCXx" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6r9$urbOCXy" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.strumenta.mpsserver.server" />
+                  <node concept="2Ry0Ak" id="6r9$urbOCXz" role="2Ry0An">
+                    <property role="2Ry0Am" value="libs" />
+                    <node concept="2Ry0Ak" id="6r9$urbOCX$" role="2Ry0An">
+                      <property role="2Ry0Am" value="kotlin-stdlib.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
       </node>
       <node concept="1E1JtA" id="4JnP3TV$EDw" role="2G$12L">
         <property role="BnDLt" value="true" />
@@ -920,6 +1001,125 @@
                     <property role="2Ry0Am" value="libs" />
                     <node concept="2Ry0Ak" id="4aUgzo0Jn$8" role="2Ry0An">
                       <property role="2Ry0Am" value="jsch.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="6r9$urbOD4k" role="39821P">
+            <node concept="398BVA" id="6r9$urbOD7y" role="28jJRO">
+              <ref role="398BVh" node="5jTJHMumiWk" resolve="mpsserver.home" />
+              <node concept="2Ry0Ak" id="6r9$urbOD9O" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6r9$urbOD9T" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.strumenta.mpsserver.server" />
+                  <node concept="2Ry0Ak" id="6r9$urbOD9Y" role="2Ry0An">
+                    <property role="2Ry0Am" value="libs" />
+                    <node concept="2Ry0Ak" id="6r9$urbODa3" role="2Ry0An">
+                      <property role="2Ry0Am" value="kotlin-stdlib-common.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="6r9$urbODa5" role="39821P">
+            <node concept="398BVA" id="6r9$urbODa6" role="28jJRO">
+              <ref role="398BVh" node="5jTJHMumiWk" resolve="mpsserver.home" />
+              <node concept="2Ry0Ak" id="6r9$urbODa7" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6r9$urbODa8" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.strumenta.mpsserver.server" />
+                  <node concept="2Ry0Ak" id="6r9$urbODa9" role="2Ry0An">
+                    <property role="2Ry0Am" value="libs" />
+                    <node concept="2Ry0Ak" id="6r9$urbODoX" role="2Ry0An">
+                      <property role="2Ry0Am" value="kotlin-stdlib-jdk7.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="6r9$urbODbj" role="39821P">
+            <node concept="398BVA" id="6r9$urbODbk" role="28jJRO">
+              <ref role="398BVh" node="5jTJHMumiWk" resolve="mpsserver.home" />
+              <node concept="2Ry0Ak" id="6r9$urbODbl" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6r9$urbODbm" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.strumenta.mpsserver.server" />
+                  <node concept="2Ry0Ak" id="6r9$urbODbn" role="2Ry0An">
+                    <property role="2Ry0Am" value="libs" />
+                    <node concept="2Ry0Ak" id="6r9$urbODrb" role="2Ry0An">
+                      <property role="2Ry0Am" value="kotlin-stdlib-jdk8.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="6r9$urbODeN" role="39821P">
+            <node concept="398BVA" id="6r9$urbODeO" role="28jJRO">
+              <ref role="398BVh" node="5jTJHMumiWk" resolve="mpsserver.home" />
+              <node concept="2Ry0Ak" id="6r9$urbODeP" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6r9$urbODeQ" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.strumenta.mpsserver.server" />
+                  <node concept="2Ry0Ak" id="6r9$urbODeR" role="2Ry0An">
+                    <property role="2Ry0Am" value="libs" />
+                    <node concept="2Ry0Ak" id="6r9$urbODtp" role="2Ry0An">
+                      <property role="2Ry0Am" value="kotlin-stdlib.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="6r9$urbODgd" role="39821P">
+            <node concept="398BVA" id="6r9$urbODge" role="28jJRO">
+              <ref role="398BVh" node="5jTJHMumiWk" resolve="mpsserver.home" />
+              <node concept="2Ry0Ak" id="6r9$urbODgf" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6r9$urbODgg" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.strumenta.mpsserver.server" />
+                  <node concept="2Ry0Ak" id="6r9$urbODgh" role="2Ry0An">
+                    <property role="2Ry0Am" value="libs" />
+                    <node concept="2Ry0Ak" id="6r9$urbODvB" role="2Ry0An">
+                      <property role="2Ry0Am" value="mps-protocol-jvm.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="6r9$urbODhH" role="39821P">
+            <node concept="398BVA" id="6r9$urbODhI" role="28jJRO">
+              <ref role="398BVh" node="5jTJHMumiWk" resolve="mpsserver.home" />
+              <node concept="2Ry0Ak" id="6r9$urbODhJ" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6r9$urbODhK" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.strumenta.mpsserver.server" />
+                  <node concept="2Ry0Ak" id="6r9$urbODhL" role="2Ry0An">
+                    <property role="2Ry0Am" value="libs" />
+                    <node concept="2Ry0Ak" id="6r9$urbODxP" role="2Ry0An">
+                      <property role="2Ry0Am" value="mps-protocol-metadata-sources.jar" />
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="28jJK3" id="6r9$urbODjj" role="39821P">
+            <node concept="398BVA" id="6r9$urbODjk" role="28jJRO">
+              <ref role="398BVh" node="5jTJHMumiWk" resolve="mpsserver.home" />
+              <node concept="2Ry0Ak" id="6r9$urbODjl" role="iGT6I">
+                <property role="2Ry0Am" value="solutions" />
+                <node concept="2Ry0Ak" id="6r9$urbODjm" role="2Ry0An">
+                  <property role="2Ry0Am" value="com.strumenta.mpsserver.server" />
+                  <node concept="2Ry0Ak" id="6r9$urbODjn" role="2Ry0An">
+                    <property role="2Ry0Am" value="libs" />
+                    <node concept="2Ry0Ak" id="6r9$urbOD$3" role="2Ry0An">
+                      <property role="2Ry0Am" value="mps-protocol-metadata.jar" />
                     </node>
                   </node>
                 </node>
