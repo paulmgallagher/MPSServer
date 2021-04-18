@@ -327,5 +327,46 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="6d1KBCwWQMx">
+    <ref role="1XX52x" to="2cet:6d1KBCwWQAY" resolve="HandleProtocol" />
+    <node concept="3EZMnI" id="6d1KBCwWQMz" role="2wV5jI">
+      <node concept="3F0ifn" id="6d1KBCwWQME" role="3EZMnx">
+        <property role="3F0ifm" value="handleProtocol&lt;" />
+        <node concept="11LMrY" id="6d1KBCwWQMS" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="1iCGBv" id="6d1KBCwZ4Gk" role="3EZMnx">
+        <ref role="1NtTu8" to="2cet:6d1KBCwWQMl" resolve="featureGroup" />
+        <node concept="1sVBvm" id="6d1KBCwZ4Gm" role="1sWHZn">
+          <node concept="3F0A7n" id="6d1KBCwZ4GA" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6d1KBCwZ4FR" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;(" />
+        <node concept="11L4FC" id="6d1KBCwZ4G0" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+        <node concept="11LMrY" id="6d1KBCwZ4G5" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="3F2HdR" id="6d1KBCwWQMW" role="3EZMnx">
+        <property role="2czwfO" value="," />
+        <ref role="1NtTu8" to="2cet:6d1KBCwWQMn" resolve="fieldValues" />
+        <node concept="2iRfu4" id="6d1KBCwWQMY" role="2czzBx" />
+      </node>
+      <node concept="3F0ifn" id="6d1KBCwWQMK" role="3EZMnx">
+        <property role="3F0ifm" value=")" />
+        <node concept="11L4FC" id="6d1KBCwWQMU" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="6d1KBCwWQMA" role="2iSdaV" />
+    </node>
+  </node>
 </model>
 

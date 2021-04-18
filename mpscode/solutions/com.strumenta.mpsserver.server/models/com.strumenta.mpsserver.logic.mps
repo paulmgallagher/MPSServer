@@ -12,6 +12,7 @@
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
+    <use id="c62ce876-2fe3-43b8-861f-e6998e9c05c7" name="com.strumenta.mpsserver.protocol" version="0" />
   </languages>
   <imports>
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
@@ -68,6 +69,7 @@
     <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
+    <import index="be1l" ref="r:70f08587-87ff-46ab-81f5-1539f19f90cc(com.strumenta.mpsserver.protocol)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
@@ -102,7 +104,7 @@
       <concept id="8118189177080264853" name="jetbrains.mps.baseLanguage.structure.AlternativeType" flags="ig" index="nSUau">
         <child id="8118189177080264854" name="alternative" index="nSUat" />
       </concept>
-      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="nn" index="2tJIrI" />
+      <concept id="1465982738277781862" name="jetbrains.mps.baseLanguage.structure.PlaceholderMember" flags="ng" index="2tJIrI" />
       <concept id="1076505808687" name="jetbrains.mps.baseLanguage.structure.WhileStatement" flags="nn" index="2$JKZl">
         <child id="1076505808688" name="condition" index="2$JKZa" />
       </concept>
@@ -337,7 +339,7 @@
         <child id="1144231408325" name="iteration" index="1Dwrff" />
       </concept>
       <concept id="1107796713796" name="jetbrains.mps.baseLanguage.structure.Interface" flags="ig" index="3HP615" />
-      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="nn" index="3J1_TO">
+      <concept id="5351203823916750322" name="jetbrains.mps.baseLanguage.structure.TryUniversalStatement" flags="ng" index="3J1_TO">
         <child id="8276990574886367510" name="catchClause" index="1zxBo5" />
         <child id="8276990574886367508" name="body" index="1zxBo7" />
       </concept>
@@ -430,6 +432,12 @@
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="7776141288922801652" name="jetbrains.mps.lang.actions.structure.NF_Concept_NewInstance" flags="nn" index="q_SaT" />
     </language>
+    <language id="c62ce876-2fe3-43b8-861f-e6998e9c05c7" name="com.strumenta.mpsserver.protocol">
+      <concept id="7152211513035680190" name="com.strumenta.mpsserver.protocol.structure.HandleProtocol" flags="ng" index="13GEJ4">
+        <reference id="7152211513035680917" name="featureGroup" index="13GEVJ" />
+        <child id="7152211513035680919" name="fieldValues" index="13GEVH" />
+      </concept>
+    </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="1168401810208" name="jetbrains.mps.baseLanguage.logging.structure.PrintStatement" flags="nn" index="abc8K">
         <child id="1168401864803" name="textExpression" index="abp_N" />
@@ -508,11 +516,11 @@
       </concept>
     </language>
     <language id="c7fb639f-be78-4307-89b0-b5959c3fa8c8" name="jetbrains.mps.lang.text">
-      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="nn" index="3oM_SD">
+      <concept id="155656958578482948" name="jetbrains.mps.lang.text.structure.Word" flags="ng" index="3oM_SD">
         <property id="155656958578482949" name="value" index="3oM_SC" />
         <property id="6328114375520539781" name="url" index="1X82VU" />
       </concept>
-      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="nn" index="1PaTwC">
+      <concept id="2535923850359271782" name="jetbrains.mps.lang.text.structure.Line" flags="ng" index="1PaTwC">
         <child id="2535923850359271783" name="elements" index="1PaTwD" />
       </concept>
     </language>
@@ -15964,24 +15972,37 @@
               </node>
             </node>
           </node>
-          <node concept="3eNFk2" id="6uy13ANAp03" role="3eNLev">
-            <node concept="1rXfSq" id="6uy13ANArHm" role="3eO9$A">
-              <ref role="37wK5l" node="6uy13ANAlI4" resolve="handleIntentionsMessages" />
-              <node concept="37vLTw" id="6uy13ANDvAN" role="37wK5m">
-                <ref role="3cqZAo" node="6Y14zWtL0tT" resolve="session" />
-              </node>
-              <node concept="37vLTw" id="6uy13ANDwtO" role="37wK5m">
-                <ref role="3cqZAo" node="6Y14zWtL0tV" resolve="message" />
-              </node>
-              <node concept="37vLTw" id="6uy13ANDwXb" role="37wK5m">
-                <ref role="3cqZAo" node="6Y14zWtOyAm" resolve="data" />
+          <node concept="3eNFk2" id="6d1KBCwXa4C" role="3eNLev">
+            <node concept="13GEJ4" id="6d1KBCwZ4lb" role="3eO9$A">
+              <ref role="13GEVJ" to="be1l:7M1MBns0eK7" resolve="Intentions" />
+              <node concept="37vLTw" id="6d1KBCwZSXs" role="13GEVH">
+                <ref role="3cqZAo" node="6uy13ANA6Rk" resolve="intentionsIntegrationServerModule" />
               </node>
             </node>
-            <node concept="3clFbS" id="6uy13ANAp05" role="3eOfB_">
-              <node concept="3SKdUt" id="6uy13ANDz2C" role="3cqZAp">
-                <node concept="1PaTwC" id="6uy13ANDz2D" role="1aUNEU">
-                  <node concept="3oM_SD" id="6uy13ANDz2F" role="1PaTwD">
-                    <property role="3oM_SC" value="handled" />
+            <node concept="3clFbS" id="6d1KBCwXa4E" role="3eOfB_" />
+          </node>
+          <node concept="1X3_iC" id="6d1KBCwZU0a" role="lGtFl">
+            <property role="3V$3am" value="elsifClauses" />
+            <property role="3V$3ak" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123159/1206060520071" />
+            <node concept="3eNFk2" id="6uy13ANAp03" role="8Wnug">
+              <node concept="1rXfSq" id="6uy13ANArHm" role="3eO9$A">
+                <ref role="37wK5l" node="6uy13ANAlI4" resolve="handleIntentionsMessages" />
+                <node concept="37vLTw" id="6uy13ANDvAN" role="37wK5m">
+                  <ref role="3cqZAo" node="6Y14zWtL0tT" resolve="session" />
+                </node>
+                <node concept="37vLTw" id="6uy13ANDwtO" role="37wK5m">
+                  <ref role="3cqZAo" node="6Y14zWtL0tV" resolve="message" />
+                </node>
+                <node concept="37vLTw" id="6uy13ANDwXb" role="37wK5m">
+                  <ref role="3cqZAo" node="6Y14zWtOyAm" resolve="data" />
+                </node>
+              </node>
+              <node concept="3clFbS" id="6uy13ANAp05" role="3eOfB_">
+                <node concept="3SKdUt" id="6uy13ANDz2C" role="3cqZAp">
+                  <node concept="1PaTwC" id="6uy13ANDz2D" role="1aUNEU">
+                    <node concept="3oM_SD" id="6uy13ANDz2F" role="1PaTwD">
+                      <property role="3oM_SC" value="handled" />
+                    </node>
                   </node>
                 </node>
               </node>

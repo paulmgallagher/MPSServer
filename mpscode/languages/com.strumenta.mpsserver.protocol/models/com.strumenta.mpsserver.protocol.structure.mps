@@ -194,5 +194,24 @@
       <ref role="20lvS9" node="7M1MBns1DIc" resolve="Parameter" />
     </node>
   </node>
+  <node concept="1TIwiD" id="6d1KBCwWQAY">
+    <property role="EcuMT" value="7152211513035680190" />
+    <property role="TrG5h" value="HandleProtocol" />
+    <property role="34LRSv" value="handleProtocol" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="6d1KBCwWQMn" role="1TKVEi">
+      <property role="IQ2ns" value="7152211513035680919" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="fieldValues" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6d1KBCwWQMl" role="1TKVEi">
+      <property role="IQ2ns" value="7152211513035680917" />
+      <property role="20kJfa" value="featureGroup" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="7M1MBns0bNR" resolve="FeaturesGroup" />
+    </node>
+  </node>
 </model>
 
