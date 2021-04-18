@@ -14,6 +14,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.strumenta.mpsserver.ide/com.strumenta.mpsserver.ide.msd" folder="main" />
       <modulePath path="$PROJECT_DIR$/solutions/com.strumenta.mpsserver.launcher/com.strumenta.mpsserver.launcher.msd" folder="main" />
       <modulePath path="$PROJECT_DIR$/solutions/com.strumenta.mpsserver.operations/com.strumenta.mpsserver.operations.msd" folder="main" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.strumenta.mpsserver.protocol.runtime/com.strumenta.mpsserver.protocol.runtime.msd" folder="main" />
       <modulePath path="$PROJECT_DIR$/solutions/com.strumenta.mpsserver.server.tests/com.strumenta.mpsserver.server.tests.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/solutions/com.strumenta.mpsserver.server/com.strumenta.mpsserver.server.msd" folder="main" />
     </projectModules>
