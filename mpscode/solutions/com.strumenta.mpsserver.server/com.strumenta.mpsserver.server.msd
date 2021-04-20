@@ -31,6 +31,7 @@
     <dependency reexport="false">18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
     <dependency reexport="false">085cc589-8058-4644-9c28-a7c7db0e2395(com.strumenta.mpsserver.protocol.runtime)</dependency>
+    <dependency reexport="false">3f233e7f-b8a6-46d2-a57f-795d56775243(Annotations)</dependency>
   </dependencies>
   <languageVersions>
     <language slang="l:c62ce876-2fe3-43b8-861f-e6998e9c05c7:com.strumenta.mpsserver.protocol" version="0" />
