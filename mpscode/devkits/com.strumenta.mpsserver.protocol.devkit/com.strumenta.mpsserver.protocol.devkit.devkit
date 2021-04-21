@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dev-kit name="com.strumenta.mpsserver.protocol.devkit" uuid="bb9a362e-bde3-4a57-a705-2e72b13b3454">
+  <exported-language name="c62ce876-2fe3-43b8-861f-e6998e9c05c7(com.strumenta.mpsserver.protocol)" />
+  <exported-solutions>
+    <exported-solution>bfeea22c-3783-443e-baf9-13aae2289528(com.strumenta.mpsserver.protocol.genplan)</exported-solution>
+  </exported-solutions>
+  <generation-plan model="r:cdaa1fff-2973-46d1-acbc-acf84223c34a(com.strumenta.mpsserver.protocol.genplan)" />
+</dev-kit>
+

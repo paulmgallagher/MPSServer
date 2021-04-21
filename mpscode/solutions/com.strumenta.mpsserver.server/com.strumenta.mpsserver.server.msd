@@ -66,6 +66,7 @@
     <module reference="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" version="0" />
     <module reference="48e3d84c-0510-4776-ac01-301d43fa8646(com.strumenta.mpsserver.deps)" version="0" />
     <module reference="5b9b211c-9338-4880-881e-9982edcce804(com.strumenta.mpsserver.extensionkit)" version="0" />
+    <module reference="bfeea22c-3783-443e-baf9-13aae2289528(com.strumenta.mpsserver.protocol.genplan)" version="0" />
     <module reference="085cc589-8058-4644-9c28-a7c7db0e2395(com.strumenta.mpsserver.protocol.runtime)" version="0" />
     <module reference="bf983e15-b4da-4ef2-8e0a-5041eab7ff32(com.strumenta.mpsserver.server)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
