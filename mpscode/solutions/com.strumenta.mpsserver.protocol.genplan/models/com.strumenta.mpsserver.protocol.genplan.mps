@@ -37,62 +37,210 @@
         <property role="2V$B1T" value="c62ce876-2fe3-43b8-861f-e6998e9c05c7" />
         <property role="2V$B1Q" value="com.strumenta.mpsserver.protocol" />
       </node>
-      <node concept="2V$Bhx" id="6Qi5aHrNDJr" role="1t_9vn">
-        <property role="2V$B1T" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1" />
-        <property role="2V$B1Q" value="jetbrains.mps.lang.smodel" />
-      </node>
-      <node concept="2V$Bhx" id="6Qi5aHrO8nl" role="1t_9vn">
-        <property role="2V$B1T" value="760a0a8c-eabb-4521-8bfd-65db761a9ba3" />
-        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.logging" />
-      </node>
-      <node concept="2V$Bhx" id="6Qi5aHrLqG$" role="1t_9vn">
-        <property role="2V$B1T" value="83888646-71ce-4f1c-9c53-c54016f6ad4f" />
-        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.collections" />
-      </node>
-      <node concept="2V$Bhx" id="6Qi5aHrTjXB" role="1t_9vn">
-        <property role="2V$B1T" value="c7fb639f-be78-4307-89b0-b5959c3fa8c8" />
-        <property role="2V$B1Q" value="jetbrains.mps.lang.text" />
-      </node>
-      <node concept="2V$Bhx" id="6Qi5aHrTjY4" role="1t_9vn">
-        <property role="2V$B1T" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c" />
-        <property role="2V$B1Q" value="jetbrains.mps.lang.core" />
-      </node>
-      <node concept="2V$Bhx" id="6Qi5aHrTk23" role="1t_9vn">
-        <property role="2V$B1T" value="446c26eb-2b7b-4bf0-9b35-f83fa582753e" />
-        <property role="2V$B1Q" value="jetbrains.mps.lang.modelapi" />
-      </node>
-      <node concept="2V$Bhx" id="6Qi5aHrNDJI" role="1t_9vn">
-        <property role="2V$B1T" value="a247e09e-2435-45ba-b8d2-07e93feba96a" />
-        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.tuples" />
-      </node>
-      <node concept="2V$Bhx" id="6Qi5aHrTk2$" role="1t_9vn">
-        <property role="2V$B1T" value="f2801650-65d5-424e-bb1b-463a8781b786" />
-        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.javadoc" />
-      </node>
-      <node concept="2V$Bhx" id="6Qi5aHrLqGn" role="1t_9vn">
-        <property role="2V$B1T" value="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" />
-        <property role="2V$B1Q" value="jetbrains.mps.lang.actions" />
-      </node>
-      <node concept="2V$Bhx" id="6Qi5aHrLqFr" role="1t_9vn">
-        <property role="2V$B1T" value="f3061a53-9226-4cc5-a443-f952ceaf5816" />
-        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage" />
-      </node>
-      <node concept="2V$Bhx" id="6Qi5aHrQLpA" role="1t_9vn">
-        <property role="2V$B1T" value="fd392034-7849-419d-9071-12563d152375" />
-        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.closures" />
-      </node>
-      <node concept="2V$Bhx" id="6Qi5aHrLqGc" role="1t_9vn">
-        <property role="2V$B1T" value="63650c59-16c8-498a-99c8-005c7ee9515d" />
-        <property role="2V$B1Q" value="jetbrains.mps.lang.access" />
-      </node>
-      <node concept="2V$Bhx" id="6Qi5aHrU3o4" role="1t_9vn">
-        <property role="2V$B1T" value="df345b11-b8c7-4213-ac66-48d2a9b75d88" />
-        <property role="2V$B1Q" value="jetbrains.mps.baseLanguageInternal" />
-      </node>
     </node>
     <node concept="2VgMA1" id="6Qi5aHrLqH5" role="2VgMA7">
       <node concept="3ps74r" id="6Qi5aHrLqHi" role="3ps6aC">
         <property role="TrG5h" value="checkpointToSaveMappingLabbels" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs7ZMC" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHsdoNI" role="1t_9vn">
+        <property role="2V$B1T" value="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.actions" />
+      </node>
+      <node concept="2V$Bhx" id="6Qi5aHs9cj9" role="1t_9vn">
+        <property role="2V$B1T" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.smodel" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHsb0SS" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHsb0U0" role="1t_9vn">
+        <property role="2V$B1T" value="63650c59-16c8-498a-99c8-005c7ee9515d" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.access" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHsb0V9" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHsb0Va" role="1t_9vn">
+        <property role="2V$B1T" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.smodel" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6fCv" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6fD1" role="1t_9vn">
+        <property role="2V$B1T" value="ceab5195-25ea-4f22-9b92-103b95ca8c0c" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.core" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6fDC" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6fGB" role="1t_9vn">
+        <property role="2V$B1T" value="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.actions" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6fGU" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6fHc" role="1t_9vn">
+        <property role="2V$B1T" value="f4ad079d-bc71-4ffb-9600-9328705cf998" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.descriptor" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6fFe" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6fFr" role="1t_9vn">
+        <property role="2V$B1T" value="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.actions" />
+      </node>
+      <node concept="2V$Bhx" id="6Qi5aHs6fHe" role="1t_9vn">
+        <property role="2V$B1T" value="af65afd8-f0dd-4942-87d9-63a55f2a9db1" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.behavior" />
+      </node>
+      <node concept="2V$Bhx" id="6Qi5aHs6fHj" role="1t_9vn">
+        <property role="2V$B1T" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.smodel" />
+      </node>
+      <node concept="2V$Bhx" id="6Qi5aHs6fHu" role="1t_9vn">
+        <property role="2V$B1T" value="c72da2b9-7cce-4447-8389-f407dc1158b7" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.structure" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6fHT" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6fId" role="1t_9vn">
+        <property role="2V$B1T" value="a247e09e-2435-45ba-b8d2-07e93feba96a" />
+        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.tuples" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6fIy" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6fIS" role="1t_9vn">
+        <property role="2V$B1T" value="28f9e497-3b42-4291-aeba-0a1039153ab1" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.plugin" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6fJf" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6fJB" role="1t_9vn">
+        <property role="2V$B1T" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.smodel" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6fK0" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6fKq" role="1t_9vn">
+        <property role="2V$B1T" value="83888646-71ce-4f1c-9c53-c54016f6ad4f" />
+        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.collections" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6fKP" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6fLh" role="1t_9vn">
+        <property role="2V$B1T" value="c72da2b9-7cce-4447-8389-f407dc1158b7" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.structure" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6fLI" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6fMc" role="1t_9vn">
+        <property role="2V$B1T" value="83888646-71ce-4f1c-9c53-c54016f6ad4f" />
+        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.collections" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6fMF" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6fNb" role="1t_9vn">
+        <property role="2V$B1T" value="982eb8df-2c96-4bd7-9963-11712ea622e5" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.resources" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6fNG" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6fOe" role="1t_9vn">
+        <property role="2V$B1T" value="fd392034-7849-419d-9071-12563d152375" />
+        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.closures" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6fOL" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6fPl" role="1t_9vn">
+        <property role="2V$B1T" value="fd392034-7849-419d-9071-12563d152375" />
+        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.closures" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6fPU" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6fQw" role="1t_9vn">
+        <property role="2V$B1T" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.smodel" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6g1q" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6g22" role="1t_9vn">
+        <property role="2V$B1T" value="a247e09e-2435-45ba-b8d2-07e93feba96a" />
+        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.tuples" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6g2F" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6g3l" role="1t_9vn">
+        <property role="2V$B1T" value="28f9e497-3b42-4291-aeba-0a1039153ab1" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.plugin" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6g40" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6g4G" role="1t_9vn">
+        <property role="2V$B1T" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.smodel" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6g5p" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6g67" role="1t_9vn">
+        <property role="2V$B1T" value="83888646-71ce-4f1c-9c53-c54016f6ad4f" />
+        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.collections" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6g6Q" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6g7A" role="1t_9vn">
+        <property role="2V$B1T" value="c72da2b9-7cce-4447-8389-f407dc1158b7" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.structure" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6g8n" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6g99" role="1t_9vn">
+        <property role="2V$B1T" value="83888646-71ce-4f1c-9c53-c54016f6ad4f" />
+        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.collections" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6g9W" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6gaK" role="1t_9vn">
+        <property role="2V$B1T" value="982eb8df-2c96-4bd7-9963-11712ea622e5" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.resources" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6gb_" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6gcr" role="1t_9vn">
+        <property role="2V$B1T" value="fd392034-7849-419d-9071-12563d152375" />
+        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.closures" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6gdi" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6gea" role="1t_9vn">
+        <property role="2V$B1T" value="fd392034-7849-419d-9071-12563d152375" />
+        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.closures" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6gf3" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6gfX" role="1t_9vn">
+        <property role="2V$B1T" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.smodel" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6ggS" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6ghO" role="1t_9vn">
+        <property role="2V$B1T" value="7866978e-a0f0-4cc7-81bc-4d213d9375e1" />
+        <property role="2V$B1Q" value="jetbrains.mps.lang.smodel" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6giL" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6gjJ" role="1t_9vn">
+        <property role="2V$B1T" value="f3061a53-9226-4cc5-a443-f952ceaf5816" />
+        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage" />
+      </node>
+    </node>
+    <node concept="2VgMA2" id="6Qi5aHs6gkI" role="2VgMA7">
+      <node concept="2V$Bhx" id="6Qi5aHs6glI" role="1t_9vn">
+        <property role="2V$B1T" value="760a0a8c-eabb-4521-8bfd-65db761a9ba3" />
+        <property role="2V$B1Q" value="jetbrains.mps.baseLanguage.logging" />
+      </node>
+      <node concept="2V$Bhx" id="6Qi5aHs6gpF" role="1t_9vn">
+        <property role="2V$B1T" value="df345b11-b8c7-4213-ac66-48d2a9b75d88" />
+        <property role="2V$B1Q" value="jetbrains.mps.baseLanguageInternal" />
       </node>
     </node>
   </node>

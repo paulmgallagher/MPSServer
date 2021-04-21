@@ -9,7 +9,7 @@
     <use id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel" version="17" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
-    <devkit ref="bb9a362e-bde3-4a57-a705-2e72b13b3454(com.strumenta.mpsserver.protocol.devkit)" />
+    <use id="c62ce876-2fe3-43b8-861f-e6998e9c05c7" name="com.strumenta.mpsserver.protocol" version="0" />
   </languages>
   <imports>
     <import index="33ny" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util(JDK/)" />
@@ -104,9 +104,7 @@
         <child id="1070534934092" name="expression" index="10QFUP" />
       </concept>
       <concept id="1068390468200" name="jetbrains.mps.baseLanguage.structure.FieldDeclaration" flags="ig" index="312cEg" />
-      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu">
-        <child id="1095933932569" name="implementedInterface" index="EKbjA" />
-      </concept>
+      <concept id="1068390468198" name="jetbrains.mps.baseLanguage.structure.ClassConcept" flags="ig" index="312cEu" />
       <concept id="1068431474542" name="jetbrains.mps.baseLanguage.structure.VariableDeclaration" flags="ng" index="33uBYm">
         <property id="1176718929932" name="isFinal" index="3TUv4t" />
         <child id="1068431790190" name="initializer" index="33vP2m" />
@@ -250,11 +248,6 @@
       </concept>
       <concept id="8971674540250655080" name="com.strumenta.mpsserver.protocol.structure.ParameterReference" flags="ng" index="2wzUct">
         <reference id="8971674540250655081" name="parameter" index="2wzUcs" />
-      </concept>
-      <concept id="7152211513035680190" name="com.strumenta.mpsserver.protocol.structure.HandleProtocol" flags="ng" index="13GEJ4">
-        <reference id="7152211513035680917" name="featureGroup" index="13GEVJ" />
-        <child id="2278510417767615037" name="paramValues" index="VzyWq" />
-        <child id="7152211513035680919" name="fieldValues" index="13GEVH" />
       </concept>
     </language>
     <language id="7866978e-a0f0-4cc7-81bc-4d213d9375e1" name="jetbrains.mps.lang.smodel">
@@ -1521,125 +1514,6 @@
           </node>
           <node concept="2wylKp" id="7M1MBns5f2e" role="ukAjM" />
         </node>
-      </node>
-    </node>
-  </node>
-  <node concept="312cEu" id="1YuTis$4cK1">
-    <property role="TrG5h" value="ProtocolWrapper" />
-    <node concept="2tJIrI" id="1YuTis$4cZn" role="jymVt" />
-    <node concept="312cEg" id="6uy13ANA6Rk" role="jymVt">
-      <property role="TrG5h" value="intentionsIntegrationServerModule" />
-      <node concept="3Tm6S6" id="6uy13ANA6Rl" role="1B3o_S" />
-      <node concept="3uibUv" id="6uy13ANA6Rn" role="1tU5fm">
-        <ref role="3uigEE" node="3ronlYH5$Qr" resolve="IntentionsIntegrationServerModule" />
-      </node>
-    </node>
-    <node concept="2tJIrI" id="1YuTis$4kv7" role="jymVt" />
-    <node concept="3clFbW" id="1YuTis$4dUI" role="jymVt">
-      <node concept="37vLTG" id="1YuTis$4kyw" role="3clF46">
-        <property role="TrG5h" value="intentionsIntegrationServerModule" />
-        <node concept="3uibUv" id="1YuTis$4kyy" role="1tU5fm">
-          <ref role="3uigEE" node="3ronlYH5$Qr" resolve="IntentionsIntegrationServerModule" />
-        </node>
-      </node>
-      <node concept="3cqZAl" id="1YuTis$4dUK" role="3clF45" />
-      <node concept="3Tm1VV" id="1YuTis$4dUL" role="1B3o_S" />
-      <node concept="3clFbS" id="1YuTis$4dUM" role="3clF47">
-        <node concept="3clFbF" id="1YuTis$4kFg" role="3cqZAp">
-          <node concept="37vLTI" id="1YuTis$4l5r" role="3clFbG">
-            <node concept="37vLTw" id="1YuTis$4ltm" role="37vLTx">
-              <ref role="3cqZAo" node="1YuTis$4kyw" resolve="intentionsIntegrationServerModule" />
-            </node>
-            <node concept="2OqwBi" id="1YuTis$4kNO" role="37vLTJ">
-              <node concept="Xjq3P" id="1YuTis$4kFf" role="2Oq$k0" />
-              <node concept="2OwXpG" id="1YuTis$4kWW" role="2OqNvi">
-                <ref role="2Oxat5" node="6uy13ANA6Rk" resolve="intentionsIntegrationServerModule" />
-              </node>
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="2tJIrI" id="1YuTis$4dOu" role="jymVt" />
-    <node concept="3Tm1VV" id="1YuTis$4cK2" role="1B3o_S" />
-    <node concept="3uibUv" id="1YuTis$4cNh" role="EKbjA">
-      <ref role="3uigEE" to="b7s2:7M1MBns5muq" resolve="WebSocketFeatureGroupHandler" />
-    </node>
-    <node concept="3clFb_" id="1YuTis$4cO4" role="jymVt">
-      <property role="TrG5h" value="tryToHandle" />
-      <node concept="37vLTG" id="1YuTis$4cO5" role="3clF46">
-        <property role="TrG5h" value="session" />
-        <property role="3TUv4t" value="true" />
-        <node concept="3uibUv" id="1YuTis$4cO6" role="1tU5fm">
-          <ref role="3uigEE" to="fz1u:~Session" resolve="Session" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="1YuTis$4cO7" role="3clF46">
-        <property role="TrG5h" value="message" />
-        <node concept="3uibUv" id="1YuTis$4cO8" role="1tU5fm">
-          <ref role="3uigEE" to="wyt6:~String" resolve="String" />
-        </node>
-      </node>
-      <node concept="37vLTG" id="1YuTis$4cO9" role="3clF46">
-        <property role="TrG5h" value="msgJson" />
-        <node concept="3uibUv" id="1YuTis$4cOa" role="1tU5fm">
-          <ref role="3uigEE" to="wy2b:~JsonObject" resolve="JsonObject" />
-        </node>
-      </node>
-      <node concept="3Tm1VV" id="1YuTis$4cOc" role="1B3o_S" />
-      <node concept="10P_77" id="1YuTis$4cOd" role="3clF45" />
-      <node concept="3clFbS" id="1YuTis$4cOe" role="3clF47">
-        <node concept="3clFbJ" id="1YuTis$4drl" role="3cqZAp">
-          <node concept="3clFbS" id="1YuTis$4drn" role="3clFbx">
-            <node concept="3cpWs6" id="1YuTis$4mB2" role="3cqZAp">
-              <node concept="3clFbT" id="1YuTis$4mR$" role="3cqZAk">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
-          </node>
-          <node concept="13GEJ4" id="1YuTis$4dFf" role="3clFbw">
-            <ref role="13GEVJ" node="7M1MBns0eK7" resolve="Intentions" />
-            <node concept="37vLTw" id="1YuTis$4lAg" role="13GEVH">
-              <ref role="3cqZAo" node="6uy13ANA6Rk" resolve="intentionsIntegrationServerModule" />
-            </node>
-            <node concept="37vLTw" id="1YuTis$5SRw" role="VzyWq">
-              <ref role="3cqZAo" node="1YuTis$4cO5" resolve="session" />
-            </node>
-            <node concept="37vLTw" id="1YuTis$5Tjw" role="VzyWq">
-              <ref role="3cqZAo" node="1YuTis$4cO7" resolve="message" />
-            </node>
-            <node concept="37vLTw" id="1YuTis$5Ucj" role="VzyWq">
-              <ref role="3cqZAo" node="1YuTis$4cO9" resolve="msgJson" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbJ" id="1YuTis$7ET5" role="3cqZAp">
-          <node concept="3clFbS" id="1YuTis$7ET6" role="3clFbx">
-            <node concept="3cpWs6" id="1YuTis$7ET7" role="3cqZAp">
-              <node concept="3clFbT" id="1YuTis$7ET8" role="3cqZAk">
-                <property role="3clFbU" value="true" />
-              </node>
-            </node>
-          </node>
-          <node concept="13GEJ4" id="1YuTis$7ET9" role="3clFbw">
-            <ref role="13GEVJ" node="1YuTis$7CTJ" resolve="NodesManipulation" />
-            <node concept="37vLTw" id="1YuTis$7ETb" role="VzyWq">
-              <ref role="3cqZAo" node="1YuTis$4cO5" resolve="session" />
-            </node>
-            <node concept="37vLTw" id="1YuTis$7ETc" role="VzyWq">
-              <ref role="3cqZAo" node="1YuTis$4cO7" resolve="message" />
-            </node>
-            <node concept="37vLTw" id="1YuTis$7ETd" role="VzyWq">
-              <ref role="3cqZAo" node="1YuTis$4cO9" resolve="msgJson" />
-            </node>
-          </node>
-        </node>
-        <node concept="3clFbF" id="1YuTis$4cOh" role="3cqZAp">
-          <node concept="3clFbT" id="1YuTis$4cOg" role="3clFbG" />
-        </node>
-      </node>
-      <node concept="2AHcQZ" id="1YuTis$4cOf" role="2AJF6D">
-        <ref role="2AI5Lk" to="wyt6:~Override" resolve="Override" />
       </node>
     </node>
   </node>

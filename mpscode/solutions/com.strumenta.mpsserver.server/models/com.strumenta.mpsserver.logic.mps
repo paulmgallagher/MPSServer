@@ -433,6 +433,13 @@
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="7776141288922801652" name="jetbrains.mps.lang.actions.structure.NF_Concept_NewInstance" flags="nn" index="q_SaT" />
     </language>
+    <language id="c62ce876-2fe3-43b8-861f-e6998e9c05c7" name="com.strumenta.mpsserver.protocol">
+      <concept id="7152211513035680190" name="com.strumenta.mpsserver.protocol.structure.HandleProtocol" flags="ng" index="13GEJ4">
+        <reference id="7152211513035680917" name="featureGroup" index="13GEVJ" />
+        <child id="2278510417767615037" name="paramValues" index="VzyWq" />
+        <child id="7152211513035680919" name="fieldValues" index="13GEVH" />
+      </concept>
+    </language>
     <language id="760a0a8c-eabb-4521-8bfd-65db761a9ba3" name="jetbrains.mps.baseLanguage.logging">
       <concept id="1168401810208" name="jetbrains.mps.baseLanguage.logging.structure.PrintStatement" flags="nn" index="abc8K">
         <child id="1168401864803" name="textExpression" index="abp_N" />
@@ -14455,6 +14462,7 @@
                   </node>
                 </node>
               </node>
+              <node concept="3clFbH" id="6Qi5aHrZ74V" role="3cqZAp" />
             </node>
             <node concept="1rXfSq" id="5ZkOVoVtiUL" role="3eO9$A">
               <ref role="37wK5l" node="5ZkOVoVrNzc" resolve="matchType" />
@@ -14466,30 +14474,38 @@
               </node>
             </node>
           </node>
-          <node concept="3eNFk2" id="6d1KBCwXa4C" role="3eNLev">
-            <node concept="2OqwBi" id="1YuTis$4FfO" role="3eO9$A">
-              <node concept="2ShNRf" id="1YuTis$4pKu" role="2Oq$k0">
-                <node concept="1pGfFk" id="1YuTis$4D$A" role="2ShVmc">
-                  <ref role="37wK5l" to="be1l:1YuTis$4dUI" resolve="ProtocolWrapper" />
-                  <node concept="37vLTw" id="1YuTis$4E2C" role="37wK5m">
-                    <ref role="3cqZAo" node="6uy13ANA6Rk" resolve="intentionsIntegrationServerModule" />
-                  </node>
-                </node>
+          <node concept="3eNFk2" id="6Qi5aHrZ8jh" role="3eNLev">
+            <node concept="3clFbS" id="6Qi5aHrZ8jj" role="3eOfB_" />
+            <node concept="13GEJ4" id="1YuTis$4dFf" role="3eO9$A">
+              <ref role="13GEVJ" to="be1l:7M1MBns0eK7" resolve="Intentions" />
+              <node concept="37vLTw" id="1YuTis$4lAg" role="13GEVH">
+                <ref role="3cqZAo" node="6uy13ANA6Rk" resolve="intentionsIntegrationServerModule" />
               </node>
-              <node concept="liA8E" id="1YuTis$4GnC" role="2OqNvi">
-                <ref role="37wK5l" to="be1l:1YuTis$4cO4" resolve="tryToHandle" />
-                <node concept="37vLTw" id="1YuTis$4GMg" role="37wK5m">
-                  <ref role="3cqZAo" node="6Y14zWtL0tT" resolve="session" />
-                </node>
-                <node concept="37vLTw" id="1YuTis$4IaM" role="37wK5m">
-                  <ref role="3cqZAo" node="6Y14zWtL0tV" resolve="message" />
-                </node>
-                <node concept="37vLTw" id="1YuTis$4J_G" role="37wK5m">
-                  <ref role="3cqZAo" node="6Y14zWtOyAm" resolve="data" />
-                </node>
+              <node concept="37vLTw" id="1YuTis$5SRw" role="VzyWq">
+                <ref role="3cqZAo" node="6Y14zWtL0tT" resolve="session" />
+              </node>
+              <node concept="37vLTw" id="1YuTis$5Tjw" role="VzyWq">
+                <ref role="3cqZAo" node="6Y14zWtL0tV" resolve="message" />
+              </node>
+              <node concept="37vLTw" id="6Qi5aHrZo$9" role="VzyWq">
+                <ref role="3cqZAo" node="6Y14zWtOyAm" resolve="data" />
               </node>
             </node>
+          </node>
+          <node concept="3eNFk2" id="6d1KBCwXa4C" role="3eNLev">
             <node concept="3clFbS" id="6d1KBCwXa4E" role="3eOfB_" />
+            <node concept="13GEJ4" id="1YuTis$7ET9" role="3eO9$A">
+              <ref role="13GEVJ" to="be1l:1YuTis$7CTJ" resolve="NodesManipulation" />
+              <node concept="37vLTw" id="1YuTis$7ETb" role="VzyWq">
+                <ref role="3cqZAo" node="6Y14zWtL0tT" resolve="session" />
+              </node>
+              <node concept="37vLTw" id="1YuTis$7ETc" role="VzyWq">
+                <ref role="3cqZAo" node="6Y14zWtL0tV" resolve="message" />
+              </node>
+              <node concept="37vLTw" id="6Qi5aHrZobj" role="VzyWq">
+                <ref role="3cqZAo" node="6Y14zWtOyAm" resolve="data" />
+              </node>
+            </node>
           </node>
           <node concept="3eNFk2" id="15JNn0t2jW9" role="3eNLev">
             <node concept="1rXfSq" id="15JNn0t2mC4" role="3eO9$A">
