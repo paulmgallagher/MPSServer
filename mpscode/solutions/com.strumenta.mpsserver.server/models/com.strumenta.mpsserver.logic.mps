@@ -69,8 +69,9 @@
     <import index="wyuk" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.components(MPS.Core/)" />
     <import index="bd8o" ref="498d89d2-c2e9-11e2-ad49-6cf049e62fe5/java:com.intellij.openapi.application(MPS.IDEA/)" />
     <import index="3a50" ref="742f6602-5a2f-4313-aa6e-ae1cd4ffdc61/java:jetbrains.mps.ide(MPS.Platform/)" />
-    <import index="be1l" ref="r:70f08587-87ff-46ab-81f5-1539f19f90cc(com.strumenta.mpsserver.protocol)" />
     <import index="b7s2" ref="r:35f84172-39a0-46c4-9076-089321860a07(com.strumenta.mpsserver.protocol.runtime)" />
+    <import index="oe13" ref="r:8a2fdb91-4ecb-4cf7-98fa-039d93f748fc(com.strumenta.mpsserver.server.dummy)" />
+    <import index="be1l" ref="r:70f08587-87ff-46ab-81f5-1539f19f90cc(com.strumenta.mpsserver.protocol)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="tpcu" ref="r:00000000-0000-4000-0000-011c89590282(jetbrains.mps.lang.core.behavior)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
@@ -14470,14 +14471,14 @@
             <node concept="2OqwBi" id="1YuTis$4FfO" role="3eO9$A">
               <node concept="2ShNRf" id="1YuTis$4pKu" role="2Oq$k0">
                 <node concept="1pGfFk" id="1YuTis$4D$A" role="2ShVmc">
-                  <ref role="37wK5l" to="be1l:1YuTis$4dUI" resolve="ProtocolWrapper" />
+                  <ref role="37wK5l" to="oe13:1YuTis$4dUI" resolve="ProtocolWrapper" />
                   <node concept="37vLTw" id="1YuTis$4E2C" role="37wK5m">
                     <ref role="3cqZAo" node="6uy13ANA6Rk" resolve="intentionsIntegrationServerModule" />
                   </node>
                 </node>
               </node>
               <node concept="liA8E" id="1YuTis$4GnC" role="2OqNvi">
-                <ref role="37wK5l" to="be1l:1YuTis$4cO4" resolve="tryToHandle" />
+                <ref role="37wK5l" to="oe13:1YuTis$4cO4" resolve="tryToHandle" />
                 <node concept="37vLTw" id="1YuTis$4GMg" role="37wK5m">
                   <ref role="3cqZAo" node="6Y14zWtL0tT" resolve="session" />
                 </node>

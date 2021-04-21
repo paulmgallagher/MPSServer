@@ -2,6 +2,7 @@
 <project version="4">
   <component name="MPSProject">
     <projectModules>
+      <modulePath path="$PROJECT_DIR$/devkits/com.strumenta.mpsserver.protocol.dk/com.strumenta.mpsserver.protocol.dk.devkit" folder="main" />
       <modulePath path="$PROJECT_DIR$/languages/com.strumenta.businessorg/com.strumenta.businessorg.mpl" folder="business" />
       <modulePath path="$PROJECT_DIR$/languages/com.strumenta.financialcalc/com.strumenta.financialcalc.mpl" folder="financialcalc" />
       <modulePath path="$PROJECT_DIR$/languages/com.strumenta.mpsserver.protocol/com.strumenta.mpsserver.protocol.mpl" folder="main" />
@@ -14,6 +15,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.strumenta.mpsserver.ide/com.strumenta.mpsserver.ide.msd" folder="main" />
       <modulePath path="$PROJECT_DIR$/solutions/com.strumenta.mpsserver.launcher/com.strumenta.mpsserver.launcher.msd" folder="main" />
       <modulePath path="$PROJECT_DIR$/solutions/com.strumenta.mpsserver.operations/com.strumenta.mpsserver.operations.msd" folder="main" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.strumenta.mpsserver.protocol.genplan/com.strumenta.mpsserver.protocol.genplan.msd" folder="main" />
       <modulePath path="$PROJECT_DIR$/solutions/com.strumenta.mpsserver.protocol.runtime/com.strumenta.mpsserver.protocol.runtime.msd" folder="main" />
       <modulePath path="$PROJECT_DIR$/solutions/com.strumenta.mpsserver.server.tests/com.strumenta.mpsserver.server.tests.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/solutions/com.strumenta.mpsserver.server/com.strumenta.mpsserver.server.msd" folder="main" />
