@@ -80,7 +80,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="fields" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="GiRQ8KGVJh" resolve="MessageField" />
+      <ref role="20lvS9" node="GiRQ8KGVJh" resolve="ProtocolField" />
     </node>
   </node>
   <node concept="1TIwiD" id="GiRQ8KGSHw">
@@ -98,7 +98,7 @@
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="fields" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="GiRQ8KGVJh" resolve="MessageField" />
+      <ref role="20lvS9" node="GiRQ8KGVJh" resolve="ProtocolField" />
     </node>
     <node concept="PrWs8" id="GiRQ8KGVJ7" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -116,7 +116,7 @@
   </node>
   <node concept="1TIwiD" id="GiRQ8KGVJh">
     <property role="EcuMT" value="797945696814873553" />
-    <property role="TrG5h" value="MessageField" />
+    <property role="TrG5h" value="ProtocolField" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="GiRQ8KIsFn" role="1TKVEi">
       <property role="IQ2ns" value="797945696815270615" />
@@ -187,7 +187,7 @@
   </node>
   <node concept="1TIwiD" id="3XHhffdZxuC">
     <property role="EcuMT" value="4570385010774644648" />
-    <property role="TrG5h" value="MessageType" />
+    <property role="TrG5h" value="JavaMessageType" />
     <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
     <node concept="1TJgyj" id="3XHhffdZxuD" role="1TKVEi">
       <property role="IQ2ns" value="4570385010774644649" />
@@ -198,16 +198,19 @@
     <node concept="RPilO" id="3XHhffe0GZB" role="lGtFl">
       <ref role="RPilL" node="3XHhffdZxuD" resolve="message" />
     </node>
+    <node concept="PrWs8" id="6tLBKr9XaZJ" role="PzmwI">
+      <ref role="PrY4T" node="6tLBKr9X8FM" resolve="IFieldsContainerType" />
+    </node>
   </node>
   <node concept="1TIwiD" id="3XHhffe1WXc">
     <property role="EcuMT" value="4570385010775281484" />
-    <property role="TrG5h" value="MessageFieldReferenceOperation" />
+    <property role="TrG5h" value="ProtocolFieldReferenceOperation" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="1TJgyj" id="3XHhffe1WXf" role="1TKVEi">
       <property role="IQ2ns" value="4570385010775281487" />
       <property role="20kJfa" value="field" />
       <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="GiRQ8KGVJh" resolve="MessageField" />
+      <ref role="20lvS9" node="GiRQ8KGVJh" resolve="ProtocolField" />
     </node>
     <node concept="PrWs8" id="3XHhffe1WXd" role="PzmwI">
       <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
@@ -276,6 +279,27 @@
     <property role="TrG5h" value="SimpleMessage" />
     <property role="34LRSv" value="simple" />
     <ref role="1TJDcQ" node="GiRQ8KGyoQ" resolve="Message" />
+  </node>
+  <node concept="1TIwiD" id="6tLBKr9VZeQ">
+    <property role="EcuMT" value="7453913709781447606" />
+    <property role="TrG5h" value="JavaDataType" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1H" resolve="Type" />
+    <node concept="1TJgyj" id="6tLBKr9VZeR" role="1TKVEi">
+      <property role="IQ2ns" value="7453913709781447607" />
+      <property role="20kJfa" value="data" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6tLBKr9KcNk" resolve="DataDeclaration" />
+    </node>
+    <node concept="RPilO" id="6tLBKr9VZeS" role="lGtFl">
+      <ref role="RPilL" node="6tLBKr9VZeR" resolve="data" />
+    </node>
+    <node concept="PrWs8" id="6tLBKr9XaZM" role="PzmwI">
+      <ref role="PrY4T" node="6tLBKr9X8FM" resolve="IFieldsContainerType" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6tLBKr9X8FM">
+    <property role="EcuMT" value="7453913709781748466" />
+    <property role="TrG5h" value="IFieldsContainerType" />
   </node>
 </model>
 

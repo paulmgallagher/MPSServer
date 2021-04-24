@@ -152,7 +152,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="GiRQ8KIsFv">
-    <ref role="1XX52x" to="albe:GiRQ8KGVJh" resolve="MessageField" />
+    <ref role="1XX52x" to="albe:GiRQ8KGVJh" resolve="ProtocolField" />
     <node concept="3EZMnI" id="GiRQ8KIsFx" role="2wV5jI">
       <node concept="3F0A7n" id="GiRQ8KIsFC" role="3EZMnx">
         <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
@@ -259,7 +259,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3XHhffe0GZK">
-    <ref role="1XX52x" to="albe:3XHhffdZxuC" resolve="MessageType" />
+    <ref role="1XX52x" to="albe:3XHhffdZxuC" resolve="JavaMessageType" />
     <node concept="3EZMnI" id="3XHhffe0GZM" role="2wV5jI">
       <node concept="3F0ifn" id="3XHhffe0GZT" role="3EZMnx">
         <property role="3F0ifm" value="messageType&lt;" />
@@ -288,7 +288,7 @@
     </node>
   </node>
   <node concept="24kQdi" id="3XHhffe1WXo">
-    <ref role="1XX52x" to="albe:3XHhffe1WXc" resolve="MessageFieldReferenceOperation" />
+    <ref role="1XX52x" to="albe:3XHhffe1WXc" resolve="ProtocolFieldReferenceOperation" />
     <node concept="1iCGBv" id="3XHhffe1WXq" role="2wV5jI">
       <ref role="1NtTu8" to="albe:3XHhffe1WXf" resolve="field" />
       <node concept="1sVBvm" id="3XHhffe1WXs" role="1sWHZn">
@@ -432,6 +432,35 @@
         </node>
         <node concept="3F0A7n" id="6tLBKr9KnH7" role="3EZMnx">
           <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="24kQdi" id="6tLBKr9WsLR">
+    <ref role="1XX52x" to="albe:6tLBKr9VZeQ" resolve="JavaDataType" />
+    <node concept="3EZMnI" id="6tLBKr9WsLT" role="2wV5jI">
+      <node concept="3F0ifn" id="6tLBKr9WsLU" role="3EZMnx">
+        <property role="3F0ifm" value="dataType&lt;" />
+        <ref role="1k5W1q" node="3XHhffdYaVy" resolve="Keyword" />
+        <node concept="11LMrY" id="6tLBKr9WsLV" role="3F10Kt">
+          <property role="VOm3f" value="true" />
+        </node>
+      </node>
+      <node concept="2iRfu4" id="6tLBKr9WsLW" role="2iSdaV" />
+      <node concept="1iCGBv" id="6tLBKr9WsLX" role="3EZMnx">
+        <ref role="1NtTu8" to="albe:6tLBKr9VZeR" resolve="data" />
+        <node concept="1sVBvm" id="6tLBKr9WsLY" role="1sWHZn">
+          <node concept="3F0A7n" id="6tLBKr9WsLZ" role="2wV5jI">
+            <property role="1Intyy" value="true" />
+            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+          </node>
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6tLBKr9WsM0" role="3EZMnx">
+        <property role="3F0ifm" value="&gt;" />
+        <ref role="1k5W1q" node="3XHhffdYaVy" resolve="Keyword" />
+        <node concept="11L4FC" id="6tLBKr9WsM1" role="3F10Kt">
+          <property role="VOm3f" value="true" />
         </node>
       </node>
     </node>

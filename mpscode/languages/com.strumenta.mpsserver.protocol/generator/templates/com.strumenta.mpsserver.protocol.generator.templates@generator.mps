@@ -71,6 +71,7 @@
       <concept id="1068580123136" name="jetbrains.mps.baseLanguage.structure.StatementList" flags="sn" stub="5293379017992965193" index="3clFbS">
         <child id="1068581517665" name="statement" index="3cqZAp" />
       </concept>
+      <concept id="1068581242875" name="jetbrains.mps.baseLanguage.structure.PlusExpression" flags="nn" index="3cpWs3" />
       <concept id="1068581242864" name="jetbrains.mps.baseLanguage.structure.LocalVariableDeclarationStatement" flags="nn" index="3cpWs8">
         <child id="1068581242865" name="localVariableDeclaration" index="3cpWs9" />
       </concept>
@@ -83,6 +84,7 @@
       </concept>
       <concept id="1107461130800" name="jetbrains.mps.baseLanguage.structure.Classifier" flags="ng" index="3pOWGL">
         <property id="521412098689998745" name="nonStatic" index="2bfB8j" />
+        <property id="2791683072064593257" name="packageName" index="2HnT6v" />
         <child id="5375687026011219971" name="member" index="jymVt" unordered="true" />
       </concept>
       <concept id="1107535904670" name="jetbrains.mps.baseLanguage.structure.ClassifierType" flags="in" index="3uibUv">
@@ -208,7 +210,7 @@
     </node>
     <node concept="2rT7sh" id="3XHhffe7Qf3" role="2rTMjI">
       <property role="TrG5h" value="JAVAFIELD_FOR_FIELD" />
-      <ref role="2rTdP9" to="albe:GiRQ8KGVJh" resolve="MessageField" />
+      <ref role="2rTdP9" to="albe:GiRQ8KGVJh" resolve="ProtocolField" />
       <ref role="2rZz_L" to="tpee:fz12cDC" resolve="FieldDeclaration" />
     </node>
     <node concept="3aamgX" id="GiRQ8KMnGz" role="3acgRq">
@@ -365,7 +367,7 @@
       </node>
     </node>
     <node concept="3aamgX" id="3XHhffe6hSh" role="3acgRq">
-      <ref role="30HIoZ" to="albe:3XHhffdZxuC" resolve="MessageType" />
+      <ref role="30HIoZ" to="albe:3XHhffdZxuC" resolve="JavaMessageType" />
       <node concept="1Koe21" id="3XHhffe6hTH" role="1lVwrX">
         <node concept="312cEu" id="3XHhffe6hTN" role="1Koe22">
           <property role="TrG5h" value="Foo" />
@@ -417,8 +419,61 @@
         </node>
       </node>
     </node>
+    <node concept="3aamgX" id="6tLBKr9YaLA" role="3acgRq">
+      <ref role="30HIoZ" to="albe:6tLBKr9VZeQ" resolve="JavaDataType" />
+      <node concept="1Koe21" id="6tLBKr9YaLB" role="1lVwrX">
+        <node concept="312cEu" id="6tLBKr9YaLC" role="1Koe22">
+          <property role="TrG5h" value="Foo" />
+          <node concept="312cEu" id="6tLBKr9YaLD" role="jymVt">
+            <property role="2bfB8j" value="true" />
+            <property role="TrG5h" value="Bar" />
+            <node concept="2tJIrI" id="6tLBKr9YaLE" role="jymVt" />
+            <node concept="3Tm1VV" id="6tLBKr9YaLF" role="1B3o_S" />
+          </node>
+          <node concept="3clFb_" id="6tLBKr9YaLG" role="jymVt">
+            <property role="TrG5h" value="zum" />
+            <node concept="3cqZAl" id="6tLBKr9YaLH" role="3clF45" />
+            <node concept="3Tm1VV" id="6tLBKr9YaLI" role="1B3o_S" />
+            <node concept="3clFbS" id="6tLBKr9YaLJ" role="3clF47">
+              <node concept="3cpWs8" id="6tLBKr9YaLK" role="3cqZAp">
+                <node concept="3cpWsn" id="6tLBKr9YaLL" role="3cpWs9">
+                  <property role="TrG5h" value="a" />
+                  <node concept="3uibUv" id="6tLBKr9YaLM" role="1tU5fm">
+                    <ref role="3uigEE" node="6tLBKr9YaLD" resolve="Foo.Bar" />
+                    <node concept="raruj" id="6tLBKr9YaLN" role="lGtFl" />
+                    <node concept="1ZhdrF" id="6tLBKr9YaLO" role="lGtFl">
+                      <property role="2qtEX8" value="classifier" />
+                      <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
+                      <node concept="3$xsQk" id="6tLBKr9YaLP" role="3$ytzL">
+                        <node concept="3clFbS" id="6tLBKr9YaLQ" role="2VODD2">
+                          <node concept="3clFbF" id="6tLBKr9YaLR" role="3cqZAp">
+                            <node concept="2OqwBi" id="6tLBKr9YaLS" role="3clFbG">
+                              <node concept="1iwH7S" id="6tLBKr9YaLT" role="2Oq$k0" />
+                              <node concept="1iwH70" id="6tLBKr9YaLU" role="2OqNvi">
+                                <ref role="1iwH77" node="6tLBKr9Omg7" resolve="JAVACLASS_FOR_DATATYPE" />
+                                <node concept="2OqwBi" id="6tLBKr9YaLV" role="1iwH7V">
+                                  <node concept="30H73N" id="6tLBKr9YaLW" role="2Oq$k0" />
+                                  <node concept="3TrEf2" id="6tLBKra0CAp" role="2OqNvi">
+                                    <ref role="3Tt5mk" to="albe:6tLBKr9VZeR" resolve="data" />
+                                  </node>
+                                </node>
+                              </node>
+                            </node>
+                          </node>
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
+            </node>
+          </node>
+          <node concept="3Tm1VV" id="6tLBKr9YaLY" role="1B3o_S" />
+        </node>
+      </node>
+    </node>
     <node concept="3aamgX" id="3XHhffe7PEV" role="3acgRq">
-      <ref role="30HIoZ" to="albe:3XHhffe1WXc" resolve="MessageFieldReferenceOperation" />
+      <ref role="30HIoZ" to="albe:3XHhffe1WXc" resolve="ProtocolFieldReferenceOperation" />
       <node concept="1Koe21" id="3XHhffe7PGO" role="1lVwrX">
         <node concept="312cEu" id="3XHhffe7PGU" role="1Koe22">
           <property role="TrG5h" value="MyClass" />
@@ -586,8 +641,8 @@
               <node concept="10Nm6u" id="6tLBKr9P$Q9" role="3uHU7w" />
               <node concept="2OqwBi" id="6tLBKr9P$ni" role="3uHU7B">
                 <node concept="30H73N" id="6tLBKr9P$hg" role="2Oq$k0" />
-                <node concept="2qgKlT" id="6tLBKr9P$op" role="2OqNvi">
-                  <ref role="37wK5l" to="bxw3:6tLBKr9Pwv2" resolve="ancestor" />
+                <node concept="2qgKlT" id="6tLBKra5$$1" role="2OqNvi">
+                  <ref role="37wK5l" to="bxw3:6tLBKra4VSZ" resolve="getAncestor" />
                 </node>
               </node>
             </node>
@@ -604,8 +659,8 @@
             <node concept="3y3z36" id="6tLBKr9P$T7" role="3clFbG">
               <node concept="2OqwBi" id="6tLBKr9P$R4" role="3uHU7B">
                 <node concept="30H73N" id="6tLBKr9P$R5" role="2Oq$k0" />
-                <node concept="2qgKlT" id="6tLBKr9P$R6" role="2OqNvi">
-                  <ref role="37wK5l" to="bxw3:6tLBKr9Pwv2" resolve="ancestor" />
+                <node concept="2qgKlT" id="6tLBKra5$xq" role="2OqNvi">
+                  <ref role="37wK5l" to="bxw3:6tLBKra4VSZ" resolve="getAncestor" />
                 </node>
               </node>
               <node concept="10Nm6u" id="6tLBKr9P$R3" role="3uHU7w" />
@@ -845,11 +900,16 @@
       <node concept="3zFVjK" id="6tLBKr9NAMX" role="3zH0cK">
         <node concept="3clFbS" id="6tLBKr9NAMY" role="2VODD2">
           <node concept="3clFbF" id="6tLBKr9NAMZ" role="3cqZAp">
-            <node concept="2OqwBi" id="6tLBKr9NAN0" role="3clFbG">
-              <node concept="3TrcHB" id="6tLBKr9NAN1" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            <node concept="3cpWs3" id="6tLBKr9Uufl" role="3clFbG">
+              <node concept="2OqwBi" id="6tLBKr9NAN0" role="3uHU7B">
+                <node concept="3TrcHB" id="6tLBKr9NAN1" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+                <node concept="30H73N" id="6tLBKr9NAN2" role="2Oq$k0" />
               </node>
-              <node concept="30H73N" id="6tLBKr9NAN2" role="2Oq$k0" />
+              <node concept="Xl_RD" id="6tLBKr9Uugk" role="3uHU7w">
+                <property role="Xl_RC" value="DataObject" />
+              </node>
             </node>
           </node>
         </node>
@@ -888,6 +948,7 @@
   </node>
   <node concept="312cEu" id="6tLBKr9Pycw">
     <property role="TrG5h" value="map_ProtocolDataObjectWithAncestor" />
+    <property role="2HnT6v" value="foo" />
     <node concept="312cEg" id="6tLBKr9Pycx" role="jymVt">
       <property role="TrG5h" value="modelName" />
       <node concept="3Tm1VV" id="6tLBKr9Pycy" role="1B3o_S" />
@@ -950,11 +1011,16 @@
       <node concept="3zFVjK" id="6tLBKr9PycX" role="3zH0cK">
         <node concept="3clFbS" id="6tLBKr9PycY" role="2VODD2">
           <node concept="3clFbF" id="6tLBKr9PycZ" role="3cqZAp">
-            <node concept="2OqwBi" id="6tLBKr9Pyd0" role="3clFbG">
-              <node concept="3TrcHB" id="6tLBKr9Pyd1" role="2OqNvi">
-                <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+            <node concept="3cpWs3" id="6tLBKr9TiNu" role="3clFbG">
+              <node concept="Xl_RD" id="6tLBKr9TiOt" role="3uHU7w">
+                <property role="Xl_RC" value="DataObject" />
               </node>
-              <node concept="30H73N" id="6tLBKr9Pyd2" role="2Oq$k0" />
+              <node concept="2OqwBi" id="6tLBKr9Pyd0" role="3uHU7B">
+                <node concept="3TrcHB" id="6tLBKr9Pyd1" role="2OqNvi">
+                  <ref role="3TsBF5" to="tpck:h0TrG11" resolve="name" />
+                </node>
+                <node concept="30H73N" id="6tLBKr9Pyd2" role="2Oq$k0" />
+              </node>
             </node>
           </node>
         </node>
@@ -977,8 +1043,8 @@
                   <ref role="1iwH77" node="6tLBKr9Omg7" resolve="JAVACLASS_FOR_DATATYPE" />
                   <node concept="2OqwBi" id="6tLBKr9PzXU" role="1iwH7V">
                     <node concept="30H73N" id="6tLBKr9PzLq" role="2Oq$k0" />
-                    <node concept="2qgKlT" id="6tLBKr9P$a_" role="2OqNvi">
-                      <ref role="37wK5l" to="bxw3:6tLBKr9Pwv2" resolve="ancestor" />
+                    <node concept="2qgKlT" id="6tLBKra6bPl" role="2OqNvi">
+                      <ref role="37wK5l" to="bxw3:6tLBKra4VSZ" resolve="getAncestor" />
                     </node>
                   </node>
                 </node>

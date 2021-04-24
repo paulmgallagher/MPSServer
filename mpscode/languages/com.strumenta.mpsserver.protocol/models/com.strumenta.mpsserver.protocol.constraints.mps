@@ -21,6 +21,7 @@
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" />
     <import index="6xgk" ref="r:6e9ad488-5df2-49e4-8c01-8a7f3812adf7(jetbrains.mps.lang.scopes.runtime)" />
     <import index="albe" ref="r:52af8a84-01a7-42bb-9755-abab3ed890fe(com.strumenta.mpsserver.protocol.structure)" implicit="true" />
+    <import index="bxw3" ref="r:cf0029cc-104c-43a3-880c-11e5b35a72d9(com.strumenta.mpsserver.protocol.behavior)" implicit="true" />
   </imports>
   <registry>
     <language id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage">
@@ -111,6 +112,7 @@
       <concept id="1177026924588" name="jetbrains.mps.lang.smodel.structure.RefConcept_Reference" flags="nn" index="chp4Y">
         <reference id="1177026940964" name="conceptDeclaration" index="cht4Q" />
       </concept>
+      <concept id="1179409122411" name="jetbrains.mps.lang.smodel.structure.Node_ConceptMethodCall" flags="nn" index="2qgKlT" />
       <concept id="2396822768958367367" name="jetbrains.mps.lang.smodel.structure.AbstractTypeCastExpression" flags="nn" index="$5XWr">
         <child id="6733348108486823193" name="leftExpression" index="1m5AlR" />
         <child id="3906496115198199033" name="conceptArgument" index="3oSUPX" />
@@ -127,9 +129,6 @@
       <concept id="1138056143562" name="jetbrains.mps.lang.smodel.structure.SLinkAccess" flags="nn" index="3TrEf2">
         <reference id="1138056516764" name="link" index="3Tt5mk" />
       </concept>
-      <concept id="1138056282393" name="jetbrains.mps.lang.smodel.structure.SLinkListAccess" flags="nn" index="3Tsc0h">
-        <reference id="1138056546658" name="link" index="3TtcxE" />
-      </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
@@ -138,7 +137,7 @@
     </language>
   </registry>
   <node concept="1M2fIO" id="3XHhffe1XC8">
-    <ref role="1M2myG" to="albe:3XHhffe1WXc" resolve="MessageFieldReferenceOperation" />
+    <ref role="1M2myG" to="albe:3XHhffe1WXc" resolve="ProtocolFieldReferenceOperation" />
     <node concept="1N5Pfh" id="3XHhffe1XC9" role="1Mr941">
       <ref role="1N5Vy1" to="albe:3XHhffe1WXf" resolve="field" />
       <node concept="3dgokm" id="3XHhffe1XCX" role="1N6uqs">
@@ -208,21 +207,16 @@
                   <ref role="37wK5l" to="o8zo:4IP40Bi3eAf" resolve="forNamedElements" />
                   <ref role="1Pybhc" to="o8zo:4IP40Bi3e_R" resolve="ListScope" />
                   <node concept="2OqwBi" id="3XHhffe25e_" role="37wK5m">
-                    <node concept="2OqwBi" id="3XHhffe24kP" role="2Oq$k0">
-                      <node concept="1PxgMI" id="3XHhffe23Bw" role="2Oq$k0">
-                        <node concept="chp4Y" id="3XHhffe23K7" role="3oSUPX">
-                          <ref role="cht4Q" to="albe:3XHhffdZxuC" resolve="MessageType" />
-                        </node>
-                        <node concept="37vLTw" id="3XHhffe22uZ" role="1m5AlR">
-                          <ref role="3cqZAo" node="4QTAjAf5A3J" resolve="instanceType" />
-                        </node>
+                    <node concept="1PxgMI" id="3XHhffe23Bw" role="2Oq$k0">
+                      <node concept="chp4Y" id="6tLBKr9XbAW" role="3oSUPX">
+                        <ref role="cht4Q" to="albe:6tLBKr9X8FM" resolve="IFieldsContainerType" />
                       </node>
-                      <node concept="3TrEf2" id="3XHhffe24C2" role="2OqNvi">
-                        <ref role="3Tt5mk" to="albe:3XHhffdZxuD" resolve="message" />
+                      <node concept="37vLTw" id="3XHhffe22uZ" role="1m5AlR">
+                        <ref role="3cqZAo" node="4QTAjAf5A3J" resolve="instanceType" />
                       </node>
                     </node>
-                    <node concept="3Tsc0h" id="3XHhffe26aL" role="2OqNvi">
-                      <ref role="3TtcxE" to="albe:GiRQ8KIjnZ" resolve="fields" />
+                    <node concept="2qgKlT" id="6tLBKr9XcqZ" role="2OqNvi">
+                      <ref role="37wK5l" to="bxw3:6tLBKr9Xchi" resolve="getFields" />
                     </node>
                   </node>
                 </node>
@@ -233,8 +227,8 @@
                 <ref role="3cqZAo" node="4QTAjAf5A3J" resolve="instanceType" />
               </node>
               <node concept="1mIQ4w" id="3XHhffe1ZXn" role="2OqNvi">
-                <node concept="chp4Y" id="3XHhffe206V" role="cj9EA">
-                  <ref role="cht4Q" to="albe:3XHhffdZxuC" resolve="MessageType" />
+                <node concept="chp4Y" id="6tLBKr9Xbuo" role="cj9EA">
+                  <ref role="cht4Q" to="albe:6tLBKr9X8FM" resolve="IFieldsContainerType" />
                 </node>
               </node>
             </node>
@@ -313,7 +307,7 @@
                 <node concept="2OqwBi" id="3XHhffe3ocZ" role="2Oq$k0">
                   <node concept="1PxgMI" id="3XHhffe3nnO" role="2Oq$k0">
                     <node concept="chp4Y" id="3XHhffe3nrR" role="3oSUPX">
-                      <ref role="cht4Q" to="albe:3XHhffdZxuC" resolve="MessageType" />
+                      <ref role="cht4Q" to="albe:3XHhffdZxuC" resolve="JavaMessageType" />
                     </node>
                     <node concept="37vLTw" id="3XHhffe3pzB" role="1m5AlR">
                       <ref role="3cqZAo" node="3XHhffe3lbP" resolve="instanceType" />
@@ -337,7 +331,7 @@
             </node>
             <node concept="1mIQ4w" id="3XHhffe3lcd" role="2OqNvi">
               <node concept="chp4Y" id="3XHhffe3lce" role="cj9EA">
-                <ref role="cht4Q" to="albe:3XHhffdZxuC" resolve="MessageType" />
+                <ref role="cht4Q" to="albe:3XHhffdZxuC" resolve="JavaMessageType" />
               </node>
             </node>
           </node>
