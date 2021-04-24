@@ -30,8 +30,11 @@
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
     <dependency reexport="false">18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
+    <dependency reexport="false">3e746e3a-2334-4f8c-8e09-e6f7d0d74696(com.strumenta.mpsserver.protocolused)</dependency>
+    <dependency reexport="false">d8420fa5-03a4-4907-8795-d6db9a37b0e8(com.strumenta.mpsserver.protocol.base)</dependency>
   </dependencies>
   <languageVersions>
+    <language slang="l:3425a305-8286-4b78-9487-dc57f6d1f527:com.strumenta.mpsserver.protocol" version="0" />
     <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
     <language slang="l:fd392034-7849-419d-9071-12563d152375:jetbrains.mps.baseLanguage.closures" version="0" />
     <language slang="l:83888646-71ce-4f1c-9c53-c54016f6ad4f:jetbrains.mps.baseLanguage.collections" version="1" />
@@ -63,6 +66,8 @@
     <module reference="9b80526e-f0bf-4992-bdf5-cee39c1833f3(collections.runtime)" version="0" />
     <module reference="48e3d84c-0510-4776-ac01-301d43fa8646(com.strumenta.mpsserver.deps)" version="0" />
     <module reference="5b9b211c-9338-4880-881e-9982edcce804(com.strumenta.mpsserver.extensionkit)" version="0" />
+    <module reference="d8420fa5-03a4-4907-8795-d6db9a37b0e8(com.strumenta.mpsserver.protocol.base)" version="0" />
+    <module reference="3e746e3a-2334-4f8c-8e09-e6f7d0d74696(com.strumenta.mpsserver.protocolused)" version="0" />
     <module reference="bf983e15-b4da-4ef2-8e0a-5041eab7ff32(com.strumenta.mpsserver.server)" version="0" />
     <module reference="f3061a53-9226-4cc5-a443-f952ceaf5816(jetbrains.mps.baseLanguage)" version="0" />
     <module reference="443f4c36-fcf5-4eb6-9500-8d06ed259e3e(jetbrains.mps.baseLanguage.classifiers)" version="0" />
