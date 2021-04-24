@@ -12,7 +12,9 @@
     <use id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions" version="4" />
     <use id="fd392034-7849-419d-9071-12563d152375" name="jetbrains.mps.baseLanguage.closures" version="0" />
     <use id="a247e09e-2435-45ba-b8d2-07e93feba96a" name="jetbrains.mps.baseLanguage.tuples" version="0" />
-    <use id="3425a305-8286-4b78-9487-dc57f6d1f527" name="com.strumenta.mpsserver.protocol" version="0" />
+    <use id="ef02deba-0710-4a64-925d-5fa3879f3750" name="com.strumenta.mpsserver.protocoljava" version="-1" />
+    <use id="3425a305-8286-4b78-9487-dc57f6d1f527" name="com.strumenta.mpsserver.protocol" version="1" />
+    <devkit ref="5d582ef6-32bc-4e54-bfc8-436f44b8e0f1(com.strumenta.mpsserver.protocoljava.devkit)" />
   </languages>
   <imports>
     <import index="w1kc" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.smodel(MPS.Core/)" />
@@ -430,12 +432,6 @@
         <reference id="7256306938026143658" name="target" index="2aWVGs" />
       </concept>
     </language>
-    <language id="3425a305-8286-4b78-9487-dc57f6d1f527" name="com.strumenta.mpsserver.protocol">
-      <concept id="797945696815462669" name="com.strumenta.mpsserver.protocol.structure.MatchMessage" flags="ng" index="VFApJ">
-        <reference id="797945696815565767" name="message" index="VF9i_" />
-        <child id="797945696815565769" name="typeExpression" index="VF9iF" />
-      </concept>
-    </language>
     <language id="aee9cad2-acd4-4608-aef2-0004f6a1cdbd" name="jetbrains.mps.lang.actions">
       <concept id="7776141288922801652" name="jetbrains.mps.lang.actions.structure.NF_Concept_NewInstance" flags="nn" index="q_SaT" />
     </language>
@@ -602,6 +598,12 @@
         <child id="1197932525128" name="key" index="3ElVtu" />
       </concept>
       <concept id="1172254888721" name="jetbrains.mps.baseLanguage.collections.structure.ContainsOperation" flags="nn" index="3JPx81" />
+    </language>
+    <language id="ef02deba-0710-4a64-925d-5fa3879f3750" name="com.strumenta.mpsserver.protocoljava">
+      <concept id="797945696815462669" name="com.strumenta.mpsserver.protocoljava.structure.MatchMessage" flags="ng" index="VFApJ">
+        <reference id="797945696815565767" name="message" index="VF9i_" />
+        <child id="797945696815565769" name="typeExpression" index="VF9iF" />
+      </concept>
     </language>
   </registry>
   <node concept="312cEu" id="5SYYrGBzPK3">

@@ -2,7 +2,7 @@
 <model ref="r:3d2edf62-72ed-44c7-a1fc-a16c7e5269f7(com.strumenta.mpsserver.protocolused.protocol)">
   <persistence version="9" />
   <languages>
-    <use id="3425a305-8286-4b78-9487-dc57f6d1f527" name="com.strumenta.mpsserver.protocol" version="0" />
+    <devkit ref="ca8dd48e-c708-45f5-aade-1a36f8922cde(com.strumenta.mpsserver.protocol.devkit)" />
   </languages>
   <imports />
   <registry>

@@ -33,21 +33,11 @@
         <property id="1186403771423" name="style" index="Vbekb" />
       </concept>
       <concept id="1186404549998" name="jetbrains.mps.lang.editor.structure.ForegroundColorStyleClassItem" flags="ln" index="VechU" />
-      <concept id="1186414536763" name="jetbrains.mps.lang.editor.structure.BooleanStyleSheetItem" flags="ln" index="VOi$J">
-        <property id="1186414551515" name="flag" index="VOm3f" />
-      </concept>
       <concept id="1186414928363" name="jetbrains.mps.lang.editor.structure.SelectableStyleSheetItem" flags="ln" index="VPM3Z" />
       <concept id="1186415722038" name="jetbrains.mps.lang.editor.structure.FontSizeStyleClassItem" flags="ln" index="VSNWy">
         <property id="1221209241505" name="value" index="1lJzqX" />
       </concept>
-      <concept id="1233758997495" name="jetbrains.mps.lang.editor.structure.PunctuationLeftStyleClassItem" flags="ln" index="11L4FC" />
-      <concept id="1233759184865" name="jetbrains.mps.lang.editor.structure.PunctuationRightStyleClassItem" flags="ln" index="11LMrY" />
-      <concept id="1088013125922" name="jetbrains.mps.lang.editor.structure.CellModel_RefCell" flags="sg" stub="730538219795941030" index="1iCGBv">
-        <child id="1088186146602" name="editorComponent" index="1sWHZn" />
-      </concept>
-      <concept id="1088185857835" name="jetbrains.mps.lang.editor.structure.InlineEditorComponent" flags="ig" index="1sVBvm" />
       <concept id="1139848536355" name="jetbrains.mps.lang.editor.structure.CellModel_WithRole" flags="ng" index="1$h60E">
-        <property id="1140017977771" name="readOnly" index="1Intyy" />
         <reference id="1140103550593" name="relationDeclaration" index="1NtTu8" />
       </concept>
       <concept id="1073389446423" name="jetbrains.mps.lang.editor.structure.CellModel_Collection" flags="sn" stub="3013115976261988961" index="3EZMnI">
@@ -160,54 +150,6 @@
       </node>
       <node concept="VechU" id="GiRQ8KIvz3" role="3F10Kt">
         <property role="Vb096" value="g1_qVrt/darkMagenta" />
-      </node>
-    </node>
-  </node>
-  <node concept="24kQdi" id="GiRQ8KJ$Jj">
-    <ref role="1XX52x" to="albe:GiRQ8KJb$d" resolve="MatchMessage" />
-    <node concept="3EZMnI" id="GiRQ8KJ$Jl" role="2wV5jI">
-      <node concept="3F0ifn" id="GiRQ8KJ$Js" role="3EZMnx">
-        <property role="3F0ifm" value="match&lt;" />
-        <node concept="11LMrY" id="GiRQ8KJ$Kq" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="VechU" id="GiRQ8KJ$Kv" role="3F10Kt">
-          <property role="Vb096" value="g1_eI4o/darkBlue" />
-        </node>
-      </node>
-      <node concept="2iRfu4" id="GiRQ8KJ$Jo" role="2iSdaV" />
-      <node concept="1iCGBv" id="GiRQ8KJ$JE" role="3EZMnx">
-        <ref role="1NtTu8" to="albe:GiRQ8KJ$J7" resolve="message" />
-        <node concept="1sVBvm" id="GiRQ8KJ$JG" role="1sWHZn">
-          <node concept="3F0A7n" id="GiRQ8KJ$JP" role="2wV5jI">
-            <property role="1Intyy" value="true" />
-            <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
-          </node>
-        </node>
-      </node>
-      <node concept="3F0ifn" id="GiRQ8KJ$Jy" role="3EZMnx">
-        <property role="3F0ifm" value="&gt;?(" />
-        <node concept="11L4FC" id="GiRQ8KJ$Ko" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="11LMrY" id="GiRQ8KLqL7" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
-        <node concept="VechU" id="GiRQ8KJ$Kz" role="3F10Kt">
-          <property role="Vb096" value="g1_eI4o/darkBlue" />
-        </node>
-      </node>
-      <node concept="3F1sOY" id="GiRQ8KJ$JZ" role="3EZMnx">
-        <ref role="1NtTu8" to="albe:GiRQ8KJ$J9" resolve="typeExpression" />
-      </node>
-      <node concept="3F0ifn" id="GiRQ8KJ$Kf" role="3EZMnx">
-        <property role="3F0ifm" value=")" />
-        <node concept="VechU" id="GiRQ8KJ$KA" role="3F10Kt">
-          <property role="Vb096" value="g1_eI4o/darkBlue" />
-        </node>
-        <node concept="11L4FC" id="GiRQ8KLqLf" role="3F10Kt">
-          <property role="VOm3f" value="true" />
-        </node>
       </node>
     </node>
   </node>
