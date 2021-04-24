@@ -437,7 +437,7 @@
         <child id="797945696814873552" name="elements" index="VCmiM" />
       </concept>
       <concept id="797945696814861152" name="com.strumenta.mpsserver.protocol.structure.RequestMessage" flags="ng" index="VClg2" />
-      <concept id="797945696814873553" name="com.strumenta.mpsserver.protocol.structure.Field" flags="ng" index="VCmiN">
+      <concept id="797945696814873553" name="com.strumenta.mpsserver.protocol.structure.MessageField" flags="ng" index="VCmiN">
         <child id="797945696815270615" name="type" index="VELmP" />
       </concept>
       <concept id="797945696814873562" name="com.strumenta.mpsserver.protocol.structure.StringType" flags="ng" index="VCmiS" />
@@ -13407,15 +13407,6 @@
             </node>
           </node>
           <node concept="3eNFk2" id="6kdSgSErKtu" role="3eNLev">
-            <node concept="1rXfSq" id="6kdSgSErNeP" role="3eO9$A">
-              <ref role="37wK5l" node="5ZkOVoVrNzc" resolve="matchType" />
-              <node concept="37vLTw" id="6kdSgSErOCz" role="37wK5m">
-                <ref role="3cqZAo" node="6Y14zWtOOeY" resolve="messageType" />
-              </node>
-              <node concept="3VsKOn" id="6kdSgSErSh3" role="37wK5m">
-                <ref role="3VsUkX" node="6kdSgSErl9S" resolve="GetRoots" />
-              </node>
-            </node>
             <node concept="3clFbS" id="6kdSgSErKtw" role="3eOfB_">
               <node concept="3J1_TO" id="6kdSgSErT9b" role="3cqZAp">
                 <node concept="3uVAMA" id="6kdSgSErT9p" role="1zxBo5">
@@ -13442,27 +13433,11 @@
                   </node>
                 </node>
                 <node concept="3clFbS" id="6kdSgSErT9c" role="1zxBo7">
-                  <node concept="3cpWs8" id="6kdSgSErT9d" role="3cqZAp">
-                    <node concept="3cpWsn" id="6kdSgSErT9e" role="3cpWs9">
-                      <property role="TrG5h" value="msg" />
-                      <node concept="3uibUv" id="6kdSgSErUvT" role="1tU5fm">
-                        <ref role="3uigEE" node="6kdSgSErl9S" resolve="GetRoots" />
-                      </node>
-                      <node concept="2OqwBi" id="6kdSgSErT9g" role="33vP2m">
-                        <node concept="2YIFZM" id="3XHhffdVBbn" role="2Oq$k0">
-                          <ref role="37wK5l" to="j1by:4XQ2p$w2wg4" resolve="getInstance" />
-                          <ref role="1Pybhc" to="j1by:4XQ2p$w2w51" resolve="Serialization" />
-                        </node>
-                        <node concept="liA8E" id="6kdSgSErT9i" role="2OqNvi">
-                          <ref role="37wK5l" to="j1by:SXzjmhsPTE" resolve="unserialize" />
-                          <node concept="37vLTw" id="6kdSgSErT9j" role="37wK5m">
-                            <ref role="3cqZAo" node="6Y14zWtL0tV" resolve="message" />
-                          </node>
-                          <node concept="3VsKOn" id="6kdSgSErT9k" role="37wK5m">
-                            <ref role="3VsUkX" node="6kdSgSErl9S" resolve="GetRoots" />
-                          </node>
-                        </node>
-                      </node>
+                  <node concept="3Mwj0Z" id="3XHhffekyNX" role="3cqZAp">
+                    <property role="TrG5h" value="msg" />
+                    <ref role="3Mwj0Y" node="3XHhffekptB" resolve="GetRoots" />
+                    <node concept="37vLTw" id="3XHhffekzd4" role="3MwG1Z">
+                      <ref role="3cqZAo" node="6Y14zWtL0tV" resolve="message" />
                     </node>
                   </node>
                   <node concept="3clFbF" id="6kdSgSErT9l" role="3cqZAp">
@@ -13471,12 +13446,18 @@
                       <node concept="37vLTw" id="6kdSgSErT9n" role="37wK5m">
                         <ref role="3cqZAo" node="6Y14zWtL0tT" resolve="session" />
                       </node>
-                      <node concept="37vLTw" id="6kdSgSErT9o" role="37wK5m">
-                        <ref role="3cqZAo" node="6kdSgSErT9e" resolve="msg" />
+                      <node concept="3M$ONe" id="3XHhffekAld" role="37wK5m">
+                        <ref role="3M$OTh" node="3XHhffekyNX" resolve="msg" />
                       </node>
                     </node>
                   </node>
                 </node>
+              </node>
+            </node>
+            <node concept="VFApJ" id="3XHhffekvGp" role="3eO9$A">
+              <ref role="VF9i_" node="3XHhffekptB" resolve="GetRoots" />
+              <node concept="37vLTw" id="3XHhffekx__" role="VF9iF">
+                <ref role="3cqZAo" node="6Y14zWtOOeY" resolve="messageType" />
               </node>
             </node>
           </node>
@@ -16374,8 +16355,8 @@
                         <node concept="37vLTw" id="6kdSgSErnsD" role="2Oq$k0">
                           <ref role="3cqZAo" node="6kdSgSErntz" resolve="request" />
                         </node>
-                        <node concept="2OwXpG" id="6kdSgSEs66X" role="2OqNvi">
-                          <ref role="2Oxat5" node="6kdSgSErl9T" resolve="modelName" />
+                        <node concept="3LqCIZ" id="3XHhffekGRo" role="2OqNvi">
+                          <ref role="3LqCIW" node="3XHhffekptX" resolve="modelName" />
                         </node>
                       </node>
                     </node>
@@ -16412,9 +16393,7 @@
               <node concept="37vLTw" id="6kdSgSErnt8" role="2Oq$k0">
                 <ref role="3cqZAo" node="6kdSgSErntz" resolve="request" />
               </node>
-              <node concept="2OwXpG" id="6kdSgSErnt9" role="2OqNvi">
-                <ref role="2Oxat5" to="j1by:3h0CTvwIjPg" resolve="requestId" />
-              </node>
+              <node concept="3Lo0aP" id="3XHhffekGFL" role="2OqNvi" />
             </node>
             <node concept="2OqwBi" id="6kdSgSErnta" role="37vLTJ">
               <node concept="37vLTw" id="6kdSgSErntb" role="2Oq$k0">
@@ -16432,8 +16411,8 @@
               <node concept="37vLTw" id="6kdSgSEs849" role="2Oq$k0">
                 <ref role="3cqZAo" node="6kdSgSErntz" resolve="request" />
               </node>
-              <node concept="2OwXpG" id="6kdSgSEs8Zt" role="2OqNvi">
-                <ref role="2Oxat5" node="6kdSgSErl9T" resolve="modelName" />
+              <node concept="3LqCIZ" id="3XHhffekGLW" role="2OqNvi">
+                <ref role="3LqCIW" node="3XHhffekptX" resolve="modelName" />
               </node>
             </node>
             <node concept="2OqwBi" id="6kdSgSEs6Uw" role="37vLTJ">
@@ -16488,8 +16467,8 @@
       </node>
       <node concept="37vLTG" id="6kdSgSErntz" role="3clF46">
         <property role="TrG5h" value="request" />
-        <node concept="3uibUv" id="6kdSgSErIpJ" role="1tU5fm">
-          <ref role="3uigEE" node="6kdSgSErl9S" resolve="GetRoots" />
+        <node concept="3M$Pdr" id="3XHhffekEYR" role="1tU5fm">
+          <ref role="3M$Pdq" node="3XHhffekptB" resolve="GetRoots" />
         </node>
       </node>
     </node>
@@ -33052,24 +33031,6 @@
       <ref role="3uigEE" node="4XQ2p$w7GMr" resolve="NodeInfoDetailed" />
     </node>
   </node>
-  <node concept="312cEu" id="6kdSgSEnqet">
-    <property role="3GE5qa" value="messages.roots" />
-    <property role="TrG5h" value="GetInstancesOfConcept" />
-    <node concept="312cEg" id="6kdSgSEnqeu" role="jymVt">
-      <property role="TrG5h" value="modelName" />
-      <node concept="3Tm1VV" id="6kdSgSEnqev" role="1B3o_S" />
-      <node concept="17QB3L" id="6kdSgSEnqew" role="1tU5fm" />
-    </node>
-    <node concept="312cEg" id="6kdSgSEnqex" role="jymVt">
-      <property role="TrG5h" value="conceptName" />
-      <node concept="3Tm1VV" id="6kdSgSEnqey" role="1B3o_S" />
-      <node concept="17QB3L" id="6kdSgSEnqez" role="1tU5fm" />
-    </node>
-    <node concept="3Tm1VV" id="6kdSgSEnqeD" role="1B3o_S" />
-    <node concept="3uibUv" id="6kdSgSEnMio" role="1zkMxy">
-      <ref role="3uigEE" to="j1by:3h0CTvwIhrW" resolve="RequestMessage" />
-    </node>
-  </node>
   <node concept="312cEu" id="6kdSgSEnMse">
     <property role="3GE5qa" value="messages.roots" />
     <property role="TrG5h" value="GetInstancesOfConceptAnswer" />
@@ -33095,19 +33056,6 @@
     <node concept="3Tm1VV" id="6kdSgSEnMsl" role="1B3o_S" />
     <node concept="3uibUv" id="6kdSgSEnMtS" role="1zkMxy">
       <ref role="3uigEE" to="j1by:3h0CTvwIo9d" resolve="RequestAnswerMessage" />
-    </node>
-  </node>
-  <node concept="312cEu" id="6kdSgSErl9S">
-    <property role="3GE5qa" value="messages.roots" />
-    <property role="TrG5h" value="GetRoots" />
-    <node concept="312cEg" id="6kdSgSErl9T" role="jymVt">
-      <property role="TrG5h" value="modelName" />
-      <node concept="3Tm1VV" id="6kdSgSErl9U" role="1B3o_S" />
-      <node concept="17QB3L" id="6kdSgSErl9V" role="1tU5fm" />
-    </node>
-    <node concept="3Tm1VV" id="6kdSgSErl9Z" role="1B3o_S" />
-    <node concept="3uibUv" id="6kdSgSErla0" role="1zkMxy">
-      <ref role="3uigEE" to="j1by:3h0CTvwIhrW" resolve="RequestMessage" />
     </node>
   </node>
   <node concept="312cEu" id="6kdSgSErla$">
@@ -33143,6 +33091,13 @@
       <node concept="VCmiN" id="GiRQ8KIsFm" role="VEYEt">
         <property role="TrG5h" value="conceptName" />
         <node concept="VCmiS" id="GiRQ8KIvy$" role="VELmP" />
+      </node>
+    </node>
+    <node concept="VClg2" id="3XHhffekptB" role="VCmiM">
+      <property role="TrG5h" value="GetRoots" />
+      <node concept="VCmiN" id="3XHhffekptX" role="VEYEt">
+        <property role="TrG5h" value="modelName" />
+        <node concept="VCmiS" id="3XHhffekpu1" role="VELmP" />
       </node>
     </node>
   </node>
