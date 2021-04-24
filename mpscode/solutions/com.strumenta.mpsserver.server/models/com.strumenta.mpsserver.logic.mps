@@ -430,6 +430,13 @@
       </concept>
     </language>
     <language id="3425a305-8286-4b78-9487-dc57f6d1f527" name="com.strumenta.mpsserver.protocol">
+      <concept id="7453913709786702522" name="com.strumenta.mpsserver.protocol.structure.HandleMessage" flags="ng" index="2HcrQW">
+        <reference id="7453913709786712496" name="message" index="2HctqQ" />
+        <child id="7453913709786792891" name="body" index="2Hc1MX" />
+        <child id="7453913709786712493" name="messageTypeExpression" index="2HctqF" />
+        <child id="7453913709786712491" name="messageExpression" index="2HctqH" />
+      </concept>
+      <concept id="7453913709787120614" name="com.strumenta.mpsserver.protocol.structure.MsgReference" flags="ng" index="2HdLNw" />
       <concept id="7453913709784471021" name="com.strumenta.mpsserver.protocol.structure.IntType" flags="ng" index="2HrSFF" />
       <concept id="7453913709781447606" name="com.strumenta.mpsserver.protocol.structure.JavaDataType" flags="ig" index="2IBAMK">
         <reference id="7453913709781447607" name="data" index="2IBAML" />
@@ -13571,82 +13578,41 @@
               </node>
             </node>
           </node>
-          <node concept="3eNFk2" id="2yBD7rQcjmq" role="3eNLev">
-            <node concept="3clFbS" id="2yBD7rQcjms" role="3eOfB_">
-              <node concept="3J1_TO" id="2yBD7rQereZ" role="3cqZAp">
-                <node concept="3uVAMA" id="2yBD7rQerf2" role="1zxBo5">
-                  <node concept="XOnhg" id="2yBD7rQerf4" role="1zc67B">
-                    <property role="3TUv4t" value="false" />
-                    <property role="TrG5h" value="t" />
-                    <node concept="nSUau" id="9rFMWf5_27f" role="1tU5fm">
-                      <node concept="3uibUv" id="2yBD7rQesu7" role="nSUat">
-                        <ref role="3uigEE" to="wyt6:~Throwable" resolve="Throwable" />
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbS" id="2yBD7rQerf8" role="1zc67A">
-                    <node concept="3clFbF" id="2yBD7rQesKQ" role="3cqZAp">
-                      <node concept="2OqwBi" id="2yBD7rQesUA" role="3clFbG">
-                        <node concept="37vLTw" id="2yBD7rQesKP" role="2Oq$k0">
-                          <ref role="3cqZAo" node="2yBD7rQerf4" resolve="t" />
-                        </node>
-                        <node concept="liA8E" id="2yBD7rQet9Q" role="2OqNvi">
-                          <ref role="37wK5l" to="wyt6:~Throwable.printStackTrace()" resolve="printStackTrace" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
-                <node concept="3clFbS" id="2yBD7rQerf1" role="1zxBo7">
-                  <node concept="3cpWs8" id="1taqoP6oPUB" role="3cqZAp">
-                    <node concept="3cpWsn" id="1taqoP6oPUC" role="3cpWs9">
-                      <property role="TrG5h" value="msg" />
-                      <node concept="3M$Pdr" id="6tLBKr9KTxd" role="1tU5fm">
-                        <ref role="3M$Pdq" node="6tLBKr9KzEU" resolve="InstantiateConcept" />
-                      </node>
-                      <node concept="3Mwj0Z" id="6tLBKr9KNTV" role="33vP2m">
-                        <ref role="3Mwj0Y" node="6tLBKr9KzEU" resolve="InstantiateConcept" />
-                        <node concept="37vLTw" id="6tLBKr9KPdm" role="3MwG1Z">
-                          <ref role="3cqZAo" node="6Y14zWtL0tV" resolve="message" />
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                  <node concept="3clFbF" id="2yBD7rQcCRl" role="3cqZAp">
-                    <node concept="2OqwBi" id="2yBD7rQcD90" role="3clFbG">
-                      <node concept="37vLTw" id="2yBD7rQcCRj" role="2Oq$k0">
-                        <ref role="3cqZAo" node="6Y14zWtOZZA" resolve="serverController" />
-                      </node>
-                      <node concept="liA8E" id="2yBD7rQcDnQ" role="2OqNvi">
-                        <ref role="37wK5l" node="6tLBKra3ojy" resolve="instantiateNodeProtocol" />
-                        <node concept="2OqwBi" id="6tLBKra3HFJ" role="37wK5m">
-                          <node concept="37vLTw" id="6tLBKra3H_K" role="2Oq$k0">
-                            <ref role="3cqZAo" node="1taqoP6oPUC" resolve="msg" />
-                          </node>
-                          <node concept="3LqCIZ" id="6tLBKra3I1n" role="2OqNvi">
-                            <ref role="3LqCIW" node="6tLBKr9KzFm" resolve="nodeToReplace" />
-                          </node>
-                        </node>
-                        <node concept="2OqwBi" id="1taqoP6tnAS" role="37wK5m">
-                          <node concept="37vLTw" id="1taqoP6tnpZ" role="2Oq$k0">
-                            <ref role="3cqZAo" node="1taqoP6oPUC" resolve="msg" />
-                          </node>
-                          <node concept="3LqCIZ" id="6tLBKr9KUP6" role="2OqNvi">
-                            <ref role="3LqCIW" node="6tLBKr9KzFo" resolve="conceptToInstantiate" />
-                          </node>
-                        </node>
-                      </node>
-                    </node>
-                  </node>
-                </node>
+          <node concept="3eNFk2" id="6tLBKrah4TI" role="3eNLev">
+            <node concept="2HcrQW" id="6tLBKrah7ZB" role="3eO9$A">
+              <ref role="2HctqQ" node="6tLBKr9KzEU" resolve="InstantiateConcept" />
+              <node concept="37vLTw" id="6tLBKrahycJ" role="2HctqH">
+                <ref role="3cqZAo" node="6Y14zWtL0tV" resolve="message" />
               </node>
-            </node>
-            <node concept="VFApJ" id="6tLBKr9KLIk" role="3eO9$A">
-              <ref role="VF9i_" node="6tLBKr9KzEU" resolve="InstantiateConcept" />
-              <node concept="37vLTw" id="6tLBKr9KMV5" role="VF9iF">
+              <node concept="37vLTw" id="6tLBKrahxCe" role="2HctqF">
                 <ref role="3cqZAo" node="6Y14zWtOOeY" resolve="messageType" />
               </node>
+              <node concept="3clFbS" id="6tLBKrah7ZH" role="2Hc1MX">
+                <node concept="3clFbF" id="2yBD7rQcCRl" role="3cqZAp">
+                  <node concept="2OqwBi" id="2yBD7rQcD90" role="3clFbG">
+                    <node concept="37vLTw" id="2yBD7rQcCRj" role="2Oq$k0">
+                      <ref role="3cqZAo" node="6Y14zWtOZZA" resolve="serverController" />
+                    </node>
+                    <node concept="liA8E" id="2yBD7rQcDnQ" role="2OqNvi">
+                      <ref role="37wK5l" node="6tLBKra3ojy" resolve="instantiateNodeProtocol" />
+                      <node concept="2OqwBi" id="6tLBKra3HFJ" role="37wK5m">
+                        <node concept="2HdLNw" id="6tLBKraiy8j" role="2Oq$k0" />
+                        <node concept="3LqCIZ" id="6tLBKra3I1n" role="2OqNvi">
+                          <ref role="3LqCIW" node="6tLBKr9KzFm" resolve="nodeToReplace" />
+                        </node>
+                      </node>
+                      <node concept="2OqwBi" id="1taqoP6tnAS" role="37wK5m">
+                        <node concept="2HdLNw" id="6tLBKraiyJl" role="2Oq$k0" />
+                        <node concept="3LqCIZ" id="6tLBKr9KUP6" role="2OqNvi">
+                          <ref role="3LqCIW" node="6tLBKr9KzFo" resolve="conceptToInstantiate" />
+                        </node>
+                      </node>
+                    </node>
+                  </node>
+                </node>
+              </node>
             </node>
+            <node concept="3clFbS" id="6tLBKrah4TK" role="3eOfB_" />
           </node>
           <node concept="3eNFk2" id="5p1VBoMcyYE" role="3eNLev">
             <node concept="3clFbS" id="5p1VBoMcyYG" role="3eOfB_">

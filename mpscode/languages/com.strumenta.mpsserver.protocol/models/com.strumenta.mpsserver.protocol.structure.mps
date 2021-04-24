@@ -313,5 +313,44 @@
     <property role="34LRSv" value="int" />
     <ref role="1TJDcQ" node="GiRQ8KGVJj" resolve="PrimitiveType" />
   </node>
+  <node concept="1TIwiD" id="6tLBKrag2aU">
+    <property role="EcuMT" value="7453913709786702522" />
+    <property role="TrG5h" value="HandleMessage" />
+    <property role="34LRSv" value="handle" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+    <node concept="1TJgyj" id="6tLBKrag4AK" role="1TKVEi">
+      <property role="IQ2ns" value="7453913709786712496" />
+      <property role="20kJfa" value="message" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="GiRQ8KGyoQ" resolve="Message" />
+    </node>
+    <node concept="1TJgyj" id="6tLBKrag4AF" role="1TKVEi">
+      <property role="IQ2ns" value="7453913709786712491" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="messageExpression" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6tLBKrag4AH" role="1TKVEi">
+      <property role="IQ2ns" value="7453913709786712493" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="messageTypeExpression" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tpee:fz3vP1J" resolve="Expression" />
+    </node>
+    <node concept="1TJgyj" id="6tLBKragoeV" role="1TKVEi">
+      <property role="IQ2ns" value="7453913709786792891" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="body" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" to="tpee:fzclF80" resolve="StatementList" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6tLBKrahCfA">
+    <property role="EcuMT" value="7453913709787120614" />
+    <property role="TrG5h" value="MsgReference" />
+    <property role="34LRSv" value="msg" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
+  </node>
 </model>
 

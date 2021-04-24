@@ -475,5 +475,71 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="6tLBKrag4AV">
+    <ref role="1XX52x" to="albe:6tLBKrag2aU" resolve="HandleMessage" />
+    <node concept="3EZMnI" id="6tLBKragofu" role="2wV5jI">
+      <node concept="2iRkQZ" id="6tLBKragofv" role="2iSdaV" />
+      <node concept="3EZMnI" id="6tLBKrag4AX" role="3EZMnx">
+        <node concept="3F0ifn" id="6tLBKrag4B4" role="3EZMnx">
+          <property role="3F0ifm" value="handle&lt;" />
+          <ref role="1k5W1q" node="3XHhffdYaVy" resolve="Keyword" />
+          <node concept="11LMrY" id="6tLBKrah8B$" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="1iCGBv" id="6tLBKrag4BP" role="3EZMnx">
+          <ref role="1NtTu8" to="albe:6tLBKrag4AK" resolve="message" />
+          <node concept="1sVBvm" id="6tLBKrag4BR" role="1sWHZn">
+            <node concept="3F0A7n" id="6tLBKrag4C5" role="2wV5jI">
+              <property role="1Intyy" value="true" />
+              <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+            </node>
+          </node>
+        </node>
+        <node concept="2iRfu4" id="6tLBKrag4B0" role="2iSdaV" />
+        <node concept="3F0ifn" id="6tLBKrag4Bd" role="3EZMnx">
+          <property role="3F0ifm" value="&gt;(" />
+          <ref role="1k5W1q" node="3XHhffdYaVy" resolve="Keyword" />
+          <node concept="11L4FC" id="6tLBKrag4Bi" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+          <node concept="11LMrY" id="6tLBKrag4Bn" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F1sOY" id="6tLBKrag4Ck" role="3EZMnx">
+          <ref role="1NtTu8" to="albe:6tLBKrag4AH" resolve="messageTypeExpression" />
+        </node>
+        <node concept="3F0ifn" id="6tLBKrag4CI" role="3EZMnx">
+          <property role="3F0ifm" value="," />
+          <node concept="11L4FC" id="6tLBKrag4Dp" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+        <node concept="3F1sOY" id="6tLBKrag4Da" role="3EZMnx">
+          <ref role="1NtTu8" to="albe:6tLBKrag4AF" resolve="messageExpression" />
+        </node>
+        <node concept="3F0ifn" id="6tLBKrag4By" role="3EZMnx">
+          <property role="3F0ifm" value="){" />
+          <ref role="1k5W1q" node="3XHhffdYaVy" resolve="Keyword" />
+          <node concept="11L4FC" id="6tLBKrag4BE" role="3F10Kt">
+            <property role="VOm3f" value="true" />
+          </node>
+        </node>
+      </node>
+      <node concept="3EZMnI" id="6tLBKragoh5" role="3EZMnx">
+        <node concept="VPM3Z" id="6tLBKragoh7" role="3F10Kt" />
+        <node concept="3XFhqQ" id="6tLBKragohw" role="3EZMnx" />
+        <node concept="2iRfu4" id="6tLBKragoha" role="2iSdaV" />
+        <node concept="3F1sOY" id="6tLBKragohA" role="3EZMnx">
+          <ref role="1NtTu8" to="albe:6tLBKragoeV" resolve="body" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6tLBKragog2" role="3EZMnx">
+        <property role="3F0ifm" value="}" />
+        <ref role="1k5W1q" node="3XHhffdYaVy" resolve="Keyword" />
+      </node>
+    </node>
+  </node>
 </model>
 
