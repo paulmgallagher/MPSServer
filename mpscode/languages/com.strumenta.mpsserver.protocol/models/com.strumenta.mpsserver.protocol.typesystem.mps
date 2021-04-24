@@ -23,19 +23,11 @@
       </concept>
     </language>
     <language id="3a13115c-633c-4c5c-bbcc-75c4219e9555" name="jetbrains.mps.lang.quotation">
-      <concept id="5455284157994012186" name="jetbrains.mps.lang.quotation.structure.NodeBuilderInitLink" flags="ng" index="2pIpSj">
-        <reference id="5455284157994012188" name="link" index="2pIpSl" />
-        <child id="1595412875168045827" name="initValue" index="28nt2d" />
-      </concept>
       <concept id="5455284157993863837" name="jetbrains.mps.lang.quotation.structure.NodeBuilder" flags="nn" index="2pJPEk">
         <child id="5455284157993863838" name="quotedNode" index="2pJPEn" />
       </concept>
       <concept id="5455284157993863840" name="jetbrains.mps.lang.quotation.structure.NodeBuilderNode" flags="nn" index="2pJPED">
         <reference id="5455284157993910961" name="concept" index="2pJxaS" />
-        <child id="5455284157993911099" name="values" index="2pJxcM" />
-      </concept>
-      <concept id="8182547171709752110" name="jetbrains.mps.lang.quotation.structure.NodeBuilderExpression" flags="nn" index="36biLy">
-        <child id="8182547171709752112" name="expression" index="36biLW" />
       </concept>
     </language>
     <language id="7a5dda62-9140-4668-ab76-d5ed1746f2b2" name="jetbrains.mps.lang.typesystem">
@@ -162,46 +154,6 @@
     <node concept="1YaCAy" id="3XHhffdVSmk" role="1YuTPh">
       <property role="TrG5h" value="unserializeMsg" />
       <ref role="1YaFvo" to="albe:3XHhffdV7jc" resolve="UnserializeMsg" />
-    </node>
-  </node>
-  <node concept="1YbPZF" id="3XHhffdZwx4">
-    <property role="TrG5h" value="typeof_UnserializedMessageReference" />
-    <node concept="3clFbS" id="3XHhffdZwx5" role="18ibNy">
-      <node concept="1Z5TYs" id="3XHhffdZwJ$" role="3cqZAp">
-        <node concept="mw_s8" id="3XHhffdZwJS" role="1ZfhKB">
-          <node concept="1Z2H0r" id="3XHhffdZwJO" role="mwGJk">
-            <node concept="2pJPEk" id="3XHhffdZxuF" role="1Z2MuG">
-              <node concept="2pJPED" id="3XHhffdZxvj" role="2pJPEn">
-                <ref role="2pJxaS" to="albe:3XHhffdZxuC" resolve="MessageType" />
-                <node concept="2pIpSj" id="3XHhffdZxwk" role="2pJxcM">
-                  <ref role="2pIpSl" to="albe:3XHhffdZxuD" resolve="message" />
-                  <node concept="36biLy" id="3XHhffdZxwR" role="28nt2d">
-                    <node concept="2OqwBi" id="3XHhffdZxEJ" role="36biLW">
-                      <node concept="1YBJjd" id="3XHhffdZxx2" role="2Oq$k0">
-                        <ref role="1YBMHb" node="3XHhffdZwx7" resolve="unserializedMessageReference" />
-                      </node>
-                      <node concept="3TrEf2" id="3XHhffdZxNJ" role="2OqNvi">
-                        <ref role="3Tt5mk" to="albe:3XHhffdZwEy" resolve="message" />
-                      </node>
-                    </node>
-                  </node>
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="mw_s8" id="3XHhffdZwJB" role="1ZfhK$">
-          <node concept="1Z2H0r" id="3XHhffdZwxb" role="mwGJk">
-            <node concept="1YBJjd" id="3XHhffdZwxr" role="1Z2MuG">
-              <ref role="1YBMHb" node="3XHhffdZwx7" resolve="unserializedMessageReference" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-    <node concept="1YaCAy" id="3XHhffdZwx7" role="1YuTPh">
-      <property role="TrG5h" value="unserializedMessageReference" />
-      <ref role="1YaFvo" to="albe:3XHhffdZwwX" resolve="UnserializedMessageReference" />
     </node>
   </node>
   <node concept="1YbPZF" id="3XHhffe2arH">

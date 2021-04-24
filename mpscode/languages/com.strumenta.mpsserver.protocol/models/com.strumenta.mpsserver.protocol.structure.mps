@@ -17,7 +17,9 @@
         <property id="5092175715804935370" name="conceptAlias" index="34LRSv" />
         <child id="1071489727083" name="linkDeclaration" index="1TKVEi" />
       </concept>
-      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ" />
+      <concept id="1169125989551" name="jetbrains.mps.lang.structure.structure.InterfaceConceptDeclaration" flags="ig" index="PlHQZ">
+        <child id="1169127546356" name="extends" index="PrDN$" />
+      </concept>
       <concept id="1169127622168" name="jetbrains.mps.lang.structure.structure.InterfaceConceptReference" flags="ig" index="PrWs8">
         <reference id="1169127628841" name="intfc" index="PrY4T" />
       </concept>
@@ -84,17 +86,28 @@
   <node concept="1TIwiD" id="GiRQ8KGSHw">
     <property role="EcuMT" value="797945696814861152" />
     <property role="TrG5h" value="RequestMessage" />
+    <property role="34LRSv" value="request" />
     <ref role="1TJDcQ" node="GiRQ8KGyoQ" resolve="Message" />
   </node>
   <node concept="1TIwiD" id="GiRQ8KGVJ6">
     <property role="EcuMT" value="797945696814873542" />
     <property role="TrG5h" value="ProtocolDataObject" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6tLBKr9JkjY" role="1TKVEi">
+      <property role="IQ2ns" value="7453913709778126078" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="fields" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="GiRQ8KGVJh" resolve="MessageField" />
+    </node>
     <node concept="PrWs8" id="GiRQ8KGVJ7" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
     </node>
     <node concept="PrWs8" id="GiRQ8KGVJe" role="PzmwI">
       <ref role="PrY4T" node="GiRQ8KGVJ8" resolve="ProtocolElement" />
+    </node>
+    <node concept="PrWs8" id="6tLBKr9KcNr" role="PzmwI">
+      <ref role="PrY4T" node="6tLBKr9KcNk" resolve="DataDeclaration" />
     </node>
   </node>
   <node concept="PlHQZ" id="GiRQ8KGVJ8">
@@ -157,7 +170,7 @@
     <property role="EcuMT" value="4570385010773488844" />
     <property role="TrG5h" value="UnserializeMsg" />
     <property role="34LRSv" value="unserialize" />
-    <ref role="1TJDcQ" to="tpee:fzclF8l" resolve="Statement" />
+    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
     <node concept="1TJgyj" id="3XHhffdVSic" role="1TKVEi">
       <property role="IQ2ns" value="4570385010773689484" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
@@ -170,23 +183,6 @@
       <property role="20kJfa" value="message" />
       <property role="20lbJX" value="fLJekj4/_1" />
       <ref role="20lvS9" node="GiRQ8KGyoQ" resolve="Message" />
-    </node>
-    <node concept="PrWs8" id="3XHhffdV7jf" role="PzmwI">
-      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
-    </node>
-  </node>
-  <node concept="1TIwiD" id="3XHhffdZwwX">
-    <property role="EcuMT" value="4570385010774640701" />
-    <property role="TrG5h" value="UnserializedMessageReference" />
-    <ref role="1TJDcQ" to="tpee:fz3vP1J" resolve="Expression" />
-    <node concept="1TJgyj" id="3XHhffdZwEy" role="1TKVEi">
-      <property role="IQ2ns" value="4570385010774641314" />
-      <property role="20kJfa" value="message" />
-      <property role="20lbJX" value="fLJekj4/_1" />
-      <ref role="20lvS9" node="3XHhffdV7jc" resolve="UnserializeMsg" />
-    </node>
-    <node concept="RPilO" id="3XHhffdZIQR" role="lGtFl">
-      <ref role="RPilL" node="3XHhffdZwEy" resolve="message" />
     </node>
   </node>
   <node concept="1TIwiD" id="3XHhffdZxuC">
@@ -225,6 +221,61 @@
     <node concept="PrWs8" id="3XHhffe3kp8" role="PzmwI">
       <ref role="PrY4T" to="tpee:hqOqG0K" resolve="IOperation" />
     </node>
+  </node>
+  <node concept="1TIwiD" id="6tLBKr9JyZu">
+    <property role="EcuMT" value="7453913709778186206" />
+    <property role="TrG5h" value="SwitchDataDeclaration" />
+    <property role="34LRSv" value="switchdata" />
+    <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
+    <node concept="1TJgyj" id="6tLBKr9JyZx" role="1TKVEi">
+      <property role="IQ2ns" value="7453913709778186209" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="subtypes" />
+      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <ref role="20lvS9" node="GiRQ8KGVJ6" resolve="ProtocolDataObject" />
+    </node>
+    <node concept="PrWs8" id="6tLBKr9JyZv" role="PzmwI">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+    <node concept="PrWs8" id="6tLBKr9JGkS" role="PzmwI">
+      <ref role="PrY4T" node="GiRQ8KGVJ8" resolve="ProtocolElement" />
+    </node>
+    <node concept="PrWs8" id="6tLBKr9KcN$" role="PzmwI">
+      <ref role="PrY4T" node="6tLBKr9KcNk" resolve="DataDeclaration" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6tLBKr9JHOV">
+    <property role="EcuMT" value="7453913709778230587" />
+    <property role="TrG5h" value="LongType" />
+    <property role="34LRSv" value="long" />
+    <ref role="1TJDcQ" node="GiRQ8KGVJj" resolve="PrimitiveType" />
+  </node>
+  <node concept="1TIwiD" id="6tLBKr9K1VD">
+    <property role="EcuMT" value="7453913709778312937" />
+    <property role="TrG5h" value="DataType" />
+    <ref role="1TJDcQ" node="GiRQ8KGVJk" resolve="Type" />
+    <node concept="1TJgyj" id="6tLBKr9K1VE" role="1TKVEi">
+      <property role="IQ2ns" value="7453913709778312938" />
+      <property role="20kJfa" value="data" />
+      <property role="20lbJX" value="fLJekj4/_1" />
+      <ref role="20lvS9" node="6tLBKr9KcNk" resolve="DataDeclaration" />
+    </node>
+    <node concept="RPilO" id="6tLBKr9K1VG" role="lGtFl">
+      <ref role="RPilL" node="6tLBKr9K1VE" resolve="data" />
+    </node>
+  </node>
+  <node concept="PlHQZ" id="6tLBKr9KcNk">
+    <property role="EcuMT" value="7453913709778357460" />
+    <property role="TrG5h" value="DataDeclaration" />
+    <node concept="PrWs8" id="6tLBKr9KcNl" role="PrDN$">
+      <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
+    </node>
+  </node>
+  <node concept="1TIwiD" id="6tLBKr9KnGF">
+    <property role="EcuMT" value="7453913709778402091" />
+    <property role="TrG5h" value="SimpleMessage" />
+    <property role="34LRSv" value="simple" />
+    <ref role="1TJDcQ" node="GiRQ8KGyoQ" resolve="Message" />
   </node>
 </model>
 
