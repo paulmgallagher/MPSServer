@@ -541,5 +541,43 @@
       </node>
     </node>
   </node>
+  <node concept="24kQdi" id="6tLBKrayBL_">
+    <ref role="1XX52x" to="albe:6tLBKrayBLs" resolve="ResponseMessage" />
+    <node concept="3EZMnI" id="6tLBKrayBLB" role="2wV5jI">
+      <property role="S$Qs1" value="true" />
+      <property role="3EXrWe" value="true" />
+      <node concept="3EZMnI" id="6tLBKrayBLC" role="3EZMnx">
+        <node concept="2iRfu4" id="6tLBKrayBLD" role="2iSdaV" />
+        <node concept="VPM3Z" id="6tLBKrayBLE" role="3F10Kt" />
+        <node concept="3F0ifn" id="6tLBKrayBLF" role="3EZMnx">
+          <property role="3F0ifm" value="response message" />
+        </node>
+        <node concept="3F0A7n" id="6tLBKrayBLG" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+      <node concept="3EZMnI" id="6tLBKrayBLH" role="3EZMnx">
+        <node concept="VPM3Z" id="6tLBKrayBLI" role="3F10Kt" />
+        <node concept="3XFhqQ" id="6tLBKrayBLJ" role="3EZMnx" />
+        <node concept="2iRfu4" id="6tLBKrayBLK" role="2iSdaV" />
+        <node concept="3F2HdR" id="6tLBKrayBLL" role="3EZMnx">
+          <ref role="1NtTu8" to="albe:GiRQ8KIjnZ" resolve="fields" />
+          <node concept="2EHx9g" id="6tLBKrayBLM" role="2czzBx" />
+        </node>
+      </node>
+      <node concept="3F0ifn" id="6tLBKrayBLN" role="3EZMnx" />
+      <node concept="2iRkQZ" id="6tLBKrayBLO" role="2iSdaV" />
+      <node concept="3EZMnI" id="6tLBKrayBLP" role="AHCbl">
+        <node concept="2iRfu4" id="6tLBKrayBLQ" role="2iSdaV" />
+        <node concept="VPM3Z" id="6tLBKrayBLR" role="3F10Kt" />
+        <node concept="3F0ifn" id="6tLBKrayBLS" role="3EZMnx">
+          <property role="3F0ifm" value="response message" />
+        </node>
+        <node concept="3F0A7n" id="6tLBKrayBLT" role="3EZMnx">
+          <ref role="1NtTu8" to="tpck:h0TrG11" resolve="name" />
+        </node>
+      </node>
+    </node>
+  </node>
 </model>
 
