@@ -164,6 +164,16 @@
       <node concept="3F1sOY" id="GiRQ8KIsFF" role="3EZMnx">
         <ref role="1NtTu8" to="albe:GiRQ8KIsFn" resolve="type" />
       </node>
+      <node concept="3EZMnI" id="6tLBKra7y8M" role="3EZMnx">
+        <node concept="VPM3Z" id="6tLBKra7y8O" role="3F10Kt" />
+        <node concept="3F0ifn" id="6tLBKra7y8Z" role="3EZMnx">
+          <property role="3F0ifm" value="=" />
+        </node>
+        <node concept="2iRfu4" id="6tLBKra7y8R" role="2iSdaV" />
+        <node concept="3F1sOY" id="6tLBKra7y95" role="3EZMnx">
+          <ref role="1NtTu8" to="albe:6tLBKra7y8E" resolve="initializer" />
+        </node>
+      </node>
     </node>
   </node>
   <node concept="24kQdi" id="GiRQ8KIvyY">
