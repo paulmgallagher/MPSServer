@@ -430,12 +430,13 @@
       </concept>
     </language>
     <language id="3425a305-8286-4b78-9487-dc57f6d1f527" name="com.strumenta.mpsserver.protocol">
+      <concept id="797945696814769718" name="com.strumenta.mpsserver.protocol.structure.Message" flags="ng" index="VCf_k">
+        <child id="797945696815232511" name="fields" index="VEYEt" />
+      </concept>
       <concept id="797945696814769716" name="com.strumenta.mpsserver.protocol.structure.Protocol" flags="ng" index="VCf_m">
         <child id="797945696814873552" name="elements" index="VCmiM" />
       </concept>
-      <concept id="797945696814861152" name="com.strumenta.mpsserver.protocol.structure.RequestMessage" flags="ng" index="VClg2">
-        <child id="797945696815232511" name="fields" index="VEYEt" />
-      </concept>
+      <concept id="797945696814861152" name="com.strumenta.mpsserver.protocol.structure.RequestMessage" flags="ng" index="VClg2" />
       <concept id="797945696814873553" name="com.strumenta.mpsserver.protocol.structure.Field" flags="ng" index="VCmiN">
         <child id="797945696815270615" name="type" index="VELmP" />
       </concept>
@@ -443,6 +444,10 @@
       <concept id="797945696815462669" name="com.strumenta.mpsserver.protocol.structure.MatchMessage" flags="ng" index="VFApJ">
         <reference id="797945696815565767" name="message" index="VF9i_" />
         <child id="797945696815565769" name="typeExpression" index="VF9iF" />
+      </concept>
+      <concept id="4570385010775639622" name="com.strumenta.mpsserver.protocol.structure.RequestIdFieldReferenceOperation" flags="ng" index="3Lo0aP" />
+      <concept id="4570385010775281484" name="com.strumenta.mpsserver.protocol.structure.MessageFieldReferenceOperation" flags="ng" index="3LqCIZ">
+        <reference id="4570385010775281487" name="field" index="3LqCIW" />
       </concept>
       <concept id="4570385010773488844" name="com.strumenta.mpsserver.protocol.structure.UnserializeMsg" flags="ng" index="3Mwj0Z">
         <reference id="4570385010773488845" name="message" index="3Mwj0Y" />
@@ -16172,12 +16177,12 @@
                     </node>
                     <node concept="liA8E" id="6kdSgSEoGAC" role="2OqNvi">
                       <ref role="37wK5l" node="4XQ2p$w5akQ" resolve="modelDetailsByName" />
-                      <node concept="2OqwBi" id="6kdSgSEp9B1" role="37wK5m">
+                      <node concept="2OqwBi" id="3XHhffe2Jub" role="37wK5m">
                         <node concept="37vLTw" id="6kdSgSEp9k4" role="2Oq$k0">
                           <ref role="3cqZAo" node="6kdSgSEowjt" resolve="request" />
                         </node>
-                        <node concept="2OwXpG" id="6kdSgSEpapm" role="2OqNvi">
-                          <ref role="2Oxat5" node="6kdSgSEnqeu" resolve="modelName" />
+                        <node concept="3LqCIZ" id="3XHhffe2KkD" role="2OqNvi">
+                          <ref role="3LqCIW" node="GiRQ8KIsFa" resolve="modelName" />
                         </node>
                       </node>
                     </node>
@@ -16213,8 +16218,8 @@
                   <node concept="37vLTw" id="6kdSgSEpy0Q" role="2Oq$k0">
                     <ref role="3cqZAo" node="6kdSgSEowjt" resolve="request" />
                   </node>
-                  <node concept="2OwXpG" id="6kdSgSEpy0R" role="2OqNvi">
-                    <ref role="2Oxat5" node="6kdSgSEnqex" resolve="conceptName" />
+                  <node concept="3LqCIZ" id="3XHhffe2Krf" role="2OqNvi">
+                    <ref role="3LqCIW" node="GiRQ8KIsFm" resolve="conceptName" />
                   </node>
                 </node>
               </node>
@@ -16240,8 +16245,8 @@
               <node concept="37vLTw" id="6kdSgSEq$5d" role="2Oq$k0">
                 <ref role="3cqZAo" node="6kdSgSEowjt" resolve="request" />
               </node>
-              <node concept="2OwXpG" id="6kdSgSEq_J4" role="2OqNvi">
-                <ref role="2Oxat5" node="6kdSgSEnqex" resolve="conceptName" />
+              <node concept="3LqCIZ" id="3XHhffe2K$f" role="2OqNvi">
+                <ref role="3LqCIW" node="GiRQ8KIsFm" resolve="conceptName" />
               </node>
             </node>
             <node concept="2OqwBi" id="6kdSgSEqx1_" role="37vLTJ">
@@ -16256,13 +16261,11 @@
         </node>
         <node concept="3clFbF" id="6kdSgSEqC$n" role="3cqZAp">
           <node concept="37vLTI" id="6kdSgSEqHH6" role="3clFbG">
-            <node concept="2OqwBi" id="6kdSgSEqIzr" role="37vLTx">
+            <node concept="2OqwBi" id="3XHhffe3YLH" role="37vLTx">
               <node concept="37vLTw" id="6kdSgSEqIjg" role="2Oq$k0">
                 <ref role="3cqZAo" node="6kdSgSEowjt" resolve="request" />
               </node>
-              <node concept="2OwXpG" id="6kdSgSEqJnb" role="2OqNvi">
-                <ref role="2Oxat5" to="j1by:3h0CTvwIjPg" resolve="requestId" />
-              </node>
+              <node concept="3Lo0aP" id="3XHhffe3Z_e" role="2OqNvi" />
             </node>
             <node concept="2OqwBi" id="6kdSgSEqEwB" role="37vLTJ">
               <node concept="37vLTw" id="6kdSgSEqC$l" role="2Oq$k0">
@@ -16280,8 +16283,8 @@
               <node concept="37vLTw" id="6kdSgSEqRkv" role="2Oq$k0">
                 <ref role="3cqZAo" node="6kdSgSEowjt" resolve="request" />
               </node>
-              <node concept="2OwXpG" id="6kdSgSEqSkb" role="2OqNvi">
-                <ref role="2Oxat5" node="6kdSgSEnqeu" resolve="modelName" />
+              <node concept="3LqCIZ" id="3XHhffe3kjs" role="2OqNvi">
+                <ref role="3LqCIW" node="GiRQ8KIsFa" resolve="modelName" />
               </node>
             </node>
             <node concept="2OqwBi" id="6kdSgSEqOq7" role="37vLTJ">
