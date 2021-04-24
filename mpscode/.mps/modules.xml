@@ -4,6 +4,7 @@
     <projectModules>
       <modulePath path="$PROJECT_DIR$/languages/com.strumenta.businessorg/com.strumenta.businessorg.mpl" folder="business" />
       <modulePath path="$PROJECT_DIR$/languages/com.strumenta.financialcalc/com.strumenta.financialcalc.mpl" folder="financialcalc" />
+      <modulePath path="$PROJECT_DIR$/languages/com.strumenta.mpsserver.protocol/com.strumenta.mpsserver.protocol.mpl" folder="main" />
       <modulePath path="$PROJECT_DIR$/solutions/com.strumenta.businessorg.sandbox/com.strumenta.businessorg.sandbox.msd" folder="business" />
       <modulePath path="$PROJECT_DIR$/solutions/com.strumenta.financialcalc.sandbox/com.strumenta.financialcalc.sandbox.msd" folder="financialcalc" />
       <modulePath path="$PROJECT_DIR$/solutions/com.strumenta.mpsserver.build/com.strumenta.mpsserver.build.msd" folder="_build" />
@@ -15,6 +16,7 @@
       <modulePath path="$PROJECT_DIR$/solutions/com.strumenta.mpsserver.operations/com.strumenta.mpsserver.operations.msd" folder="main" />
       <modulePath path="$PROJECT_DIR$/solutions/com.strumenta.mpsserver.server.tests/com.strumenta.mpsserver.server.tests.msd" folder="tests" />
       <modulePath path="$PROJECT_DIR$/solutions/com.strumenta.mpsserver.server/com.strumenta.mpsserver.server.msd" folder="main" />
+      <modulePath path="$PROJECT_DIR$/solutions/com.strumenta.mpsserver.protocolused/com/com.strumenta.mpsserver.protocolused.msd" folder="main" />
     </projectModules>
   </component>
 </project>
