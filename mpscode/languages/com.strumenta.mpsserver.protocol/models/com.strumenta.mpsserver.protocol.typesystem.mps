@@ -509,5 +509,30 @@
       <ref role="1YaFvo" to="albe:6tLBKrahCfA" resolve="MsgReference" />
     </node>
   </node>
+  <node concept="1YbPZF" id="6tLBKraovPs">
+    <property role="TrG5h" value="typeof_IntType" />
+    <node concept="3clFbS" id="6tLBKraovPt" role="18ibNy">
+      <node concept="1Z5TYs" id="6tLBKraow1V" role="3cqZAp">
+        <node concept="mw_s8" id="6tLBKraow2f" role="1ZfhKB">
+          <node concept="2pJPEk" id="6tLBKraow2b" role="mwGJk">
+            <node concept="2pJPED" id="6tLBKraow2q" role="2pJPEn">
+              <ref role="2pJxaS" to="tpee:f_0OyhT" resolve="IntegerType" />
+            </node>
+          </node>
+        </node>
+        <node concept="mw_s8" id="6tLBKraow1Y" role="1ZfhK$">
+          <node concept="1Z2H0r" id="6tLBKraovPz" role="mwGJk">
+            <node concept="1YBJjd" id="6tLBKraovRn" role="1Z2MuG">
+              <ref role="1YBMHb" node="6tLBKraovPv" resolve="intType" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+    <node concept="1YaCAy" id="6tLBKraovPv" role="1YuTPh">
+      <property role="TrG5h" value="intType" />
+      <ref role="1YaFvo" to="albe:6tLBKra7xnH" resolve="IntType" />
+    </node>
+  </node>
 </model>
 
