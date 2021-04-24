@@ -30,7 +30,6 @@
     <dependency reexport="false">ceab5195-25ea-4f22-9b92-103b95ca8c0c(jetbrains.mps.lang.core)</dependency>
     <dependency reexport="false">18bc6592-03a6-4e29-a83a-7ff23bde13ba(jetbrains.mps.lang.editor)</dependency>
     <dependency reexport="false">498d89d2-c2e9-11e2-ad49-6cf049e62fe5(MPS.IDEA)</dependency>
-    <dependency reexport="false">3e746e3a-2334-4f8c-8e09-e6f7d0d74696(com.strumenta.mpsserver.protocolused)</dependency>
     <dependency reexport="false">d8420fa5-03a4-4907-8795-d6db9a37b0e8(com.strumenta.mpsserver.protocol.base)</dependency>
   </dependencies>
   <languageVersions>

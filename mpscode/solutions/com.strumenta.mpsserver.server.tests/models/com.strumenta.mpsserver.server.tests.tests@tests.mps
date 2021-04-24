@@ -44,6 +44,7 @@
     <import index="dnps" ref="r:7d44744b-e2b4-4f4d-95e4-ccc1b33c8297(com.strumenta.businessorg.intentions)" />
     <import index="f8ve" ref="r:480d701d-f50a-403e-b280-ef64b84517ed(com.strumenta.businessorg.sandbox.acmeinc)" />
     <import index="wy2b" ref="48e3d84c-0510-4776-ac01-301d43fa8646/java:com.google.gson(com.strumenta.mpsserver.deps/)" />
+    <import index="j1by" ref="r:129c9bcc-c4b5-43e3-adfd-c33340d0e162(com.strumenta.mpsserver.protocol.base)" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="tpck" ref="r:00000000-0000-4000-0000-011c89590288(jetbrains.mps.lang.core.structure)" implicit="true" />
     <import index="ends" ref="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea/java:jetbrains.mps.extapi.persistence(MPS.Core/)" implicit="true" />
@@ -6360,12 +6361,12 @@
             <property role="TrG5h" value="json" />
             <node concept="17QB3L" id="5CDZnbmm0Rz" role="1tU5fm" />
             <node concept="2OqwBi" id="5CDZnbmm1D$" role="33vP2m">
-              <node concept="2YIFZM" id="5CDZnbmm2n1" role="2Oq$k0">
-                <ref role="37wK5l" to="30ym:4XQ2p$w2wg4" resolve="getInstance" />
-                <ref role="1Pybhc" to="30ym:4XQ2p$w2w51" resolve="Serialization" />
+              <node concept="2YIFZM" id="3XHhffdVBb7" role="2Oq$k0">
+                <ref role="37wK5l" to="j1by:4XQ2p$w2wg4" resolve="getInstance" />
+                <ref role="1Pybhc" to="j1by:4XQ2p$w2w51" resolve="Serialization" />
               </node>
               <node concept="liA8E" id="5CDZnbmm1M6" role="2OqNvi">
-                <ref role="37wK5l" to="30ym:4XQ2p$w2w65" resolve="jsonify" />
+                <ref role="37wK5l" to="j1by:4XQ2p$w2w65" resolve="jsonify" />
                 <node concept="37vLTw" id="5CDZnbmm1MK" role="37wK5m">
                   <ref role="3cqZAo" node="5CDZnbmlYN7" resolve="data" />
                 </node>
@@ -6378,12 +6379,12 @@
             <ref role="3cqZAo" node="5CDZnbmlYN7" resolve="data" />
           </node>
           <node concept="2OqwBi" id="5CDZnbmm2ug" role="3tpDZA">
-            <node concept="2YIFZM" id="5CDZnbmm2ph" role="2Oq$k0">
-              <ref role="37wK5l" to="30ym:4XQ2p$w2wg4" resolve="getInstance" />
-              <ref role="1Pybhc" to="30ym:4XQ2p$w2w51" resolve="Serialization" />
+            <node concept="2YIFZM" id="3XHhffdVBb8" role="2Oq$k0">
+              <ref role="37wK5l" to="j1by:4XQ2p$w2wg4" resolve="getInstance" />
+              <ref role="1Pybhc" to="j1by:4XQ2p$w2w51" resolve="Serialization" />
             </node>
             <node concept="liA8E" id="5CDZnbmm2Bi" role="2OqNvi">
-              <ref role="37wK5l" to="30ym:SXzjmhsPTE" resolve="unserialize" />
+              <ref role="37wK5l" to="j1by:SXzjmhsPTE" resolve="unserialize" />
               <node concept="37vLTw" id="5CDZnbmm2C7" role="37wK5m">
                 <ref role="3cqZAo" node="5CDZnbmm0RD" resolve="json" />
               </node>
@@ -6422,12 +6423,12 @@
               <ref role="3uigEE" to="wy2b:~JsonElement" resolve="JsonElement" />
             </node>
             <node concept="2OqwBi" id="5CDZnbmnbro" role="33vP2m">
-              <node concept="2YIFZM" id="5CDZnbmnbrp" role="2Oq$k0">
-                <ref role="1Pybhc" to="30ym:4XQ2p$w2w51" resolve="Serialization" />
-                <ref role="37wK5l" to="30ym:4XQ2p$w2wg4" resolve="getInstance" />
+              <node concept="2YIFZM" id="3XHhffdVBb9" role="2Oq$k0">
+                <ref role="37wK5l" to="j1by:4XQ2p$w2wg4" resolve="getInstance" />
+                <ref role="1Pybhc" to="j1by:4XQ2p$w2w51" resolve="Serialization" />
               </node>
               <node concept="liA8E" id="5CDZnbmnbrq" role="2OqNvi">
-                <ref role="37wK5l" to="30ym:6Y14zWtShFW" resolve="jsonifyData" />
+                <ref role="37wK5l" to="j1by:6Y14zWtShFW" resolve="jsonifyData" />
                 <node concept="37vLTw" id="5CDZnbmnbrr" role="37wK5m">
                   <ref role="3cqZAo" node="5CDZnbmnbrg" resolve="data" />
                 </node>
@@ -6514,12 +6515,12 @@
               <ref role="3uigEE" to="30ym:6PjeABAwcfD" resolve="NodeIDInfo" />
             </node>
             <node concept="2OqwBi" id="5CDZnbmohBg" role="33vP2m">
-              <node concept="2YIFZM" id="5CDZnbmohBh" role="2Oq$k0">
-                <ref role="37wK5l" to="30ym:4XQ2p$w2wg4" resolve="getInstance" />
-                <ref role="1Pybhc" to="30ym:4XQ2p$w2w51" resolve="Serialization" />
+              <node concept="2YIFZM" id="3XHhffdVBba" role="2Oq$k0">
+                <ref role="37wK5l" to="j1by:4XQ2p$w2wg4" resolve="getInstance" />
+                <ref role="1Pybhc" to="j1by:4XQ2p$w2w51" resolve="Serialization" />
               </node>
               <node concept="liA8E" id="5CDZnbmohBi" role="2OqNvi">
-                <ref role="37wK5l" to="30ym:SXzjmhsPTE" resolve="unserialize" />
+                <ref role="37wK5l" to="j1by:SXzjmhsPTE" resolve="unserialize" />
                 <node concept="2OqwBi" id="5CDZnbmoi_a" role="37wK5m">
                   <node concept="37vLTw" id="5CDZnbmoj_v" role="2Oq$k0">
                     <ref role="3cqZAo" node="5CDZnbmohBl" resolve="jo" />
@@ -6577,12 +6578,12 @@
               <ref role="3uigEE" to="wy2b:~JsonElement" resolve="JsonElement" />
             </node>
             <node concept="2OqwBi" id="5CDZnbmps6p" role="33vP2m">
-              <node concept="2YIFZM" id="5CDZnbmps6q" role="2Oq$k0">
-                <ref role="37wK5l" to="30ym:4XQ2p$w2wg4" resolve="getInstance" />
-                <ref role="1Pybhc" to="30ym:4XQ2p$w2w51" resolve="Serialization" />
+              <node concept="2YIFZM" id="3XHhffdVBbb" role="2Oq$k0">
+                <ref role="37wK5l" to="j1by:4XQ2p$w2wg4" resolve="getInstance" />
+                <ref role="1Pybhc" to="j1by:4XQ2p$w2w51" resolve="Serialization" />
               </node>
               <node concept="liA8E" id="5CDZnbmps6r" role="2OqNvi">
-                <ref role="37wK5l" to="30ym:6Y14zWtShFW" resolve="jsonifyData" />
+                <ref role="37wK5l" to="j1by:6Y14zWtShFW" resolve="jsonifyData" />
                 <node concept="37vLTw" id="5CDZnbmps6s" role="37wK5m">
                   <ref role="3cqZAo" node="5CDZnbmps6h" resolve="data" />
                 </node>
@@ -6669,12 +6670,12 @@
               <ref role="3uigEE" to="30ym:6PjeABAwcfD" resolve="NodeIDInfo" />
             </node>
             <node concept="2OqwBi" id="5CDZnbmqw8C" role="33vP2m">
-              <node concept="2YIFZM" id="5CDZnbmqw8D" role="2Oq$k0">
-                <ref role="1Pybhc" to="30ym:4XQ2p$w2w51" resolve="Serialization" />
-                <ref role="37wK5l" to="30ym:4XQ2p$w2wg4" resolve="getInstance" />
+              <node concept="2YIFZM" id="3XHhffdVBbc" role="2Oq$k0">
+                <ref role="37wK5l" to="j1by:4XQ2p$w2wg4" resolve="getInstance" />
+                <ref role="1Pybhc" to="j1by:4XQ2p$w2w51" resolve="Serialization" />
               </node>
               <node concept="liA8E" id="5CDZnbmqw8E" role="2OqNvi">
-                <ref role="37wK5l" to="30ym:SXzjmhsPTE" resolve="unserialize" />
+                <ref role="37wK5l" to="j1by:SXzjmhsPTE" resolve="unserialize" />
                 <node concept="2OqwBi" id="5CDZnbmqw8F" role="37wK5m">
                   <node concept="37vLTw" id="5CDZnbmqw8G" role="2Oq$k0">
                     <ref role="3cqZAo" node="5CDZnbmqx69" resolve="jo" />
@@ -6730,12 +6731,12 @@
             <property role="TrG5h" value="json" />
             <node concept="17QB3L" id="5CDZnbmm2Go" role="1tU5fm" />
             <node concept="2OqwBi" id="5CDZnbmm2Gp" role="33vP2m">
-              <node concept="2YIFZM" id="5CDZnbmm2Gq" role="2Oq$k0">
-                <ref role="1Pybhc" to="30ym:4XQ2p$w2w51" resolve="Serialization" />
-                <ref role="37wK5l" to="30ym:4XQ2p$w2wg4" resolve="getInstance" />
+              <node concept="2YIFZM" id="3XHhffdVBbd" role="2Oq$k0">
+                <ref role="37wK5l" to="j1by:4XQ2p$w2wg4" resolve="getInstance" />
+                <ref role="1Pybhc" to="j1by:4XQ2p$w2w51" resolve="Serialization" />
               </node>
               <node concept="liA8E" id="5CDZnbmm2Gr" role="2OqNvi">
-                <ref role="37wK5l" to="30ym:4XQ2p$w2w65" resolve="jsonify" />
+                <ref role="37wK5l" to="j1by:4XQ2p$w2w65" resolve="jsonify" />
                 <node concept="37vLTw" id="5CDZnbmm2Gs" role="37wK5m">
                   <ref role="3cqZAo" node="5CDZnbmm2Gh" resolve="data" />
                 </node>
@@ -6748,12 +6749,12 @@
             <ref role="3cqZAo" node="5CDZnbmm2Gh" resolve="data" />
           </node>
           <node concept="2OqwBi" id="5CDZnbmm2Gv" role="3tpDZA">
-            <node concept="2YIFZM" id="5CDZnbmm2Gw" role="2Oq$k0">
-              <ref role="37wK5l" to="30ym:4XQ2p$w2wg4" resolve="getInstance" />
-              <ref role="1Pybhc" to="30ym:4XQ2p$w2w51" resolve="Serialization" />
+            <node concept="2YIFZM" id="3XHhffdVBbe" role="2Oq$k0">
+              <ref role="37wK5l" to="j1by:4XQ2p$w2wg4" resolve="getInstance" />
+              <ref role="1Pybhc" to="j1by:4XQ2p$w2w51" resolve="Serialization" />
             </node>
             <node concept="liA8E" id="5CDZnbmm2Gx" role="2OqNvi">
-              <ref role="37wK5l" to="30ym:SXzjmhsPTE" resolve="unserialize" />
+              <ref role="37wK5l" to="j1by:SXzjmhsPTE" resolve="unserialize" />
               <node concept="37vLTw" id="5CDZnbmm2Gy" role="37wK5m">
                 <ref role="3cqZAo" node="5CDZnbmm2Gn" resolve="json" />
               </node>
@@ -8427,12 +8428,12 @@
             </node>
             <node concept="2OqwBi" id="4NnQddZ_yTt" role="33vP2m">
               <node concept="2OqwBi" id="4NnQddZ_yaH" role="2Oq$k0">
-                <node concept="2YIFZM" id="4NnQddZ_y5h" role="2Oq$k0">
-                  <ref role="1Pybhc" to="30ym:4XQ2p$w2w51" resolve="Serialization" />
-                  <ref role="37wK5l" to="30ym:4XQ2p$w2wg4" resolve="getInstance" />
+                <node concept="2YIFZM" id="3XHhffdVBbf" role="2Oq$k0">
+                  <ref role="37wK5l" to="j1by:4XQ2p$w2wg4" resolve="getInstance" />
+                  <ref role="1Pybhc" to="j1by:4XQ2p$w2w51" resolve="Serialization" />
                 </node>
                 <node concept="liA8E" id="4NnQddZ_yka" role="2OqNvi">
-                  <ref role="37wK5l" to="30ym:6Y14zWtShFW" resolve="jsonifyData" />
+                  <ref role="37wK5l" to="j1by:6Y14zWtShFW" resolve="jsonifyData" />
                   <node concept="37vLTw" id="4NnQddZ_ykT" role="37wK5m">
                     <ref role="3cqZAo" node="4NnQddZ_tjD" resolve="lid" />
                   </node>

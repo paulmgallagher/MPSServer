@@ -14,9 +14,6 @@
       <concept id="1820634577908471803" name="jetbrains.mps.lang.generator.plan.structure.Plan" flags="ng" index="2VgMpV">
         <child id="1820634577908471815" name="steps" index="2VgMA7" />
       </concept>
-      <concept id="1820634577908471809" name="jetbrains.mps.lang.generator.plan.structure.Checkpoint" flags="ng" index="2VgMA1">
-        <child id="3750601816081740498" name="cpSpec" index="3ps6aC" />
-      </concept>
       <concept id="6257322641293267918" name="jetbrains.mps.lang.generator.plan.structure.CheckpointDeclaration" flags="ng" index="19BiC4" />
       <concept id="3750601816081740541" name="jetbrains.mps.lang.generator.plan.structure.DeclaredCheckpointSpec" flags="ng" index="3ps6a7">
         <reference id="3750601816081740544" name="cpDecl" index="3ps6dU" />
@@ -35,18 +32,8 @@
       </concept>
     </language>
     <language id="ceab5195-25ea-4f22-9b92-103b95ca8c0c" name="jetbrains.mps.lang.core">
-      <concept id="1133920641626" name="jetbrains.mps.lang.core.structure.BaseConcept" flags="ng" index="2VYdi">
-        <child id="5169995583184591170" name="smodelAttribute" index="lGtFl" />
-      </concept>
       <concept id="1169194658468" name="jetbrains.mps.lang.core.structure.INamedConcept" flags="ng" index="TrEIO">
         <property id="1169194664001" name="name" index="TrG5h" />
-      </concept>
-      <concept id="709746936026466394" name="jetbrains.mps.lang.core.structure.ChildAttribute" flags="ng" index="3VBwX9">
-        <property id="709746936026609031" name="linkId" index="3V$3ak" />
-        <property id="709746936026609029" name="role_DebugInfo" index="3V$3am" />
-      </concept>
-      <concept id="4452961908202556907" name="jetbrains.mps.lang.core.structure.BaseCommentAttribute" flags="ng" index="1X3_iC">
-        <child id="3078666699043039389" name="commentedNode" index="8Wnug" />
       </concept>
     </language>
   </registry>
@@ -55,18 +42,9 @@
     <node concept="19BiC4" id="3XHhffdJoWx" role="2VgMA7">
       <property role="TrG5h" value="protocol_classes_checkpoint" />
     </node>
-    <node concept="2VgMA1" id="3XHhffdLgnq" role="2VgMA7">
-      <node concept="3ps6a7" id="3XHhffdLgof" role="3ps6aC">
+    <node concept="26qawf" id="3XHhffdJoTu" role="2VgMA7">
+      <node concept="3ps6a7" id="3XHhffdJoXj" role="3pRG92">
         <ref role="3ps6dU" node="3XHhffdJoWx" resolve="protocol_classes_checkpoint" />
-      </node>
-    </node>
-    <node concept="1X3_iC" id="3XHhffdLgoi" role="lGtFl">
-      <property role="3V$3am" value="steps" />
-      <property role="3V$3ak" value="7ab1a6fa-0a11-4b95-9e48-75f363d6cb00/1820634577908471803/1820634577908471815" />
-      <node concept="26qawf" id="3XHhffdJoTu" role="8Wnug">
-        <node concept="3ps6a7" id="3XHhffdJoXj" role="3pRG92">
-          <ref role="3ps6dU" node="3XHhffdJoWx" resolve="protocol_classes_checkpoint" />
-        </node>
       </node>
     </node>
     <node concept="3uMcMo" id="3XHhffdJoQb" role="2VgMA7">

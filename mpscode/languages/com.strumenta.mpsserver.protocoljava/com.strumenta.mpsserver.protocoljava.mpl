@@ -27,6 +27,7 @@
       <dependencies>
         <dependency reexport="false">d8420fa5-03a4-4907-8795-d6db9a37b0e8(com.strumenta.mpsserver.protocol.base)</dependency>
         <dependency reexport="false">32871ad7-f0fb-425e-b680-ec64d1fcb377(com.strumenta.mpsserver.protocol.generator)</dependency>
+        <dependency reexport="false">3425a305-8286-4b78-9487-dc57f6d1f527(com.strumenta.mpsserver.protocol)</dependency>
       </dependencies>
       <languageVersions>
         <language slang="l:f3061a53-9226-4cc5-a443-f952ceaf5816:jetbrains.mps.baseLanguage" version="11" />
@@ -51,6 +52,7 @@
         <module reference="6354ebe7-c22a-4a0f-ac54-50b52ab9b065(JDK)" version="0" />
         <module reference="6ed54515-acc8-4d1e-a16c-9fd6cfe951ea(MPS.Core)" version="0" />
         <module reference="8865b7a8-5271-43d3-884c-6fd1d9cfdd34(MPS.OpenAPI)" version="0" />
+        <module reference="3425a305-8286-4b78-9487-dc57f6d1f527(com.strumenta.mpsserver.protocol)" version="1" />
         <module reference="d8420fa5-03a4-4907-8795-d6db9a37b0e8(com.strumenta.mpsserver.protocol.base)" version="0" />
         <module reference="32871ad7-f0fb-425e-b680-ec64d1fcb377(com.strumenta.mpsserver.protocol.generator)" version="0" />
         <module reference="ef02deba-0710-4a64-925d-5fa3879f3750(com.strumenta.mpsserver.protocoljava)" version="0" />
