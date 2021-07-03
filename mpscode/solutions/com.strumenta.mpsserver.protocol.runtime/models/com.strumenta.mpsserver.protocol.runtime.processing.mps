@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:520d51de-0e66-43c3-8e17-f1fb6fb5356c(com.strumenta.mpsserver.protocol.runtime.code)">
+<model ref="r:520d51de-0e66-43c3-8e17-f1fb6fb5356c(com.strumenta.mpsserver.protocol.runtime.processing)">
   <persistence version="9" />
   <languages>
     <use id="f3061a53-9226-4cc5-a443-f952ceaf5816" name="jetbrains.mps.baseLanguage" version="11" />

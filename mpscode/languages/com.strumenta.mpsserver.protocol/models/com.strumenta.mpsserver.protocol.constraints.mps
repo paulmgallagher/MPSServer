@@ -16,7 +16,7 @@
   <imports>
     <import index="o8zo" ref="r:314576fc-3aee-4386-a0a5-a38348ac317d(jetbrains.mps.scope)" />
     <import index="fnmy" ref="r:89c0fb70-0977-4113-a076-5906f9d8630f(jetbrains.mps.baseLanguage.scopes)" />
-    <import index="30ym" ref="r:83288bbd-38c6-4826-b817-e689c0f3038c(com.strumenta.mpsserver.logic)" />
+    <import index="rc1j" ref="r:af112958-4081-48bf-877e-603af347ab6a(com.strumenta.mpsserver.protocol.runtime.messages)" />
     <import index="nah4" ref="r:67aba5f4-da92-431a-a2e9-f9f794f21bd1(com.strumenta.mpsserver.protocol.structure)" implicit="true" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="tpek" ref="r:00000000-0000-4000-0000-011c895902c0(jetbrains.mps.baseLanguage.behavior)" implicit="true" />
@@ -209,7 +209,7 @@
                               </node>
                               <node concept="3JPx81" id="12FylkAqejR" role="2OqNvi">
                                 <node concept="3B5_sB" id="12FylkAqexW" role="25WWJ7">
-                                  <ref role="3B5MYn" to="30ym:3h0CTvwIhrW" resolve="RequestMessage" />
+                                  <ref role="3B5MYn" to="rc1j:3h0CTvwIhrW" resolve="RequestMessage" />
                                 </node>
                               </node>
                             </node>

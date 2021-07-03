@@ -9,8 +9,9 @@
   <imports>
     <import index="nah4" ref="r:67aba5f4-da92-431a-a2e9-f9f794f21bd1(com.strumenta.mpsserver.protocol.structure)" />
     <import index="82uw" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.util.function(JDK/)" />
-    <import index="mpvu" ref="r:520d51de-0e66-43c3-8e17-f1fb6fb5356c(com.strumenta.mpsserver.protocol.runtime.code)" />
+    <import index="mpvu" ref="r:520d51de-0e66-43c3-8e17-f1fb6fb5356c(com.strumenta.mpsserver.protocol.runtime.processing)" />
     <import index="30ym" ref="r:83288bbd-38c6-4826-b817-e689c0f3038c(com.strumenta.mpsserver.logic)" />
+    <import index="rc1j" ref="r:af112958-4081-48bf-877e-603af347ab6a(com.strumenta.mpsserver.protocol.runtime.messages)" />
     <import index="tpee" ref="r:00000000-0000-4000-0000-011c895902ca(jetbrains.mps.baseLanguage.structure)" implicit="true" />
     <import index="wyt6" ref="6354ebe7-c22a-4a0f-ac54-50b52ab9b065/java:java.lang(JDK/)" implicit="true" />
     <import index="e4as" ref="r:0b41bd2a-d72e-4e3a-8bde-c68965ce30dd(com.strumenta.mpsserver.extensionkit.code)" implicit="true" />
@@ -324,7 +325,7 @@
                                   <ref role="3cqZAo" node="12FylkAvWB$" resolve="message" />
                                 </node>
                                 <node concept="3VsKOn" id="12FylkAwcg7" role="37wK5m">
-                                  <ref role="3VsUkX" to="30ym:3h0CTvwIhrW" resolve="RequestMessage" />
+                                  <ref role="3VsUkX" to="rc1j:3h0CTvwIhrW" resolve="RequestMessage" />
                                   <node concept="1ZhdrF" id="12FylkAwcia" role="lGtFl">
                                     <property role="2qtEX8" value="classifier" />
                                     <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1116615150612/1116615189566" />
@@ -378,7 +379,7 @@
                                         <property role="TrG5h" value="unserialized" />
                                         <property role="3TUv4t" value="true" />
                                         <node concept="3uibUv" id="12FylkAyFPW" role="1tU5fm">
-                                          <ref role="3uigEE" to="30ym:3h0CTvwIhrW" resolve="RequestMessage" />
+                                          <ref role="3uigEE" to="rc1j:3h0CTvwIhrW" resolve="RequestMessage" />
                                           <node concept="1ZhdrF" id="12FylkAyG2c" role="lGtFl">
                                             <property role="2qtEX8" value="classifier" />
                                             <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1107535904670/1107535924139" />
@@ -408,7 +409,7 @@
                                             <ref role="3cqZAo" node="12FylkAvWB$" resolve="message" />
                                           </node>
                                           <node concept="3VsKOn" id="12FylkAyOxU" role="37wK5m">
-                                            <ref role="3VsUkX" to="30ym:3h0CTvwIhrW" resolve="RequestMessage" />
+                                            <ref role="3VsUkX" to="rc1j:3h0CTvwIhrW" resolve="RequestMessage" />
                                             <node concept="1ZhdrF" id="12FylkAyOxV" role="lGtFl">
                                               <property role="2qtEX8" value="classifier" />
                                               <property role="P3scX" value="f3061a53-9226-4cc5-a443-f952ceaf5816/1116615150612/1116615189566" />
@@ -646,7 +647,7 @@
                 <node concept="3cpWsn" id="YWVDE53hqW" role="3cpWs9">
                   <property role="TrG5h" value="rm" />
                   <node concept="3uibUv" id="YWVDE53hqX" role="1tU5fm">
-                    <ref role="3uigEE" to="30ym:3h0CTvwIhrW" resolve="RequestMessage" />
+                    <ref role="3uigEE" to="rc1j:3h0CTvwIhrW" resolve="RequestMessage" />
                   </node>
                   <node concept="10Nm6u" id="YWVDE53hrN" role="33vP2m" />
                 </node>
