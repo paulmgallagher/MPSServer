@@ -54,6 +54,7 @@ dependencies {
 }
 
 repositories {	
+    mavenLocal()
 	mavenCentral()
 	maven {
 		url 'https://projects.itemis.de/nexus/content/groups/OS/'
